@@ -1,0 +1,44 @@
+
+<div class="login">
+    <img src="../../assets/images/login_logo.jpg" alt=""><span class="logo-text">Login</span>
+    
+    <form action="" [formGroup]="loginForm" (ngSubmit)="login()">
+        <div class="username">
+
+            <div class="form-floating">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" formControlName="username">
+                <label for="floatingInput" >Email</label>
+              </div>
+              <div *ngIf="loginForm.get('username')?.touched&&loginForm.get('username')?.invalid">
+                <small><p><sup>*</sup>Email should be correct format</p></small>
+              </div>
+        </div>
+        <div class="password">
+            <div class="form-floating">
+                <input type="{{showPassword?'text':'password'}}" class="form-control" id="password" placeholder="Password" formControlName="password" autocomplete="off">
+                <label for="password" >Password</label>
+                <span class="eyeIcon"><i class="bi bi-eye-fill" [ngClass]="{'bi bi-eye-slash-fill':!showPassword,'bi bi-eye-fill':showPassword}" (click)="togglePasswordVisibility()"></i></span>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+                <div class="login-btn">
+                    <button class="btn btn-dark loginBtn" type="submit" [disabled]="loginForm.invalid">Login</button> 
+             </div>
+            </div>
+            <div class="col-md-2"></div>
+            <div class="col-md-6">
+                <div class="forgotPassword">
+                    <a href="#">Forgot Password?</a>
+            </div> 
+            </div>
+          </div>
+    </form>
+        <div class="row">
+            <div class="col-md-12 createAccount">
+                
+                <p>Need an account? <a href="#">Signup</a></p>
+            </div>
+        </div>
+      </div>
+        
