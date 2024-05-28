@@ -1,0 +1,89 @@
+.login
+{
+    width: 400px;
+    margin: 200px auto;
+    padding: 40px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.login img{
+    height: 160px;
+    width: 160px;
+}
+.login h4{
+  margin-left: 160px;
+  bottom: 40px;
+}
+.login-btn
+{
+    text-align: center;
+    float: left;
+   
+}
+.username,.password
+{
+    margin-bottom: 20px;
+}
+.username label, .password label {
+    display: block;
+   
+}
+.login input
+{
+    height: 50px
+}
+.password {
+    position: relative;
+}
+
+.eyeIcon {
+    position: absolute;
+    top: 60%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.eyeIcon i {
+    font-size: 18px;
+}
+.forgotPassword
+{
+   float: right;
+}
+.forgotPassword a{
+    color: red;
+}
+
+.logo-text
+{
+    font-size: 28px;
+    font-weight: 800;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.loginBtn
+{
+    border: none;
+    width: 100px;
+    padding: 10px;
+    margin-left: 10px;
+}
+.createAccount
+{
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 20px;
+    color: rgba(112, 109, 109, 0.971);
+}
+small
+{
+    color: red;
+    margin-top: 5px;
+}
+
+
+
+
+
+
+
