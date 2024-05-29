@@ -10,13 +10,13 @@
         class="form-control"
         id="floatingInput"
         placeholder="name@example.com"
-        formControlName="username"
+        formControlName="email"
       />
       <label for="floatingInput">Email</label>
     </div>
     <div
       *ngIf="
-        loginForm.get('username')?.touched && loginForm.get('username')?.invalid
+        loginForm.get('email')?.touched && loginForm.get('email')?.invalid
       "
     >
       <small
