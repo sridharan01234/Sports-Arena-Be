@@ -1,0 +1,131 @@
+<div class="container">
+    <h1 class="my-5 py-5 text-center">Registration</h1>
+    <div class="row my-5">
+      <div class="col-md-6 my-5 Signup">
+        <form [formGroup]="regForm" (ngSubmit)="submit()" autocomplete="off">
+          <div class="row">
+            <div class="col-md-6 form-floating">
+                <input type="text" class="form-control mb-2" placeholder="Enter your First Name" id="Floatingfirstname" formControlName="firstName">
+                <label for="Floatingfirstname" class="ms-2 pt-3"> First Name</label>
+                <div *ngIf="registerFormControl['firstName'].invalid && (registerFormControl['firstName'].dirty || registerFormControl['firstName'].touched)">
+                  <p *ngIf="registerFormControl['firstName'].hasError('required')">*First Name must be given</p>
+                  <p *ngIf="registerFormControl['firstName'].hasError('pattern')">*Valid Name should be given</p>
+                  <p *ngIf="registerFormControl['firstName'].hasError('minlength') && !registerFormControl['firstName'].hasError('pattern')" >*Name should be atleast 3 characters</p>
+                  <p *ngIf="registerFormControl['firstName'].hasError('maxlength') && !registerFormControl['firstName'].hasError('pattern')" >*Name should be less than 15 characters</p>
+                </div>
+            </div>
+            
+            <div class="col-md-6 form-floating">
+              <input type="text" class="form-control mb-2" placeholder="Enter your Last Name" id="Floatinglastname" formControlName="lastName">
+              <label for="Floatinglastname" class="ms-2 pt-3">Last Name</label>
+              <div *ngIf="registerFormControl['lastName'].invalid && (registerFormControl['lastName'].dirty || registerFormControl['lastName'].touched)">
+                <p *ngIf="registerFormControl['lastName'].hasError('required')">*Last Name must be given</p>
+                <p *ngIf="registerFormControl['lastName'].hasError('pattern')">*Valid Name should be given</p>
+              </div>
+            </div>
+          </div>
+    
+          <div class="row">
+            <div class="col-md-6 form-floating">
+               <input type="number" class="form-control my-2" id="FloatingAge" placeholder="Age" formControlName="age" min="12" max="80">
+               <label for="FloatingAge"class="m-2">Age</label>
+               <div *ngIf="registerFormControl['age'].invalid && (registerFormControl['age'].dirty || registerFormControl['age'].touched)">
+                <p *ngIf="registerFormControl['age'].hasError('required')">*Age must be given</p>
+                <p *ngIf="registerFormControl['age'].hasError('min')">*Age must be greater than 12</p>
+                <p *ngIf="registerFormControl['age'].hasError('max')">*Age must be less than 80</p>
+              </div>
+            </div>
+
+            <div class="col-md-6 form-floating">
+                <input type="tel" class="form-control my-2" id="FloatingPhoneno" placeholder="123-456-7890" formControlName="phoneNo" (input)="phoneNoMask($event)">
+                <label for="FloatingPhoneno" class="m-2">Phone Number</label>
+                <div *ngIf="registerFormControl['phoneNo'].invalid && (registerFormControl['phoneNo'].dirty || registerFormControl['phoneNo'].touched)">
+                  <p *ngIf="registerFormControl['phoneNo'].hasError('required')">*Phone Number must be given</p>
+                  <p *ngIf="registerFormControl['phoneNo'].hasError('pattern')">*Phone Number must be number</p>
+                  <p *ngIf="registerFormControl['phoneNo'].hasError('minlength') && !registerFormControl['phoneNo'].hasError('pattern')">*Phone Number must be 10 digits</p>
+                </div>
+              </div>
+          </div>
+        
+          <div>
+            <label class="col-md-12 m-2">Gender</label>
+            <div *ngFor="let gender of userGender" class="form-check form-check-inline ms-5">
+              <input class="form-check-input my-2 border border-dark border-2" type="radio" name="gender" id="gender" [value]="gender" formControlName="gender">
+              <label class="form-check-label m-1" for="gender">{{gender}}</label>
+            </div>
+                <div *ngIf="registerFormControl['gender'].invalid && (registerFormControl['gender'].dirty || registerFormControl['gender'].touched)">
+                  <p *ngIf="registerFormControl['gender'].hasError('required')">*Gender must be given</p>
+                </div>
+            </div>
+         
+          <div class="row">
+            <div class="form-floating">
+              <input type="email" class="form-control my-2" id="FloatingEmail" placeholder="abc@example.com" formControlName="email" >
+              <label for="FloatingEmail" class="m-2">Email</label>
+              <div *ngIf="registerFormControl['email'].invalid && (registerFormControl['email'].dirty || registerFormControl['email'].touched)">
+                <p *ngIf="registerFormControl['email'].hasError('required')">*Email must be given</p>
+                <p *ngIf="registerFormControl['email'].hasError('pattern')">*Valid Email must be given</p>
+              </div>
+             </div>
+          </div>
+  
+      <div class="row">
+            <div class="form-floating Password">
+                <input type="{{showPassword? 'text':'password'}}" class="form-control my-2" id="FloatingPassword" placeholder="Password" formControlName="password"  (input)="checkPasswordValid()" (mousedown)="checkPasswordValid()">
+                <label for="FloatingPassword" class="m-2">Password</label>
+                <span class="icon"><i [ngClass]="{'bi bi-eye-slash-fill':!showPassword,'bi bi-eye-fill':showPassword}" (click)="toggleShowPassword()"></i></span>
+            </div>
+            <div *ngIf="registerFormControl['password'].invalid && (registerFormControl['password'].dirty || registerFormControl['password'].touched)" class="iconAlign">
+              <p *ngIf="registerFormControl['password'].hasError('required')">*Password must be given</p>
+              <p *ngIf="registerFormControl['password'].hasError('pattern')">* Password  does not meet the requirements</p>
+          </div>
+
+        <div *ngIf="passwordValidTextVisible" class="passwordValidation">
+          <div class="d-flex">
+               <p [ngClass]="{'text-success':isContainValidLength}">-Minimum 8 characters</p>
+               <div class="ms-auto"><i [ngClass]="{'text-success bi bi-check-circle-fill':isContainValidLength}"></i></div>
+           </div>
+
+          <div class="d-flex">
+               <p [ngClass]="{'text-success':isContainUppercase}">-Atleast one uppercase letter (A-Z)</p>
+               <div class="ms-auto"><i [ngClass]="{'text-success bi bi-check-circle-fill':isContainUppercase}"></i></div>
+          </div>
+          <div class="d-flex">
+              <p  [ngClass]="{'text-success':isContainLowercase}">-Atleast one lowercase letter (a-z)</p>
+              <div class="ms-auto"><i [ngClass]="{'text-success bi bi-check-circle-fill':isContainLowercase}"></i></div>
+          </div>
+          <div class="d-flex">
+              <p [ngClass]="{'text-success':isContainDigit}">-Atleast one digit (0-9) </p>
+              <div class="ms-auto" ><i [ngClass]="{'text-success bi bi-check-circle-fill':isContainDigit}"></i></div>
+          </div>
+         <div class="d-flex">
+               <p [ngClass]="{'text-success':isContainSplChar}">-Atleast one special character (!&#64;#$%^&*)</p>
+               <div class="ms-auto"> <i [ngClass]="{'text-success bi bi-check-circle-fill':isContainSplChar}"></i> </div>
+         </div>
+        </div>
+      </div>
+              <div class="row">
+                <div class="Password form-floating">
+                  <input type="{{showConfirmPassword? 'text':'password'}}" class="form-control my-2" id="FloatingConfirmPassword" placeholder="Confirm Password" formControlName="confirmPassword" >
+                  <label for="FloatingConfirmPassword" class="m-2">Confirm Password</label>
+                  <span class="icon"><i [ngClass]="{'bi bi-eye-slash-fill':!showConfirmPassword,'bi bi-eye-fill':showConfirmPassword}" (click)="toggleShowConfirmPassword()"></i></span>
+                </div>
+
+              <div *ngIf="registerFormControl['confirmPassword'].invalid && (registerFormControl['confirmPassword'].dirty || registerFormControl['confirmPassword'].touched)" class="iconAlign">
+                <p *ngIf="registerFormControl['confirmPassword'].hasError('required')">*Confirm Password must be given</p>
+                <p *ngIf="regForm.hasError('passwordMismatch') && !registerFormControl['confirmPassword'].hasError('pattern')">*Password and Confirm Password should match</p>
+                </div>
+              </div>
+  
+            <div class="d-grid">
+            <button class="btn btn-dark btn-lg p-3 mt-3 fs-4" [disabled]="regForm.invalid">Register</button>
+            </div>
+          </form>
+      </div>
+      <div class="col-md-6 my-5 Image">
+      </div>
+    </div>
+  </div>
+  
+  
+
