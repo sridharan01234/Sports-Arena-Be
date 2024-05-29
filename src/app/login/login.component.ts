@@ -16,7 +16,7 @@ export class LoginComponent {
   }
   ngOnInit():void{
     this.loginForm=this.fb.group({
-      username:['',[Validators.required,Validators.email]],
+      email:['',[Validators.required,Validators.email]],
       password:['',[Validators.required,Validators.minLength(8)]]
 
     })
@@ -30,8 +30,9 @@ export class LoginComponent {
   public login():void
   {
     console.log(this.loginForm.value)
-    this.http.post('http://192.168.43.173',this.loginForm.value).subscribe((res)=>
+    this.http.post('http://172.24.220.187/login',this.loginForm.value).subscribe((res)=>
     {
+      console.log(res)
     },(err)=>{
     alert(`Error ${err}`)
     });
