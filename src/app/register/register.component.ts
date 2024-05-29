@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { PasswordValidationDirective } from '../shared/password-validation.directive';
 import { PhoneNumberMaskPipe } from '../shared/phone-number-mask.pipe';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-register',
@@ -30,7 +31,8 @@ export class RegisterComponent implements OnInit {
 
   constructor(
     private regFormBuilder: FormBuilder,
-    private phoneNumberMask: PhoneNumberMaskPipe
+    private phoneNumberMask: PhoneNumberMaskPipe,
+    private http:HttpClient
   ) {}
 
   ngOnInit(): void {
@@ -93,6 +95,13 @@ export class RegisterComponent implements OnInit {
   }
 
   public submit(): void {
+    this.http.post('http://172.24.220.187/register',this.regForm.value).subscribe((res)=>
+    {
+      console.log(res)
+    },(err)=>
+    {
+      console.log(err)
+    })
     if (this.regForm.valid) console.log(this.regForm.value);
   }
 
