@@ -1,6 +1,7 @@
 import { HttpClient,HttpHeaders } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-login',
@@ -10,7 +11,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 export class LoginComponent {
   loginForm!:FormGroup;
   public showPassword:boolean=false;
-  constructor(private fb:FormBuilder,private http:HttpClient)
+  constructor(private fb:FormBuilder,private http:HttpClient,private toastr: ToastrService)
   {
     
   }
@@ -31,8 +32,8 @@ export class LoginComponent {
     console.log(this.loginForm.value)
     this.http.post('http://172.24.220.187/login',this.loginForm.value).subscribe((res)=>
     {
-    
-      console.log(res)
+    console.log(res)
+      this.toastr.success('Login successful!');
     },(err)=>{
     alert(`Error ${err}`)
     });

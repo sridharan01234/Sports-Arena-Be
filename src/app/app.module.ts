@@ -11,6 +11,7 @@ import { RegisterComponent } from './register/register.component';
 import { HeaderComponent } from './header/header.component';
 import { AuthenticationInterceptor } from './core/authentication.interceptor';
 import { CookieService } from 'ngx-cookie-service';
+import { ToastNoAnimationModule, ToastrService } from 'ngx-toastr';
 
 
 
@@ -22,7 +23,12 @@ import { CookieService } from 'ngx-cookie-service';
     CommonModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    ToastNoAnimationModule.forRoot({
+      timeOut: 2000,
+      positionClass: 'toast-top-right',
+      preventDuplicates: true,
+    }),
   ],
   providers: [{ provide: HTTP_INTERCEPTORS, useClass: AuthenticationInterceptor, multi: true },CookieService],
   bootstrap: [AppComponent],
