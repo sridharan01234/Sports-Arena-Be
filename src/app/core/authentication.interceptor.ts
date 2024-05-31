@@ -1,24 +1,26 @@
 import { Injectable } from '@angular/core';
-import {
-  HttpRequest,
-  HttpHandler,
-  HttpEvent,
-  HttpInterceptor
-} from '@angular/common/http';
+import { HttpRequest, HttpHandler, HttpEvent, HttpInterceptor, HttpResponse } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { tap } from 'rxjs/operators';
+
 
 @Injectable()
 export class AuthenticationInterceptor implements HttpInterceptor {
 
   constructor() {}
-  
-  intercept(request: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
-    const token = sessionStorage.getItem('token');
-    request = request.clone({
-      setHeaders: {
-        Authorization: `${token}`
-      }
-    });
-    return next.handle(request);
+
+  intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
+    return next.handle(req).pipe(
+      tap(event => {
+        if (event instanceof HttpResponse) {
+          console.log(event.headers)
+          // Log all headers
+          // console.log('Response Headers:', event.headers.keys().map(key => ({
+          //   key,
+          //   value: event.headers.get(key)
+          // })));
+        }
+      })
+    );
   }
 }

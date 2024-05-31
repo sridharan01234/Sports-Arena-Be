@@ -10,13 +10,13 @@
         class="form-control"
         id="floatingInput"
         placeholder="name@example.com"
-        formControlName="username"
+        formControlName="email"
       />
       <label for="floatingInput">Email</label>
     </div>
     <div
       *ngIf="
-        loginForm.get('username')?.touched && loginForm.get('username')?.invalid
+        loginForm.get('email')?.touched && loginForm.get('email')?.invalid
       "
     >
       <small
@@ -59,15 +59,16 @@
       <div class="col-md-2"></div>
       <div class="col-md-6">
         <div class="forgotPassword" >
-          <a routerLink="/forgotpassword">Forgot Password?</a>
+          <a routerLink="/login/forgotpassword">Forgot Password?</a>
         </div>
       </div>
     </div>
   </form>
   <div class="row">
     <div class="col-md-12 createAccount">
-      <p>Need an account? <a href="#">Signup</a></p>
+      <p>Need an account? <a routerLink="/login/register">Signup</a></p>
     </div>
   </div>
   
 </div>
+
