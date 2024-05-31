@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient,HttpHeaders } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
@@ -22,7 +22,6 @@ export class LoginComponent {
     })
 
   }
-
   public togglePasswordVisibility():void
   {
     this.showPassword=!this.showPassword
@@ -32,6 +31,7 @@ export class LoginComponent {
     console.log(this.loginForm.value)
     this.http.post('http://172.24.220.187/login',this.loginForm.value).subscribe((res)=>
     {
+    
       console.log(res)
     },(err)=>{
     alert(`Error ${err}`)
