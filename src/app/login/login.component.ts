@@ -33,13 +33,10 @@ export class LoginComponent {
     console.log(this.loginForm.value)
     this.http.post('http://172.24.220.187/login',this.loginForm.value).subscribe((res)=>
     {
-    
       console.log(res)
       this.toastr.success('Login successful!');
     },(err)=>{
     alert(`Error ${err}`)
     });
   }
- 
-
 }
