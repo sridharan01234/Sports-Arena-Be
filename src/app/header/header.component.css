@@ -1,0 +1,55 @@
+.navigation-bar
+{
+    position: fixed;
+    width: 100%;
+    top:0;
+}
+img
+{
+    height: 70px;
+    width: 70px;
+}
+.nav-icons
+{
+    margin-top: 20px;
+    float: right;
+    right: 0;
+    cursor: pointer;
+    
+}
+.top-navbar 
+{
+    color: black;
+
+}
+.top-navbar i
+{
+  
+    margin: 5px;
+    font-size:24px ;
+    font-weight: bolder;
+    font-weight: 200;
+
+}
+.logo-text
+{
+    font-weight: bolder;
+    font-size:30px ;
+    font-family: Verdana;
+}
+.icon-text
+{
+    font-size: 18px;
+    font-weight: 500;
+}
+.product-nav
+{
+    display: flex;
+   
+}
+.search-form {
+   border: 1px solid rgba(11, 20, 3, 0.268);
+   border-radius: 50%;
+   background-color: antiquewhite;
+   height: 40px;
+}

@@ -39,7 +39,6 @@ import { AuthenticationInterceptor } from './core/authentication.interceptor';
       positionClass: 'toast-top-right',
       preventDuplicates: true,
     }),
-
   ],
   providers: [{ provide: HTTP_INTERCEPTORS, useClass: AuthenticationInterceptor, multi: true }],
   bootstrap: [AppComponent],
