@@ -43,7 +43,6 @@ import { PhoneFormatPipe } from './shared/phone-format.pipe';
       preventDuplicates: true,
       closeButton: true
     }),
-
   ],
   providers: [{ provide: HTTP_INTERCEPTORS, useClass: AuthenticationInterceptor, multi: true }],
   bootstrap: [AppComponent],
