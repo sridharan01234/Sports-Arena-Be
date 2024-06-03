@@ -1,25 +1,23 @@
-import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
-import {
-  ReactiveFormsModule,
-  FormBuilder,
-  Validators,
-  FormsModule,
-} from '@angular/forms';
-import { RegisterComponent } from './register.component';
-import { PhoneNumberMaskPipe } from '../shared/phone-number-mask.pipe';
 import { HttpClientModule } from '@angular/common/http';
-import { FormGroup } from '@angular/forms';
 import {
   HttpClientTestingModule,
   HttpTestingController,
 } from '@angular/common/http/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
+import {
+  FormBuilder,
+  FormGroup,
+  FormsModule,
+  ReactiveFormsModule
+} from '@angular/forms';
+import { PhoneNumberMaskPipe } from '../shared/phone-number-mask.pipe';
+import { RegisterComponent } from './register.component';
  
 describe('RegisterComponent', () => {
   let component: RegisterComponent;
   let fixture: ComponentFixture<RegisterComponent>;
   let formBuilder: FormBuilder;
   let httpMock: HttpTestingController;
- 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [RegisterComponent, PhoneNumberMaskPipe],
@@ -29,7 +27,7 @@ describe('RegisterComponent', () => {
         FormsModule,
         HttpClientTestingModule,
       ],
-      providers: [FormBuilder], // Provide FormBuilder
+      providers: [FormBuilder],
     }).compileComponents();
   }));
  
@@ -38,16 +36,16 @@ describe('RegisterComponent', () => {
     component = fixture.componentInstance;
     formBuilder = TestBed.inject(FormBuilder);
     httpMock = TestBed.inject(HttpTestingController);
+    formBuilder = TestBed.inject(FormBuilder);
+    httpMock = TestBed.inject(HttpTestingController);
     fixture.detectChanges();
   });
- 
-  it('should initialize the registration form correctly', () => {
+  it('should initialize the registration form', () => {
     component.ngOnInit();
     const form = component.regForm;
     expect(form).toBeDefined();
     expect(form instanceof FormGroup).toBeTrue();
  
-    // Test each form control
     expect(form.controls['firstName']).toBeDefined();
     expect(form.controls['firstName'].value).toBe('');
  
@@ -80,7 +78,6 @@ describe('RegisterComponent', () => {
     component.toggleShowPassword();
     expect(component.showPassword).toBeFalse();
   });
- 
   it('should toggle show ConfirmPassword', () => {
     expect(component.showConfirmPassword).toBeFalse();
     component.toggleShowConfirmPassword();
@@ -121,6 +118,7 @@ describe('RegisterComponent', () => {
     expect(req.request.method).toBe('POST');
     expect(req.request.body).toEqual(formData);
   });
+  
  
   it('should mask phone number', () => {
     const phoneNumber = '1234567890';
@@ -162,3 +160,4 @@ describe('RegisterComponent', () => {
   });
   
 });
+ 

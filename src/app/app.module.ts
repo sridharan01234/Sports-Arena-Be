@@ -7,16 +7,25 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
-import { RegisterComponent } from './register/register.component';
+import { ForgotpasswordComponent } from './forgotpassword/forgotpassword.component';
+import { PasswordValidationDirective } from './customvalidation/password-validation.directive';
+import { NgOtpInputModule } from 'ng-otp-input';
+import { ToastNoAnimationModule } from 'ngx-toastr';
 import { HeaderComponent } from './header/header.component';
+import { RegisterComponent } from './register/register.component';
 import { AuthenticationInterceptor } from './core/authentication.interceptor';
-import { CookieService } from 'ngx-cookie-service';
-import { ToastNoAnimationModule, ToastrService } from 'ngx-toastr';
-
 
 
 @NgModule({
-  declarations: [AppComponent, LoginComponent, RegisterComponent, HeaderComponent],
+  declarations: [AppComponent,
+     LoginComponent,
+     PasswordValidationDirective,
+     RegisterComponent,
+      HeaderComponent,
+      ForgotpasswordComponent,
+    
+    ],
+
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -24,13 +33,14 @@ import { ToastNoAnimationModule, ToastrService } from 'ngx-toastr';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
+    NgOtpInputModule,
     ToastNoAnimationModule.forRoot({
       timeOut: 2000,
       positionClass: 'toast-top-right',
       preventDuplicates: true,
     }),
   ],
-  providers: [{ provide: HTTP_INTERCEPTORS, useClass: AuthenticationInterceptor, multi: true },CookieService],
+  providers: [{ provide: HTTP_INTERCEPTORS, useClass: AuthenticationInterceptor, multi: true }],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
