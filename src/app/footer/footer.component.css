@@ -5,6 +5,7 @@
     color: white;
     font-size: small;
     bottom: 0;
+    position: relative;
 }
 
 .footer-body-style {

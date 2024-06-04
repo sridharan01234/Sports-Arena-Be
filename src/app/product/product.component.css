@@ -1,0 +1,30 @@
+.product-container {
+    display: flex;
+    margin-top: 100px;
+    height: calc(100vh - 100px);
+  }
+  
+  .products-sidebar {
+    width: 200px;
+    padding: 20px;
+    border: 1px solid;
+    background-color: black;
+    color: white;
+    box-sizing: border-box;
+  }
+  .products-sidebar .form-check
+  {
+margin: 10px;
+padding: 10px;
+  }
+  
+  .product-catalog {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+  }
+  
+  .product {
+    margin-bottom: 20px;
+  }
+  
