@@ -1,0 +1,101 @@
+{
+    "products": {
+        "cricket": [
+            {
+                "productId":101,
+                "productName": "Bat",
+                "productImage": "/assets/images/cricket-bat.jpg",
+                "productPrice": 1299,
+                "productDescription": "A game played with a ball and bat by two sides of usually 11 players each on a large field centering upon two wickets each defended by a batsman",
+                "productSize": [
+                    "S",
+                    "M",
+                    "L"
+                ]
+            },
+            {
+                "productId":102,
+                "productName": "Ball",
+                "productImage": "/assets/images/cricketBall.avif",
+                "productPrice": 299,
+                "productDescription": "A game played with a ball and bat by two sides of usually 11 players each on a large field centering upon two wickets each defended by a batsman",
+                "productSize": [
+                    "S",
+                    "M",
+                    "L"
+                ]
+            },
+            {
+                "productId":103,
+                "productName": "Stump",
+                "productImage": "/assets/images/cricket-stump.jpeg",
+                "productPrice": 799,
+                "productDescription": "A game played with a ball and bat by two sides of usually 11 players each on a large field centering upon two wickets each defended by a batsman"
+            }
+        ],
+        "football": [
+            {
+                "productId":104,
+                "productName": "Mens Football Shoe Agility 100 Turf Black",
+                "productImage": "/assets/images/football-shoe.jpg",
+                "productPrice": 999,
+                "productDescription": "The flexible Agility 100 boots for playing on firm pitches once a week.Upper and sole are resistant to wear from schist and artificial turf.Multiple small studs provide solid footing on hard pitches.",
+                "productSize": [
+                    "S",
+                    "M",
+                    "L"
+                ]
+            },
+            {
+                "productId":105,
+                "productName": "Football Goal Kage ",
+                "productImage": "/assets/images/football-cage.jpg",
+                "productPrice": 1999,
+                "productDescription": "This goal cage for football fans looking to play with friends or family on all types of playing surface. Easy to set up/take down thanks to a system of clip-on corners.",
+                "productSize": [
+                    "S",
+                    "M",
+                    "L"
+                ]
+            },
+            {
+                "productId":106,
+                "productName": "Football Ball ",
+                "productImage": "/assets/images/football.jpg",
+                "productPrice": 1999,
+                "productDescription": "Have made the F900 to FIFA Quality Pro standards for your training sessions and competitions by using thermobonding: there are no seams, giving a great feel. ",
+                "productSize": [
+                    "S",
+                    "M",
+                    "L"
+                ]
+            }
+        ],
+        "kabaadi": [
+            {
+                "productId":107,
+                "productName": "Kabaadi Jersey",
+                "productImage": "/assets/images/kabbadi-tshirt.avif",
+                "productPrice": 599,
+                "productDescription": "Designed exclusively for men, our Kabaddi Sports Jersey in striking blue is the perfect blend of style and performance. Whether you're a seasoned pro or just starting out, our Sublimation Kabaddi Jersey ensures you stand out on the field with its plain yet captivating design.",
+                "productSize": [
+                    "S",
+                    "M",
+                    "L"
+                ]
+            },
+            {
+                "productId":108,
+                "productName": "Kabaadi Shoes",
+                "productImage": "/assets/images/kabaadi-shoe.jpg",
+                "productPrice": 1599,
+                "productDescription": "Whether you're a seasoned pro or just starting out, our Sublimation Kabaddi Shoes ensures you stand out on the field with its plain yet captivating design.",
+                "productSize": [
+                    "S",
+                    "M",
+                    "L"
+                ]
+            }
+        ]
+    }
+}
