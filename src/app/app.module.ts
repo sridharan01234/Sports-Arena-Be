@@ -22,8 +22,6 @@ import { HeaderComponent } from './header/header.component';
 
 
 
-
-
 @NgModule({
   declarations: [AppComponent,
      LoginComponent,
@@ -46,6 +44,7 @@ import { HeaderComponent } from './header/header.component';
     AppRoutingModule,
     CommonModule,
     HttpClientModule,
+    ProductModule,
     FormsModule,
     ReactiveFormsModule,
     NgOtpInputModule,
