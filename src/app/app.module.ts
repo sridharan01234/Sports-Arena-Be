@@ -10,25 +10,36 @@ import { LoginComponent } from './login/login.component';
 import { PasswordValidationDirective } from './customvalidation/password-validation.directive';
 import { NgOtpInputModule } from 'ng-otp-input';
 import { ToastNoAnimationModule } from 'ngx-toastr';
-import { HeaderComponent } from './header/header.component';
 import { RegisterComponent } from './register/register.component';
 import { AuthenticationInterceptor } from './core/authentication.interceptor';
+import { HomeComponent } from './home/home.component';
 import { ResetpasswordComponent } from './resetpassword/resetpassword.component';
 import { FooterComponent } from './footer/footer.component';
 import { PhoneFormatPipe } from './shared/phone-format.pipe';
 import { ProductModule } from './product/product.module';
+import { HeaderComponent } from './header/header.component';
+
+
+
+
 
 
 @NgModule({
   declarations: [AppComponent,
-    LoginComponent,
+     LoginComponent,
+     PasswordValidationDirective,
+     RegisterComponent,
+      HomeComponent,
+      LoginComponent,
     PasswordValidationDirective,
     RegisterComponent,
     HeaderComponent,
     ResetpasswordComponent,
     FooterComponent,
     PhoneFormatPipe
-  ],
+      
+    ],
+
 
   imports: [
     BrowserModule,
