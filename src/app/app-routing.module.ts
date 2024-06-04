@@ -3,7 +3,11 @@ import { RouterModule, Routes } from '@angular/router';
 import { ResetpasswordComponent } from './resetpassword/resetpassword.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
-import { HeaderComponent } from './header/header.component';
+import { HomeComponent } from './home/home.component';
+
+
+ 
+ 
 
 
 
@@ -11,6 +15,7 @@ import { HeaderComponent } from './header/header.component';
 
 const routes: Routes = [
   {path:'login',title:'Login',component:LoginComponent},
+  {path:'home',title:'Home',component:HomeComponent},
   {path:'',title:'Reset Password',redirectTo:'login', pathMatch:"full"},
 
   {
