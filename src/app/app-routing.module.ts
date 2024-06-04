@@ -4,6 +4,7 @@ import { ResetpasswordComponent } from './resetpassword/resetpassword.component'
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { HomeComponent } from './home/home.component';
+import { AddtocartComponent } from './addtocart/addtocart.component';
 
 
  
@@ -16,6 +17,7 @@ import { HomeComponent } from './home/home.component';
 const routes: Routes = [
   {path:'login',title:'Login',component:LoginComponent},
   {path:'home',title:'Home',component:HomeComponent},
+  {path:'cart',title:'Home',component:AddtocartComponent},
   {path:'',title:'Reset Password',redirectTo:'login', pathMatch:"full"},
 
   {

@@ -1,0 +1,12 @@
+<div class="row">
+    <div class="col card">
+        <div *ngFor="let item of products" class="row">
+         <div class="col-3">
+            <img [src]="item.imageurl" alt="item.name">
+            <div class="d-block text-center"> {{ item.quantity}} <i class="bi bi-plus-circle"></i></div>      
+         </div>
+        </div>
+
+    </div>
+    <div class="col"></div>
+</div>

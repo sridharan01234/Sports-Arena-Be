@@ -17,6 +17,7 @@ import { ResetpasswordComponent } from './resetpassword/resetpassword.component'
 import { FooterComponent } from './footer/footer.component';
 import { PhoneFormatPipe } from './shared/phone-format.pipe';
 import { HeaderComponent } from './header/header.component';
+import { AddtocartComponent } from './addtocart/addtocart.component';
 
 
 
@@ -33,7 +34,8 @@ import { HeaderComponent } from './header/header.component';
     HeaderComponent,
     ResetpasswordComponent,
     FooterComponent,
-    PhoneFormatPipe
+    PhoneFormatPipe,
+    AddtocartComponent
       
     ],
 
