@@ -1,0 +1,45 @@
+<div class="navigation-bar">
+  <div class="main-navbar shadow-sm sticky-top">
+    <div class="top-navbar">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-3 my-auto d-none d-sm-none d-md-block d-lg-block">
+            <img src="../../assets/images/login_logo.jpg" alt="Sports Arena Logo" /><span
+              class="logo-text">Sports Arena</span>
+          </div>
+          <div class="col-md-3 my-auto">
+            <form role="search" class="search-form">
+              <div class="input-group">
+                <input
+                  type="search"
+                  placeholder="Search your product"
+                  class="form-control"
+                />
+              </div>
+            </form>
+          </div>
+          <div class="col-md-3"></div>
+          <div class="col-md-3 nav-icons">
+            <div class="row">
+              <div class="col-md-2"></div>
+              <div class="col-md-2"></div>
+              <div class="col-md-2"></div>
+              <div class="col-md-2" (click)="navigateTo('cart')">
+                <i class="bi bi-cart"></i>
+                <p class="icon-text">Cart</p>
+              </div>
+              <div class="col-md-2" (click)="navigateTo('wishlist')">
+                <i class="bi bi-heart"></i>
+                <p class="icon-text">Wishlist</p>
+              </div>
+              <div class="col-md-2" (click)="navigateTo('login')">
+                <i class="bi bi-person"></i>
+                <p class="icon-text">Login</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

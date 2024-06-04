@@ -8,11 +8,11 @@ import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
 
 @Component({
-  selector: 'app-forgotpassword',
-  templateUrl: './forgotpassword.component.html',
-  styleUrls: ['./forgotpassword.component.css']
+  selector: 'app-resetpassword',
+  templateUrl: './resetpassword.component.html',
+  styleUrls: ['./resetpassword.component.css']
 })
-export class ForgotpasswordComponent implements OnInit {
+export class ResetpasswordComponent implements OnInit {
   public resetPassword!: FormGroup;
   public showPassword: Boolean = false;
   public showConfirmedPass: Boolean = false;

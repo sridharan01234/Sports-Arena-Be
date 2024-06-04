@@ -1,15 +1,15 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { ReactiveFormsModule, FormBuilder } from '@angular/forms';
-import { ForgotpasswordComponent } from './forgotpassword.component';
+import { ResetpasswordComponent } from './resetpassword.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
 import { ToastrModule, ToastrService } from 'ngx-toastr';
 import { RouterTestingModule } from '@angular/router/testing';
 import { Router } from '@angular/router';
 
-describe('ForgotPasswordComponent', () => {
-  let component: ForgotpasswordComponent;
-  let fixture: ComponentFixture<ForgotpasswordComponent>;
+describe('ResetpasswordComponent', () => {
+  let component: ResetpasswordComponent;
+  let fixture: ComponentFixture<ResetpasswordComponent>;
   let formBuilder: FormBuilder;
   let httpTestingController: HttpTestingController;
   let toastrService: ToastrService;
@@ -17,7 +17,7 @@ describe('ForgotPasswordComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ForgotpasswordComponent],
+      declarations: [ResetpasswordComponent],
       imports: [ReactiveFormsModule, HttpClientModule, HttpClientTestingModule, ToastrModule.forRoot(), RouterTestingModule],
       providers: [FormBuilder, ToastrService, Router]
     })
@@ -25,11 +25,11 @@ describe('ForgotPasswordComponent', () => {
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ForgotpasswordComponent);
+    fixture = TestBed.createComponent(ResetpasswordComponent);
     component = fixture.componentInstance;
     formBuilder = TestBed.inject(FormBuilder);
     component.resetPassword = formBuilder.group({
-      newPassword: [''] // Initialize the newPassword control
+      newPassword: ['']
     });
     component.resetPassword = formBuilder.group({
       email: ['test@example.com'],
