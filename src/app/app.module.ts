@@ -16,6 +16,8 @@ import { AuthenticationInterceptor } from './core/authentication.interceptor';
 import { ResetpasswordComponent } from './resetpassword/resetpassword.component';
 import { FooterComponent } from './footer/footer.component';
 import { PhoneFormatPipe } from './shared/phone-format.pipe';
+import { ProductModule } from './product/product.module';
+
 
 
 @NgModule({
@@ -26,7 +28,8 @@ import { PhoneFormatPipe } from './shared/phone-format.pipe';
     HeaderComponent,
     ResetpasswordComponent,
     FooterComponent,
-    PhoneFormatPipe
+    PhoneFormatPipe,
+    
   ],
 
   imports: [
@@ -34,6 +37,7 @@ import { PhoneFormatPipe } from './shared/phone-format.pipe';
     AppRoutingModule,
     CommonModule,
     HttpClientModule,
+    ProductModule,
     FormsModule,
     ReactiveFormsModule,
     NgOtpInputModule,
