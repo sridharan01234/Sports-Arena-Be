@@ -16,7 +16,10 @@ import { HomeComponent } from './home/home.component';
 import { ResetpasswordComponent } from './resetpassword/resetpassword.component';
 import { FooterComponent } from './footer/footer.component';
 import { PhoneFormatPipe } from './shared/phone-format.pipe';
+import { ProductModule } from './product/product.module';
 import { HeaderComponent } from './header/header.component';
+
+
 
 
 
@@ -52,6 +55,7 @@ import { HeaderComponent } from './header/header.component';
       preventDuplicates: true,
       closeButton: true
     }),
+    ProductModule
   ],
   providers: [{ provide: HTTP_INTERCEPTORS, useClass: AuthenticationInterceptor, multi: true }],
   bootstrap: [AppComponent],
