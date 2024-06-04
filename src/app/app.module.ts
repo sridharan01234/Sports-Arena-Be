@@ -11,9 +11,10 @@ import { ForgotpasswordComponent } from './forgotpassword/forgotpassword.compone
 import { PasswordValidationDirective } from './customvalidation/password-validation.directive';
 import { NgOtpInputModule } from 'ng-otp-input';
 import { ToastNoAnimationModule } from 'ngx-toastr';
-import { HeaderComponent } from './header/header.component';
 import { RegisterComponent } from './register/register.component';
 import { AuthenticationInterceptor } from './core/authentication.interceptor';
+import { HomeComponent } from './home/home.component';
+
 
 
 @NgModule({
@@ -21,8 +22,9 @@ import { AuthenticationInterceptor } from './core/authentication.interceptor';
      LoginComponent,
      PasswordValidationDirective,
      RegisterComponent,
-      HeaderComponent,
       ForgotpasswordComponent,
+      HomeComponent,
+      
     
     ],
 

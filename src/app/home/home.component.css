@@ -1,0 +1,78 @@
+
+.image1 {
+  position: relative;
+  right: -50px;
+}
+
+.image2 {
+  height: 74vh;
+}
+
+.image3 {
+  position: relative;
+  left: -50px;
+
+}
+
+.carousel-item {
+ height: 74vh;
+}
+
+.carousel-item img{
+  border: 5px solid white;
+  align-self: center;
+}
+
+.carousel-indicators li {
+  border-radius: 100%;
+  background-color: black;
+  list-style: none;
+  width: 10px;
+  height: 10px;
+}
+
+span .previcon {
+  font-size: 50px;
+  margin-right: 200px;
+  color: black;
+  font-weight: 700px;
+}
+
+span .nexticon {
+  font-size: 50px;
+  margin-left: 200px;
+  color: black;
+}
+
+.carousel-caption{
+     margin: auto 300px;
+}
+
+figure img{
+  width:150px;
+  height:150px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+#CarouselControl{
+  margin: 50px 0px;
+}
+
+h5{
+  color: 	white;
+  background-color: darkorange;
+  display: inline;
+  font-size: 40px;
+  font-family: "Poetsen One", sans-serif;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+button{
+  font-size: larger;
+  margin:20px 0px;
+}
+
+a{
+  text-decoration: none;
+}
