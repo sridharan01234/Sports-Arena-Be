@@ -23,8 +23,6 @@ import { AddtocartComponent } from './addtocart/addtocart.component';
 
 
 
-
-
 @NgModule({
   declarations: [AppComponent,
      LoginComponent,
@@ -48,6 +46,7 @@ import { AddtocartComponent } from './addtocart/addtocart.component';
     AppRoutingModule,
     CommonModule,
     HttpClientModule,
+    ProductModule,
     FormsModule,
     ReactiveFormsModule,
     NgOtpInputModule,

@@ -1,1 +1,53 @@
-<p>product-view works!</p>
+<div class="container">
+    <div class="row" *ngFor="let i of products">
+        <div class="col-md-4">
+            <img [src]="i.imgUrl" class="w-100" alt="Img">
+        </div>
+        <div class="col-md-8">
+            <div class="product-view">
+                <h4 class="product-name">
+                    {{i.name}}
+                </h4>
+                <hr>
+                <div>
+                    <span class="selling-price">{{i.price |currency:'INR' }}/-</span>
+                </div>
+                <div class="mt-2">
+                    <div class="input-group">
+                        <span class="btn btn1"><i class="bi bi-dash"></i></span>
+                        <span class="input-quantity">{{i.quantity}}</span>
+                        <span class="btn btn1"><i class="bi bi-plus"></i></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-2">
+                <a href="" class="btn btn1"> <i class="bi bi-cart"></i> Add To Cart</a>
+                <a href="" class="btn btn1"> <i class="bi bi-heart"></i> Add To Wishlist </a>
+            </div>
+            <br>
+            <div class="card">
+                <div class="card-header bg-white">
+                    <h4>Description</h4>
+                </div>
+                <div class="card-body">
+                    <p>{{i.description}}
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                        has
+                        been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                        took a
+                        galley of type and scrambled it to make a type specimen book. It has survived not only
+                        five
+                        centuries, but also the leap into electronic typesetting, remaining essentially
+                        unchanged.
+                        It was popularised in the 1960s with the release of Letraset sheets containing Lorem
+                        Ipsum
+                        passages, and more recently with desktop publishing software like Aldus PageMaker
+                        including
+                        versions of Lorem Ipsum.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
