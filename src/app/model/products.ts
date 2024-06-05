@@ -1,14 +1,11 @@
 export interface Product {
-    productId:number,
+    productId:string,
     productName: string;
     productImage: string;
     productPrice: number;
     productDescription: string;
-    productSize?: string[];
+    productSize?: string[] | string;
+    productCategory:string;
+    productQuantity:number
   }
   
-  export interface Products {
-    cricket: Product[];
-    football: Product[];
-    kabaadi: Product[];
-  }
