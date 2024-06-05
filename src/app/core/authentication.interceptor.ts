@@ -7,20 +7,22 @@ import { tap } from 'rxjs/operators';
 @Injectable()
 export class AuthenticationInterceptor implements HttpInterceptor {
 
-  constructor() {}
 
-  intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
-    return next.handle(req).pipe(
-      tap(event => {
-        if (event instanceof HttpResponse) {
-          console.log(event.headers)
-          // Log all headers
-          // console.log('Response Headers:', event.headers.keys().map(key => ({
-          //   key,
-          //   value: event.headers.get(key)
-          // })));
-        }
-      })
-    );
+  intercept(
+    request: HttpRequest<unknown>,
+    next: HttpHandler
+  ): Observable<HttpEvent<unknown>> {
+    const myresponse = sessionStorage.getItem('token');
+    console.log(myresponse);
+    if (myresponse) {
+  
+      request = request.clone({
+        setHeaders: {
+          Authorization: `Bearer ${myresponse}`,
+        },
+      });
+    }
+
+    return next.handle(request);
   }
 }

@@ -1,7 +1,10 @@
 .product-container {
     display: flex;
     margin-top: 100px;
-    height: calc(100vh - 100px);
+    margin-bottom: 300px;
+    width: 100vw;
+    height: 100vh;
+   
   }
   
   .products-sidebar {
@@ -14,17 +17,25 @@
   }
   .products-sidebar .form-check
   {
-margin: 10px;
-padding: 10px;
+ margin: 10px;
+  padding: 10px;
   }
   
   .product-catalog {
-    flex-grow: 1;
+    display: flex;
     padding: 20px;
-    overflow-y: auto;
+    width: 100vw;
+    flex-direction: row;
+    
   }
   
   .product {
-    margin-bottom: 20px;
+    width: 400px;
+    height: 400px;
+    
+  }
+  .product img{
+    width: 200px;
+    height: 200px;
   }
   
