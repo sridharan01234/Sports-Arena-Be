@@ -37,3 +37,9 @@
     text-align: center;
     padding: 7px;
 }
+
+.size-btn:hover{
+    background-color: black;
+    color: white;
+  
+}
