@@ -1,5 +1,5 @@
 <div class="container">
-  <h1 class="my-5 py-5 text-center">Registration</h1>
+  <h1 class="title text-center">Registration</h1>
   <div class="row my-5">
     <div class="col-md-6 my-5 Signup">
       <form [formGroup]="regForm" (ngSubmit)="submit()" autocomplete="off" (input)="disableValidError()">
@@ -71,11 +71,11 @@
               <input type="{{showPassword? 'text':'password'}}" class="form-control my-2" id="FloatingPassword" placeholder="Password" formControlName="password"  (input)="checkPasswordValid()" (mousedown)="checkPasswordValid()">
               <label for="FloatingPassword" class="m-2">Password</label>
               <span class="icon"><i [ngClass]="{'bi bi-eye-slash-fill':!showPassword,'bi bi-eye-fill':showPassword}" (click)="toggleShowPassword()"></i></span>
-          <div *ngIf="registerFormControl['password'].invalid && (registerFormControl['password'].dirty || registerFormControl['password'].touched)" class="iconAlign">
+    </div>
+       <div *ngIf="registerFormControl['password'].invalid && (registerFormControl['password'].dirty || registerFormControl['password'].touched)" class="iconAlign">
             <p *ngIf="registerFormControl['password'].hasError('required')"><sup>*</sup>Password must be given</p>
             <p *ngIf="registerFormControl['password'].hasError('pattern')"><sup>*</sup>Password  does not meet the requirements</p>
         </div>
-    </div>
 
       <div *ngIf="passwordValidTextVisible" class="passwordValidation">
         <div class="d-flex">
@@ -105,10 +105,10 @@
                 <input type="{{showConfirmPassword? 'text':'password'}}" class="form-control my-2" id="FloatingConfirmPassword" placeholder="Confirm Password" formControlName="confirmPassword" >
                 <label for="FloatingConfirmPassword" class="m-2">Confirm Password</label>
                 <span class="icon"><i [ngClass]="{'bi bi-eye-slash-fill':!showConfirmPassword,'bi bi-eye-fill':showConfirmPassword}" (click)="toggleShowConfirmPassword()"></i></span>
-             <div *ngIf="registerFormControl['confirmPassword'].invalid && (registerFormControl['confirmPassword'].dirty || registerFormControl['confirmPassword'].touched)" class="iconAlign">
-                <p *ngIf="registerFormControl['confirmPassword'].hasError('required')"><sup>*</sup>Confirm Password must be given</p>
-                <p *ngIf="regForm.hasError('passwordMismatch') && !registerFormControl['confirmPassword'].hasError('pattern')"><sup>*</sup>Password and Confirm Password should match</p>
-              </div>
+            </div>
+            <div *ngIf="registerFormControl['confirmPassword'].invalid && (registerFormControl['confirmPassword'].dirty || registerFormControl['confirmPassword'].touched)" class="iconAlign">
+              <p *ngIf="registerFormControl['confirmPassword'].hasError('required')"><sup>*</sup>Confirm Password must be given</p>
+              <p *ngIf="regForm.hasError('passwordMismatch') && !registerFormControl['confirmPassword'].hasError('pattern')"><sup>*</sup>Password and Confirm Password should match</p>
             </div>
 
           <div class="d-grid">

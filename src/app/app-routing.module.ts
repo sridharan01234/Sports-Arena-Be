@@ -9,7 +9,7 @@ import { AddtocartComponent } from './addtocart/addtocart.component';
 const routes: Routes = [
   {path:'',component:HomeComponent},
   {path:'login',title:'Login',component:LoginComponent},
-  {path:'cart',title:'Home',component:AddtocartComponent},
+  {path:'cart',title:'cart',component:AddtocartComponent},
   {path:'',title:'Reset Password',redirectTo:'login', pathMatch:"full"},
   {
     path: 'login',

@@ -13,7 +13,7 @@ export class AuthenticationInterceptor implements HttpInterceptor {
     return next.handle(req).pipe(
       tap(event => {
         if (event instanceof HttpResponse) {
-          console.log(event.headers)
+          // console.log(event.headers)
           // Log all headers
           // console.log('Response Headers:', event.headers.keys().map(key => ({
           //   key,
