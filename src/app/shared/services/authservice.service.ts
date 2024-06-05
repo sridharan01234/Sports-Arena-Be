@@ -1,3 +1,5 @@
+import { HttpClient } from '@angular/common/http';
+import { ThisReceiver } from '@angular/compiler';
 import { Injectable } from '@angular/core';
 import { CookieService } from 'ngx-cookie-service';
 
@@ -6,7 +8,7 @@ import { CookieService } from 'ngx-cookie-service';
 })
 export class AuthserviceService {
 
-  constructor() { }
+  constructor(private http:HttpClient) { }
   public loginAuthenticate(token:any)
   {
     const{jwt}=token;
@@ -17,8 +19,14 @@ export class AuthserviceService {
   {
     return sessionStorage.getItem('token')
   }
-  public logout() {
-    sessionStorage.removeItem('token');
+  public async logout() {
+   
+    await this.http.get('http://172.24.220.187/logout').subscribe(res=>
+      {
+        console.log(res)
+        sessionStorage.removeItem('token');
+      }
+     );
    
   }
 }
