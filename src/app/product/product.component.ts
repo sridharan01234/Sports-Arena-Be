@@ -21,6 +21,10 @@ export class ProductComponent {
       this.products=res
       console.log(this.products)
     })
+    this.http.get('http://172.24.220.187/user/profile').subscribe((data)=>
+    {
+      console.log(data)
+    })
     
   }
   
