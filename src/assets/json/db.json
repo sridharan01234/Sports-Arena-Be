@@ -1,6 +1,7 @@
 {
   "products": [
     {
+      "id": "735a",
       "productId": "101",
       "productName": "Bat",
       "productImage": "/assets/images/cricket-bat.jpg",
@@ -12,8 +13,7 @@
         "L"
       ],
       "productCategory": "cricket",
-      "productQuantity": 1,
-      "id": "735a"
+      "productQuantity": 1
     },
     {
       "productId": "102",
@@ -173,15 +173,22 @@
       "productId": "101",
       "productName": "Bat",
       "productImage": "/assets/images/cricket-bat.jpg",
-      "productPrice": 1299,
+      "productPrice": 2000,
       "productDescription": "A game played with a ball and bat by two sides of usually 11 players each on a large field centering upon two wickets each defended by a batsman",
-      "productSize": [
-        "S",
-        "M",
-        "L"
-      ],
+      "productSize": "M",
       "productCategory": "cricket",
-      "productQuantity": 1
+      "productQuantity": 5
+    },
+    {
+      "id": "73ea",
+      "productId": "101",
+      "productName": "Bat",
+      "productImage": "/assets/images/cricket-bat.jpg",
+      "productPrice": 6400,
+      "productDescription": "A game played with a ball and bat by two sides of usually 11 players each on a large field centering upon two wickets each defended by a batsman",
+      "productSize": "L",
+      "productCategory": "cricket",
+      "productQuantity": 16
     }
   ]
 }
