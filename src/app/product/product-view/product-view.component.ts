@@ -42,7 +42,11 @@ export class ProductViewComponent implements OnInit {
   }
 
   increaseQuantity() {
+    console.log(this.productDetails.id);
+    
     this.productDetails.productQuantity++;
+    console.log(this.productDetails.productQuantity);
+    
     this.productService.updateQuantity(this.productDetails.id, this.productDetails)
       .subscribe((res) => {
         console.log(res);

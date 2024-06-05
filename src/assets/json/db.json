@@ -1,6 +1,7 @@
 {
   "products": [
     {
+      "id": "735a",
       "productId": "101",
       "productName": "Bat",
       "productImage": "/assets/images/cricket-bat.jpg",
@@ -12,8 +13,7 @@
         "L"
       ],
       "productCategory": "cricket",
-      "productQuantity": 1,
-      "id": "735a"
+      "productQuantity": 3
     },
     {
       "productId": "102",
@@ -181,7 +181,7 @@
         "L"
       ],
       "productCategory": "cricket",
-      "productQuantity": 1
+      "productQuantity": 3
     }
   ]
 }

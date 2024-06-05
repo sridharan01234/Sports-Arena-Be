@@ -18,7 +18,7 @@ export class ProductsService {
 
   updateQuantity(id:string,products:Product){
     console.log(id); 
-    return this.http.put(`${this.apiUrl}/${id}`,products)
+    return this.http.put(`http://localhost:3000/addtocart/${id}`,products)
   }  
 
 
