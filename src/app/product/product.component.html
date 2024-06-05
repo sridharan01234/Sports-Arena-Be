@@ -41,22 +41,8 @@
     </div>
    
 
-<div class="product-catalog" *ngFor="let category of products | keyvalue">
-  <!-- <h2>{{ category.key | titlecase }}</h2> -->
-  <div class="product">
-    <div *ngFor="let product of category.value" class="product-item">
-      <div clas
-      s="product-card">
-        <img [src]="product.productImage" alt="{{ product.productName }}">
-        <h3>{{ product.productName }}</h3>
-        <!-- <p>{{ product.productDescription }}</p> -->
-        <p>Price: {{ product.productPrice | currency:'INR' }}</p>
-        <p *ngIf="product.productSize">Sizes: {{ product.productSize.join(', ') }}</p>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
+
+</div> 
   <app-footer></app-footer>
  
 

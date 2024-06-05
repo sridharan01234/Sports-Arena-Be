@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Products } from '../model/products';
+import { Product } from '../model/products';
 import { HttpClient } from '@angular/common/http';
 import { ProductsService } from '../shared/services/products.service';
 
@@ -9,7 +9,7 @@ import { ProductsService } from '../shared/services/products.service';
   styleUrls: ['./product.component.css']
 })
 export class ProductComponent {
-  public products!:Products
+  public products!:Product
   constructor(private http:HttpClient,private productService:ProductsService)
   {
 

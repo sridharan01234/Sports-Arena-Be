@@ -15,9 +15,14 @@ import { AuthenticationInterceptor } from './core/authentication.interceptor';
 import { HomeComponent } from './home/home.component';
 import { ResetpasswordComponent } from './resetpassword/resetpassword.component';
 import { ProductModule } from './product/product.module';
+
+
+import { AddtocartComponent } from './addtocart/addtocart.component';
+
 import { AuthserviceService } from './shared/services/authservice.service';
 import { SharedComponent } from './shared/components/shared/shared.component';
 import { SharedModule } from './shared/components/shared/shared.module';
+
 
 
 
@@ -32,6 +37,10 @@ import { SharedModule } from './shared/components/shared/shared.module';
     PasswordValidationDirective,
     RegisterComponent,
     ResetpasswordComponent,
+
+  
+    AddtocartComponent
+      
     ],
 
 
