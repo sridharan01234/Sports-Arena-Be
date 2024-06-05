@@ -14,11 +14,15 @@ import { RegisterComponent } from './register/register.component';
 import { AuthenticationInterceptor } from './core/authentication.interceptor';
 import { HomeComponent } from './home/home.component';
 import { ResetpasswordComponent } from './resetpassword/resetpassword.component';
-import { FooterComponent } from './footer/footer.component';
-import { PhoneFormatPipe } from './shared/phone-format.pipe';
 import { ProductModule } from './product/product.module';
-import { HeaderComponent } from './header/header.component';
+
+
 import { AddtocartComponent } from './addtocart/addtocart.component';
+
+import { AuthserviceService } from './shared/services/authservice.service';
+import { SharedComponent } from './shared/components/shared/shared.component';
+import { SharedModule } from './shared/components/shared/shared.module';
+
 
 
 
@@ -32,10 +36,9 @@ import { AddtocartComponent } from './addtocart/addtocart.component';
       LoginComponent,
     PasswordValidationDirective,
     RegisterComponent,
-    HeaderComponent,
     ResetpasswordComponent,
-    FooterComponent,
-    PhoneFormatPipe,
+
+  
     AddtocartComponent
       
     ],
@@ -56,9 +59,11 @@ import { AddtocartComponent } from './addtocart/addtocart.component';
       preventDuplicates: true,
       closeButton: true
     }),
-    ProductModule
+    ProductModule,
+    SharedModule
   ],
-  providers: [{ provide: HTTP_INTERCEPTORS, useClass: AuthenticationInterceptor, multi: true }],
+  providers: [AuthserviceService,{ provide: HTTP_INTERCEPTORS, useClass: AuthenticationInterceptor, multi: true }],
   bootstrap: [AppComponent],
+  
 })
 export class AppModule { }

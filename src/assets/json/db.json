@@ -1,64 +1,187 @@
 {
   "products": [
     {
-      "product_id": 1,
-      "name": "Hockey Stick",
-      "imageUrl": "../../assets/images/cart-hockey stick.avif",
-      "description": "Made up with Solid Wood material attractive and durable  Attractive, durable and high grip to use Ideal for kids, men, women",
-      "price": 400,
-      "size": "1",
-      "quantity": 1,
-      "id": "0002"
+      "productId": "101",
+      "productName": "Bat",
+      "productImage": "/assets/images/cricket-bat.jpg",
+      "productPrice": 1299,
+      "productDescription": "A game played with a ball and bat by two sides of usually 11 players each on a large field centering upon two wickets each defended by a batsman",
+      "productSize": [
+        "S",
+        "M",
+        "L"
+      ],
+      "productCategory": "cricket",
+      "productQuantity": 1,
+      "id": "735a"
     },
     {
-      "product_id": 2,
-      "name": "Shoe",
-      "imageUrl": "../../assets/images/cart-shoe.avif",
-      "description": "Elite Design: The Bacca Bucci BluePulse Elite Series offers a striking deep blue colorway, symbolizing the vastness of the sky and the depth of the ocean, designed for players who command the field.",
-      "price": 1200,
-      "size": "1",
-      "quantity": 1,
-      "id": "43f8"
+      "productId": "102",
+      "productName": "Ball",
+      "productImage": "/assets/images/cricketBall.avif",
+      "productPrice": 299,
+      "productDescription": "A game played with a ball and bat by two sides of usually 11 players each on a large field centering upon two wickets each defended by a batsman",
+      "productSize": [
+        "S",
+        "M",
+        "L"
+      ],
+      "productCategory": "cricket",
+      "productQuantity": 2,
+      "id": "ad79"
     },
     {
-      "product_id": 3,
-      "name": "Ball",
-      "imageUrl": "../../assets/images/cart-ball.avif",
-      "description": "GREAT GIFT IDEA: This combo include of Bat Ball, Hockey & Racket and makes a perfect gift for birthdays, holidays and other gift-giving occasions. Both boys and girls will entertain themselves. ",
-      "price": 400,
-      "size": "300",
-      "quantity": 1,
-      "id": "4c0e"
+      "productId": "103",
+      "productName": "Stump",
+      "productImage": "/assets/images/cricket-stump.jpeg",
+      "productPrice": 799,
+      "productDescription": "A game played with a ball and bat by two sides of usually 11 players each on a large field centering upon two wickets each defended by a batsman",
+      "productCategory": "cricket",
+      "productQuantity": 1,
+      "id": "319b"
     },
     {
-      "product_id": 1,
-      "name": "Hockey Stick",
-      "imageUrl": "../../assets/images/cart-hockey stick.avif",
-      "description": "Made up with Solid Wood material attractive and durable  Attractive, durable and high grip to use Ideal for kids, men, women",
-      "price": 400,
-      "size": "1",
-      "quantity": 1,
-      "id": "15d5"
+      "productId": "104",
+      "productName": "Mens Football Shoe Agility 100 Turf Black",
+      "productImage": "/assets/images/football-shoe.jpg",
+      "productPrice": 999,
+      "productDescription": "The flexible Agility 100 boots for playing on firm pitches once a week.Upper and sole are resistant to wear from schist and artificial turf.Multiple small studs provide solid footing on hard pitches.",
+      "productSize": [
+        "S",
+        "M",
+        "L"
+      ],
+      "productCategory": "football",
+      "productQuantity": 1,
+      "id": "c5db"
     },
     {
-      "product_id": 2,
-      "name": "Shoe",
-      "imageUrl": "../../assets/images/cart-shoe.avif",
-      "description": "Elite Design: The Bacca Bucci BluePulse Elite Series offers a striking deep blue colorway, symbolizing the vastness of the sky and the depth of the ocean, designed for players who command the field.",
-      "price": 1200,
-      "size": "1",
-      "quantity": 1,
-      "id": "55b9"
+      "productId": "105",
+      "productName": "Football Goal Kage ",
+      "productImage": "/assets/images/football-cage.jpg",
+      "productPrice": 1999,
+      "productDescription": "This goal cage for football fans looking to play with friends or family on all types of playing surface. Easy to set up/take down thanks to a system of clip-on corners.",
+      "productSize": [
+        "S",
+        "M",
+        "L"
+      ],
+      "productCategory": "football",
+      "productQuantity": 1,
+      "id": "79c8"
     },
     {
-      "product_id": 3,
-      "name": "Ball",
-      "imageUrl": "../../assets/images/cart-ball.avif",
-      "description": "GREAT GIFT IDEA: This combo include of Bat Ball, Hockey & Racket and makes a perfect gift for birthdays, holidays and other gift-giving occasions. Both boys and girls will entertain themselves. ",
-      "price": 6000,
-      "size": "300",
-      "quantity": 15,
-      "id": "fde3"
+      "productId": "106",
+      "productName": "Football Ball ",
+      "productImage": "/assets/images/football.jpg",
+      "productPrice": 1999,
+      "productDescription": "Have made the F900 to FIFA Quality Pro standards for your training sessions and competitions by using thermobonding: there are no seams, giving a great feel. ",
+      "productSize": [
+        "S",
+        "M",
+        "L"
+      ],
+      "productCategory": "football",
+      "productQuantity": 1,
+      "id": "e6b4"
+    },
+    {
+      "productId": "107",
+      "productName": "Kabaadi Jersey",
+      "productImage": "/assets/images/kabbadi-tshirt.avif",
+      "productPrice": 599,
+      "productDescription": "Designed exclusively for men, our Kabaddi Sports Jersey in striking blue is the perfect blend of style and performance. Whether you're a seasoned pro or just starting out, our Sublimation Kabaddi Jersey ensures you stand out on the field with its plain yet captivating design.",
+      "productSize": [
+        "S",
+        "M",
+        "L"
+      ],
+      "productCategory": "kabaddi",
+      "productQuantity": 1,
+      "id": "bd6c"
+    },
+    {
+      "productId": "108",
+      "productName": "Kabaadi Shoes",
+      "productImage": "/assets/images/kabaadi-shoe.jpg",
+      "productPrice": 1599,
+      "productDescription": "Whether you're a seasoned pro or just starting out, our Sublimation Kabaddi Shoes ensures you stand out on the field with its plain yet captivating design.",
+      "productSize": [
+        "S",
+        "M",
+        "L"
+      ],
+      "productCategory": "kabaddi",
+      "productQuantity": 1,
+      "id": "26ba"
+    },
+    {
+      "id": "ad79",
+      "productId": "102",
+      "productName": "Ball",
+      "productImage": "/assets/images/cricketBall.avif",
+      "productPrice": 299,
+      "productDescription": "A game played with a ball and bat by two sides of usually 11 players each on a large field centering upon two wickets each defended by a batsman",
+      "productSize": [
+        "S",
+        "M",
+        "L"
+      ],
+      "productCategory": "cricket",
+      "productQuantity": 2
+    },
+    {
+      "id": "735a",
+      "productId": "101",
+      "productName": "Bat",
+      "productImage": "/assets/images/cricket-bat.jpg",
+      "productPrice": 1299,
+      "productDescription": "A game played with a ball and bat by two sides of usually 11 players each on a large field centering upon two wickets each defended by a batsman",
+      "productSize": [
+        "S",
+        "M",
+        "L"
+      ],
+      "productCategory": "cricket",
+      "productQuantity": 1
+    },
+    {
+      "0": "S",
+      "1": "M",
+      "2": "L",
+      "id": "ef3c"
+    },
+    {
+      "id": "735a",
+      "productId": "101",
+      "productName": "Bat",
+      "productImage": "/assets/images/cricket-bat.jpg",
+      "productPrice": 1299,
+      "productDescription": "A game played with a ball and bat by two sides of usually 11 players each on a large field centering upon two wickets each defended by a batsman",
+      "productSize": [
+        "S",
+        "M",
+        "L"
+      ],
+      "productCategory": "cricket",
+      "productQuantity": 1
+    }
+  ],
+  "addtocart": [
+    {
+      "id": "735a",
+      "productId": "101",
+      "productName": "Bat",
+      "productImage": "/assets/images/cricket-bat.jpg",
+      "productPrice": 1299,
+      "productDescription": "A game played with a ball and bat by two sides of usually 11 players each on a large field centering upon two wickets each defended by a batsman",
+      "productSize": [
+        "S",
+        "M",
+        "L"
+      ],
+      "productCategory": "cricket",
+      "productQuantity": 1
     }
   ]
 }
