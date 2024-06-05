@@ -36,12 +36,21 @@ export class LoginComponent {
   public login():void
   {
     console.log(this.loginForm.value)
-    this.http.post('http://172.24.220.187/login',this.loginForm.value).subscribe((res)=>
+    this.http.post('http://172.24.220.187/login',this.loginForm.value).subscribe((res:any)=>
     {
-      console.log(res)
-      this.authService.loginAuthenticate(res);
-       this.route.navigate([''])
-      this.toastr.success('Login successful!');
+      if(res.status==='success')
+        {
+          this.authService.loginAuthenticate(res);
+          this.route.navigate([''])
+         this.toastr.success(res.message);
+        }
+        if(res.status==='error')
+          {
+           
+           this.toastr.error(res.message);
+          }
+        console.log(res)
+      
     },(err)=>{
     alert(`Error ${err}`)
     });
