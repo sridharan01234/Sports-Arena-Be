@@ -17,7 +17,7 @@ input[type="number"] {
 }
 
 .Image {
-  background-image: url("../../assets/images/registerformpic.jpg");
+  background-image: url("../../assets/images/homeImages/registerformpic.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
