@@ -1,21 +1,28 @@
-.container{
-    height: 60vh;
-    margin-top: 15vh;
+.container {
+    height: 70vh;
+    margin-top: 20vh;
 }
 
-.product-view .product-name{
+.product-name {
     font-size: 24px;
-    color:black;
 }
 
-.product-view .selling-price{
+.product-name .label-stock{
+    font-size: 13px;
+    padding: 4px 13px;
+    border-radius: 5px;
+    color: white;
+    float: right;
+}
+
+.selling-price {
     font-size: 26px;
     color: black;
     font-weight: 600;
     margin-right: 8px;
 }
 
-.product-view .btn1{
+.btn1 {
     border: 1px solid;
     margin-right: 3px;
     border-radius: 0px;
@@ -23,12 +30,12 @@
     margin-top: 10px;
 }
 
-.product-view .btn1:hover{
+.btn1:hover {
     background-color: black;
     color: white;
 }
 
-.product-view .input-quantity{
+/* .product-view .input-quantity {
     border: 1px solid black;
     margin-right: 3px;
     font-size: 12px;
@@ -36,10 +43,13 @@
     width: 58px;
     text-align: center;
     padding: 7px;
-}
+} */
 
-.size-btn:hover{
+.size-btn:hover {
     background-color: black;
     color: white;
-  
+}
+
+.img-style:hover {
+    transform: scale(2);
 }
