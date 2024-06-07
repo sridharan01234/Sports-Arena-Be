@@ -5,6 +5,7 @@ import { PhoneNumberMaskPipe } from '../shared/phone-number-mask.pipe';
 import { HttpClient } from '@angular/common/http';
 import { ToastrService } from 'ngx-toastr';
 import { Router } from '@angular/router';
+import { DateValidatorDirective } from '../shared/date-validator.directive';
  
 @Component({
   selector: 'app-register',
@@ -25,6 +26,7 @@ export class RegisterComponent implements OnInit {
   phonenumber!: String;
   passwordValidTextVisible: boolean = false;
   confirmPasswordValidation = new PasswordValidationDirective();
+  dateValidator = new DateValidatorDirective();
   isContainUppercase!: boolean;
   isContainLowercase!: boolean;
   isContainDigit!: boolean;
@@ -32,6 +34,7 @@ export class RegisterComponent implements OnInit {
   isContainValidLength!: boolean;
   private router: Router = inject(Router);
   public isFormValid: boolean = true;
+   dateOfBirth!:Date;
  
   constructor(
     private regFormBuilder: FormBuilder,
@@ -58,7 +61,7 @@ export class RegisterComponent implements OnInit {
         ],
         age: [
           '',
-          [Validators.required, Validators.min(12), Validators.max(80)],
+          [Validators.required],
         ],
         gender: ['', [Validators.required]],
         phoneNumber: [
@@ -83,7 +86,7 @@ export class RegisterComponent implements OnInit {
         ],
         confirmPassword: ['', [Validators.required]],
       },
-      { validators: this.confirmPasswordValidation.PasswordMatchValidation }
+      { validators:[ this.confirmPasswordValidation.PasswordMatchValidation,this.dateValidator.currentDateValidation] }
     );
   }
  
@@ -102,22 +105,33 @@ export class RegisterComponent implements OnInit {
   public submit(): void {
     if (this.regForm.valid) {
       this.isFormValid = true;
+       this.calculatingAge();    
+       console.log(this.regForm.value);
+              
       this.http
         .post('http://172.24.220.187/register', this.regForm.value)
         .subscribe(
-          (res) => {
-            console.log(res);
-            this.toastr.success('Registered successfully');
-            this.router.navigate(['login']);
+          (res:any) => {
+            this.regForm.get('age')?.setValue(this.dateOfBirth);   
+            if(res.message == 'Registration successful')
+            {
+               this.toastr.success('Registered successfully');
+               this.router.navigate(['login']);
+            }
+            else if(res.message == 'Email already exists') {             
+              this.toastr.error(res.message);
+            }  
+            else{
+              this.toastr.error(res.message);
+            }
           },
           (err) => {
-            console.log(err);
-            
+            console.log(`error`,err);
           }
         );
     } else {
       this.isFormValid = false;
-    }
+    }    
   }
  
   public phoneNoMask(enteredPhoneno: Event): void {
@@ -153,4 +167,18 @@ export class RegisterComponent implements OnInit {
   public disableValidError(){
     this.isFormValid=true;
   }
+
+  public calculatingAge(){
+       const dob=this.registerFormControl['age'].value;
+       this.dateOfBirth = dob.toString();
+       const currentDate=new Date();
+       const dobSplits = new Date(dob);
+       let age = currentDate.getFullYear() - dobSplits.getFullYear();
+       const diffMonth = currentDate.getMonth() - dobSplits.getMonth();
+
+       if(diffMonth < 0 ||(diffMonth==0) && currentDate.getDate()< dobSplits.getDate())
+                age--;        
+        this.registerFormControl['age'].setValue(age);   
+  }
+
 }
