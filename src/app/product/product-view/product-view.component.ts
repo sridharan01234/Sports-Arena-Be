@@ -42,9 +42,7 @@ export class ProductViewComponent implements OnInit {
     console.log('wedf',productSize);
     this.size=productSize
     this.productDetails.productSize=this.size;
-
   }
-
 
   addtoCart(product:Product){
     if(this.productDetails.productSize && !this.size){
