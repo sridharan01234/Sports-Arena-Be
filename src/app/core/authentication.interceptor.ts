@@ -19,6 +19,7 @@ export class AuthenticationInterceptor implements HttpInterceptor {
       request = request.clone({
         setHeaders: {
           Authorization: `Bearer ${myresponse}`,
+         
         },
       });
     }
