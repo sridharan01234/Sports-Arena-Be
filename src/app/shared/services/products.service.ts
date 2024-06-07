@@ -16,10 +16,11 @@ export class ProductsService {
     return this.http.get<Product>(`${this.apiUrl}`);
   }
 
-  updateQuantity(id:string,products:Product){
-    console.log(id); 
-    return this.http.put(`http://localhost:3000/addtocart/${id}`,products)
-  }  
+
+  // updateQuantity(id:string,products:Product){
+  //   console.log(id); 
+  //   return this.http.put(`http://localhost:3000/addtocart/${id}`,products)
+  // }  
 
 
   addtocart(product:Product){

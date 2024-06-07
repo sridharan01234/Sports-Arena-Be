@@ -1,50 +1,64 @@
 
-
+<app-header></app-header>
 <div class="container" *ngIf="productDetails">
     <div class="row">
         <div class="col-md-4">
-            <img [src]="productDetails.productImage" class="w-100" [alt]="productDetails.productName">
+            <div class="row">
+                <div class="col-6" *ngFor="let i of productDetails.productImages">
+                    <img class="image-zoom" [src]="i" class="img-fluid img-style" [alt]="productDetails.productName1">
+                </div>
+                <!-- <div class="col-6">
+                    <img class="image-zoom" src="/assets/images/shoe1.jpeg" class="img-fluid img-style" [alt]="productDetails.productName1">
+                </div>
+                <div class="col-6">
+                    <img src="/assets/images/shoe2.jpg" class="img-fluid img-style" [alt]="productDetails.productName2">
+                </div>
+                <div class="col-6">
+                    <img src="/assets/images/shoe1.jpeg" class="img-fluid img-style" [alt]="productDetails.productName3">
+                </div>
+                <div class="col-6">
+                    <img src="/assets/images/shoe4.jpeg" class="img-fluid img-style" [alt]="productDetails.productName4">
+                </div> -->
+            </div>
         </div>
-        <div class="col-md-8">
+        <div class="col-md-6 mx-5 px-5">
             <div class="product-view">
                 <h4 class="product-name">
                     {{productDetails.productName}}
+                    <label class="label-stock bg-success">In Stock {{productDetails.productStock}}</label>
                 </h4>
                 <hr>
                 <div>
-                    <span class="selling-price">{{productDetails.productPrice * productDetails.productQuantity
-                        |currency:'INR' }}/-</span>
+                    <span class="selling-price">{{productDetails.productPrice | currency:'INR' }}</span>
                 </div>
                 <div class="d-flex flex-row my-3">
-
-                <div *ngFor="let i of productDetails.productSize"  >
-                    <span> <button class="size-btn px-3 py-2 mx-1" (click)="createSize(i)">{{i}}</button></span>
-                </div>
-            </div>
-
-
-                <div class="mt-2">
-                    <div class="input-group">
-                        <button class="btn btn1" (click)="decreaseQuantity()"><i class="bi bi-dash"></i></button>
-                        <button class="input-quantity">{{productDetails.productQuantity}}</button>
-                        <button class="btn btn1" (click)="increaseQuantity()"><i class="bi bi-plus"></i></button>
+                    <div *ngFor="let i of productDetails.productSize">
+                        <span>
+                            <button class="size-btn px-3 py-2 mx-1" (click)="createSize(i)">{{i}}</button>
+                        </span>
                     </div>
                 </div>
-            </div>
-
-            <div class="mt-2">
-                <a class="btn btn1" (click)="addtoCart(productDetails)"> <i class="bi bi-cart"></i> Add To Cart</a>
-                <a class="btn btn1"> <i class="bi bi-heart"></i> Add To Wishlist </a>
-            </div>
-            <br>
-            <div class="card">
-                <div class="card-header bg-white">
-                    <h4>Description</h4>
+                <div class="mt-2">
+                    <a class="btn btn1"    (click)="addtoCart(productDetails)">
+                        <i class="bi bi-cart"></i> Add To Cart
+                    </a>
+                    <a class="btn btn1">
+                        <i class="bi bi-heart"></i> Add To Wishlist
+                    </a>
                 </div>
-                <div class="card-body">
-                    <p>{{productDetails.productDescription}}</p>
+                <br>
+                <div class="card">
+                    <div class="card-header bg-white">
+                        <h4>Description</h4>
+                    </div>
+                    <div class="card-body">
+                        <p>{{productDetails.productDescription}}</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+<app-footer></app-footer>
+

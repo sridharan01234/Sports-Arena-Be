@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
 import { Product } from 'src/app/model/products';
 import { ProductsService } from 'src/app/shared/services/products.service';
 
@@ -12,13 +13,14 @@ export class ProductViewComponent implements OnInit {
 
   constructor(
     private productService: ProductsService,
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
+    private toastr:ToastrService
   ) { }
 
   public currentRoute: any;
   public product: any;
   public productDetails: any;
-
+  public size!:string;
 
   ngOnInit() {
 
@@ -41,41 +43,53 @@ export class ProductViewComponent implements OnInit {
       );
   }
 
-  increaseQuantity() {
-    console.log(this.productDetails.id);
+  // increaseQuantity() {
+  //   console.log(this.productDetails.id);
     
-    this.productDetails.productQuantity++;
-    console.log(this.productDetails.productQuantity);
+  //   this.productDetails.productQuantity++;
+  //   console.log(this.productDetails.productQuantity);
     
-    this.productService.updateQuantity(this.productDetails.id, this.productDetails)
-      .subscribe((res) => {
-        console.log(res);
-      })
-  }
+  //   this.productService.updateQuantity(this.productDetails.id, this.productDetails)
+  //     .subscribe((res) => {
+  //       console.log(res);
+  //     })
+
+  //   // this.productService.addtocart()
+  // }
 
 
-  decreaseQuantity(){
-    if(this.productDetails.productQuantity > 1){
-      this.productDetails.productQuantity--;
-      this.productService.updateQuantity(this.productDetails.id,this.productDetails)
-      .subscribe((res)=>{
-        console.log(res);
-      })
-    }
-  }
+  // decreaseQuantity(){
+  //   if(this.productDetails.productQuantity > 1){
+  //     this.productDetails.productQuantity--;
+  //     this.productService.updateQuantity(this.productDetails.id,this.productDetails)
+  //     .subscribe((res)=>{
+  //       console.log(res);
+  //     })
+  //   }
+  // }
 
   createSize(productSize:string){
     console.log('wedf',productSize);
-    const size=productSize
-    this.productDetails.productSize=size;
+    this.size=productSize
+    this.productDetails.productSize=this.size;
+
   }
 
 
   addtoCart(product:Product){
-    this.productService.addtocart(product)
-    .subscribe((res)=>{
-      console.log('addeddd',res);
-    })
+
+    if(this.size){
+      this.productService.addtocart(product)
+      .subscribe((res)=>{
+        this.toastr.success('Added to the cart!');
+        console.log('addeddd',res);
+      
+      })
+    }
+    else{
+      this.toastr.warning('Please choose Size!')
+    }
+   
   }
 
 

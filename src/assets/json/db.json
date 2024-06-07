@@ -1,187 +1,274 @@
 {
   "products": [
     {
-      "id": "735a",
-      "productId": "101",
-      "productName": "Bat",
-      "productImage": "/assets/images/cricket-bat.jpg",
-      "productPrice": 1299,
-      "productDescription": "A game played with a ball and bat by two sides of usually 11 players each on a large field centering upon two wickets each defended by a batsman",
-      "productSize": [
-        "S",
-        "M",
-        "L"
+      "productId": "201",
+      "productName": "Football",
+      "productMainImage": "/assets/images/football/ball/mainimage.avif",
+      "productImages": [
+        "/assets/images/football/ball/image1.avif",
+        "/assets/images/football/ball/image2.avif",
+        "/assets/images/football/ball/image3.avif",
+        "/assets/images/football/ball/image4.avif"
       ],
-      "productCategory": "cricket",
-      "productQuantity": 3
-    },
-    {
-      "productId": "102",
-      "productName": "Ball",
-      "productImage": "/assets/images/cricketBall.avif",
-      "productPrice": 299,
-      "productDescription": "A game played with a ball and bat by two sides of usually 11 players each on a large field centering upon two wickets each defended by a batsman",
-      "productSize": [
-        "S",
-        "M",
-        "L"
-      ],
-      "productCategory": "cricket",
-      "productQuantity": 2,
-      "id": "ad79"
-    },
-    {
-      "productId": "103",
-      "productName": "Stump",
-      "productImage": "/assets/images/cricket-stump.jpeg",
       "productPrice": 799,
-      "productDescription": "A game played with a ball and bat by two sides of usually 11 players each on a large field centering upon two wickets each defended by a batsman",
-      "productCategory": "cricket",
-      "productQuantity": 1,
-      "id": "319b"
+      "productDescription": "We've designed this F100 ball for footballers discovering football with a club or who play occasionally.",
+      "productCategory": "football",
+      "productStock": 4
     },
     {
-      "productId": "104",
-      "productName": "Mens Football Shoe Agility 100 Turf Black",
-      "productImage": "/assets/images/football-shoe.jpg",
-      "productPrice": 999,
-      "productDescription": "The flexible Agility 100 boots for playing on firm pitches once a week.Upper and sole are resistant to wear from schist and artificial turf.Multiple small studs provide solid footing on hard pitches.",
+      "productId": "202",
+      "productName": "Football Shoes Black",
+      "productMainImage": "/assets/images/football/shoes/mainimage.avif",
+      "productImages": [
+        "/assets/images/football/shoes/image1.avif",
+        "/assets/images/football/shoes/image2.avif",
+        "/assets/images/football/shoes/image3.avif",
+        "/assets/images/football/shoes/image4.avif"
+      ],
+      "productPrice": 5299,
+      "productDescription": "Coated textile durable and soft touch upper material. Coated textile the structured texture provides improved ball feel when dribbling at high speeds. Fxg this highly durable and supportive sole plate provides great traction on firm gound dry, natural grass, artificial grass long bladed synthetic fobre and hard ground recycled materials prime primegreen:end plastic waste. Speed silhouette key design markers and branding are executed to resemble the pinnacle product, affording value consumers the opportunity to experience game changing speed. ",
       "productSize": [
         "S",
         "M",
         "L"
       ],
       "productCategory": "football",
-      "productQuantity": 1,
-      "id": "c5db"
+      "productStock": 3 
     },
     {
-      "productId": "105",
-      "productName": "Football Goal Kage ",
-      "productImage": "/assets/images/football-cage.jpg",
-      "productPrice": 1999,
-      "productDescription": "This goal cage for football fans looking to play with friends or family on all types of playing surface. Easy to set up/take down thanks to a system of clip-on corners.",
+      "productId": "203",
+      "productName": "Men Football Jersey Shirt",
+      "productMainImage": "/assets/images/football/jersey/mainimage.avif",
+      "productImages": [
+        "/assets/images/football/jersey/image1.avif",
+        "/assets/images/football/jersey/image2.avif",
+        "/assets/images/football/jersey/image3.avif",
+        "/assets/images/football/jersey/image4.avif"
+      ],
+      "productPrice": 699,
+      "productDescription": "Special cut and Outback fabric.Good air circulation to ensure you stay dry during matches",
       "productSize": [
         "S",
         "M",
         "L"
       ],
       "productCategory": "football",
-      "productQuantity": 1,
-      "id": "79c8"
+      "productStock": 7 
     },
     {
-      "productId": "106",
-      "productName": "Football Ball ",
-      "productImage": "/assets/images/football.jpg",
-      "productPrice": 1999,
-      "productDescription": "Have made the F900 to FIFA Quality Pro standards for your training sessions and competitions by using thermobonding: there are no seams, giving a great feel. ",
+      "productId": "204",
+      "productName": "Football Socks",
+      "productMainImage": "/assets/images/football/socks/mainimage.avif",
+      "productImages": [
+        "/assets/images/football/socks/image1.avif",
+        "/assets/images/football/socks/image2.avif",
+        "/assets/images/football/socks/image3.avif",
+        "/assets/images/football/socks/image4.avif"
+      ],
+      "productPrice": 399,
+      "productDescription": "Heel and toe padding to keep your foot comfortable.Elasticated band around the midfoot ensures much less sock slippage in play.",
       "productSize": [
         "S",
         "M",
         "L"
       ],
       "productCategory": "football",
-      "productQuantity": 1,
-      "id": "e6b4"
+      "productStock": 5 
     },
     {
-      "productId": "107",
-      "productName": "Kabaadi Jersey",
-      "productImage": "/assets/images/kabbadi-tshirt.avif",
+      "productId": "205",
+      "productName": "Football Goalkeeper Gloves",
+      "productMainImage": "/assets/images/football/gloves/mainimage.avif",
+      "productImages": [
+        "/assets/images/football/gloves/image1.avif",
+        "/assets/images/football/gloves/image2.avif",
+        "/assets/images/football/gloves/image3.avif",
+        "/assets/images/football/gloves/image4.avif"
+      ],
+      "productPrice": 699,
+      "productDescription": "These gloves for goalkeepers learning to dive and catch the ball.Rip-tab strap for fastening around the wrist.",
+      "productSize": [
+        "S",
+        "M",
+        "L"
+      ],
+      "productCategory": "football",
+      "productStock": 5 
+    },
+    {
+      "productId": "206",
+      "productName": "Football Portable Goal Kage",
+      "productMainImage": "/assets/images/football/kage/mainimage.avif",
+      "productImages": [
+        "/assets/images/football/kage/image1.avif",
+        "/assets/images/football/kage/image2.avif",
+        "/assets/images/football/kage/image3.avif",
+        "/assets/images/football/kage/image4.avif"
+      ],
+      "productPrice": 1299,
+      "productDescription": "This goal cage for football fans looking to play with friends or family on all types of playing surface.Easy to set up/take down thanks to a system of clip-on corners.Material is resistant to wear on all surfaces .Comes in a cover with a shoulder strap.",
+      "productCategory": "football",
+      "productStock": 6 
+    },
+    {
+      "productId": "207",
+      "productName": "Football Track Pant",
+      "productMainImage": "/assets/images/football/trackpant/mainimage.avif",
+      "productImages": [
+        "/assets/images/football/trackpant/image1.avif",
+        "/assets/images/football/trackpant/image2.avif",
+        "/assets/images/football/trackpant/image3.avif",
+        "/assets/images/football/trackpant/image4.avif"
+      ],
+      "productPrice": 4999,
+      "productDescription": "Smart coaching and hard work can solve every football problem. But it also helps to have comfortable, movement-focused adidas gear to pull on at the training ground. These Arsenal training pants keep players covered up during chilly sessions. They're quick to get on and off thanks to their ankle zips. Moisture-wicking AEROREADY and a slim fit ensure you stay on the front foot.",
+      "productSize": [
+        "S",
+        "M",
+        "L"
+      ],
+      "productCategory": "football",
+      "productStock": 2 
+    },
+    {
+      "productId": "208",
+      "productName": "Football Boots",
+      "productMainImage": "/assets/images/football/boots/mainimage.avif",
+      "productImages": [
+        "/assets/images/football/boots/image1.avif",
+        "/assets/images/football/boots/image2.avif",
+        "/assets/images/football/boots/image3.avif",
+        "/assets/images/football/boots/image4.avif"
+      ],
+      "productPrice": 1699,
+      "productDescription": "Wider instep for increased comfort.Sole with multiple round studs for good footwork.Supple, seamless upper to improve ball contact.",
+      "productSize": [
+        "S",
+        "M",
+        "L"
+      ],
+      "productCategory": "football",
+      "productStock": 4 
+    },
+    {
+      "productId": "209",
+      "productName": "Football Long-Sleeved Jersey",
+      "productMainImage": "/assets/images/football/longsleevejersey/mainimage.avif",
+      "productImages": [
+        "/assets/images/football/longsleevejersey/image1.avif",
+        "/assets/images/football/longsleevejersey/image2.avif",
+        "/assets/images/football/longsleevejersey/image3.avif",
+        "/assets/images/football/longsleevejersey/image4.avif"
+      ],
+      "productPrice": 799,
+      "productDescription": "This football shirt adapts to fit each player's build.Wide, stretchy neckline. Ribbing with elastane to make it easy to put on.",
+      "productSize": [
+        "S",
+        "M",
+        "L"
+      ],
+      "productCategory": "football",
+      "productStock": 4 
+    },
+    {
+      "productId": "210",
+      "productName": "Football Ball Hard Ground",
+      "productMainImage": "/assets/images/football/ball2/mainimage.avif",
+      "productImages": [
+        "/assets/images/football/ball2/image1.avif",
+        "/assets/images/football/ball2/image2.avif",
+        "/assets/images/football/ball2/image3.avif",
+        "/assets/images/football/ball2/image4.avif"
+      ],
+      "productPrice": 1299,
+      "productDescription": "This football for beach soccer players looking for a durable ball for playing on hard or sand pitches",
+      "productCategory": "football",
+      "productStock": 5
+    },
+    {
+      "productId": "401",
+      "productName": "Volleyball Outdoor Ball",
+      "productMainImage": "/assets/images/volleyball/ball/mainimage.avif",
+      "productImages": [
+        "/assets/images/volleyball/ball/image1.avif",
+        "/assets/images/volleyball/ball/image2.avif",
+        "/assets/images/volleyball/ball/image3.avif",
+        "/assets/images/volleyball/ball/image4.avif"
+      ],
+      "productPrice": 799,
+      "productDescription": "This ball was designed for outdoor volleyball training.Ball withstands all types of outdoor pitches.",
+      "productCategory": "volleyball",
+      "productStock": 5
+    },
+    {
+      "productId": "402",
+      "productName": "Adult Right/Left Ankle Proprioceptive Brace",
+      "productMainImage": "/assets/images/volleyball/anklebrace/mainimage.avif",
+      "productImages": [
+        "/assets/images/volleyball/anklebrace/image1.avif",
+        "/assets/images/volleyball/anklebrace/image2.avif",
+        "/assets/images/volleyball/anklebrace/image3.avif",
+        "/assets/images/volleyball/anklebrace/image4.avif"
+      ],
       "productPrice": 599,
-      "productDescription": "Designed exclusively for men, our Kabaddi Sports Jersey in striking blue is the perfect blend of style and performance. Whether you're a seasoned pro or just starting out, our Sublimation Kabaddi Jersey ensures you stand out on the field with its plain yet captivating design.",
       "productSize": [
         "S",
         "M",
         "L"
       ],
-      "productCategory": "kabaddi",
-      "productQuantity": 1,
-      "id": "bd6c"
+      "productDescription": "This Soft 500 ankle support was designed to prevent injuries and osteoarthritis by supporting players' ankles with uniform joint compression.Applies even, targeted compression to support your joint",
+      "productCategory": "volleyball",
+      "productStock": 7
     },
     {
-      "productId": "108",
-      "productName": "Kabaadi Shoes",
-      "productImage": "/assets/images/kabaadi-shoe.jpg",
-      "productPrice": 1599,
-      "productDescription": "Whether you're a seasoned pro or just starting out, our Sublimation Kabaddi Shoes ensures you stand out on the field with its plain yet captivating design.",
-      "productSize": [
-        "S",
-        "M",
-        "L"
+      "productId": "403",
+      "productName": "Knee Brace",
+      "productMainImage": "/assets/images/volleyball/kneebrace/mainimage.avif",
+      "productImages": [
+        "/assets/images/volleyball/kneebrace/image1.avif",
+        "/assets/images/volleyball/kneebrace/image2.avif",
+        "/assets/images/volleyball/kneebrace/image3.avif",
+        "/assets/images/volleyball/kneebrace/image4.avif"
       ],
-      "productCategory": "kabaddi",
-      "productQuantity": 1,
-      "id": "26ba"
-    },
-    {
-      "id": "ad79",
-      "productId": "102",
-      "productName": "Ball",
-      "productImage": "/assets/images/cricketBall.avif",
       "productPrice": 299,
-      "productDescription": "A game played with a ball and bat by two sides of usually 11 players each on a large field centering upon two wickets each defended by a batsman",
       "productSize": [
         "S",
         "M",
         "L"
       ],
-      "productCategory": "cricket",
-      "productQuantity": 2
+      "productDescription": "Prevent 100 knee brace is designed to support players' knees with uniform joint compression.Airy knit for perspiration wicking to keep your knee dry.",
+      "productCategory": "volleyball",
+      "productStock": 6
     },
     {
-      "id": "735a",
-      "productId": "101",
-      "productName": "Bat",
-      "productImage": "/assets/images/cricket-bat.jpg",
-      "productPrice": 1299,
-      "productDescription": "A game played with a ball and bat by two sides of usually 11 players each on a large field centering upon two wickets each defended by a batsman",
-      "productSize": [
-        "S",
-        "M",
-        "L"
+      "productId": "404",
+      "productName": "Beach Volleyball",
+      "productMainImage": "/assets/images/volleyball/beachball/mainimage.avif",
+      "productImages": [
+        "/assets/images/volleyball/beachball/image1.avif",
+        "/assets/images/volleyball/beachball/image2.avif"
       ],
-      "productCategory": "cricket",
-      "productQuantity": 1
+      "productPrice": 699,
+      "productDescription": "This ball has been developed for playing recreational beach volleyball as a family or with friends.",
+      "productCategory": "volleyball",
+      "productStock": 7
     },
     {
-      "0": "S",
-      "1": "M",
-      "2": "L",
-      "id": "ef3c"
-    },
-    {
-      "id": "735a",
-      "productId": "101",
-      "productName": "Bat",
-      "productImage": "/assets/images/cricket-bat.jpg",
-      "productPrice": 1299,
-      "productDescription": "A game played with a ball and bat by two sides of usually 11 players each on a large field centering upon two wickets each defended by a batsman",
-      "productSize": [
-        "S",
-        "M",
-        "L"
+      "productId": "405",
+      "productName": "Volleyball Net Outdoor String",
+      "productMainImage": "/assets/images/volleyball/net/mainimage.avif",
+      "productImages": [
+        "/assets/images/volleyball/net/image1.avif",
+        "/assets/images/volleyball/net/image2.jpeg",
+        "/assets/images/volleyball/net/image3.jpeg",
+        "/assets/images/volleyball/net/image4.webp"
       ],
-      "productCategory": "cricket",
-      "productQuantity": 1
+      "productPrice": 2799,
+      "productDescription": "This net is easy to carry around and set up, making it perfect for outdoor volleyball training sessions.The net has a built-in bag for storage, making it easy to carry around.",
+      "productCategory": "volleyball",
+      "productStock": 3
     }
-  ],
-  "addtocart": [
-    {
-      "id": "735a",
-      "productId": "101",
-      "productName": "Bat",
-      "productImage": "/assets/images/cricket-bat.jpg",
-      "productPrice": 1299,
-      "productDescription": "A game played with a ball and bat by two sides of usually 11 players each on a large field centering upon two wickets each defended by a batsman",
-      "productSize": [
-        "S",
-        "M",
-        "L"
-      ],
-      "productCategory": "cricket",
-      "productQuantity": 3
-    }
+    
+
   ]
 }
