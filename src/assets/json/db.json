@@ -174,13 +174,13 @@
     {
       "productId": "301",
       "productName": "Bumper Weight Disc 50mm-15kg",
-      "productMainImage": "assets/images/gym/bumberDisc/mainImage.avif",
+      "productMainImage": "/assets/images/gym/bumberDisc/mainImage.avif",
       "productImages": 
       [
-        "assets/images/cricket/bumberDisc/image1.avif",
-        "assets/images/cricket/bumberDisc/image2.avif",
-        "assets/images/cricket/bumberDisc/image3.avif",
-        "assets/images/cricket/bumberDisc/image4.avif"
+        "assets/images/gym/bumberDisc/image1.avif",
+        "assets/images/gym/bumberDisc/image2.avif",
+        "assets/images/gym/bumberDisc/image3.avif",
+        "assets/images/gym/bumberDisc/image4.avif"
       ],
       "productPrice": 2999,
       "productDescription": "The 15 kg bumper disc was developed by our coaches and design team.",
@@ -194,10 +194,10 @@
       "productMainImage": "assets/images/gym/weightLiftBar/mainImage.avif",
       "productImages": 
       [
-        "assets/images/cricket/weightLiftBar/image1.avif",
-        "assets/images/cricket/weightLiftBar/image2.avif",
-        "assets/images/cricket/weightLiftBar/image3.avif",
-        "assets/images/cricket/weightLiftBar/image4.avif"
+        "assets/images/gym/weightLiftBar/image1.avif",
+        "assets/images/gym/weightLiftBar/image2.avif",
+        "assets/images/gym/weightLiftBar/image3.avif",
+        "assets/images/gym/weightLiftBar/image4.avif"
       ],
       "productPrice": 2999,
       "productDescription": "The 15 kg bar was developed by our coaches and design team.",
@@ -211,10 +211,10 @@
       "productMainImage": "assets/images/gym/dumbles/mainImage.avif",
       "productImages": 
       [
-        "assets/images/cricket/dumbles/image1.avif",
-        "assets/images/cricket/dumbles/image2.avif",
-        "assets/images/cricket/dumbles/image3.avif",
-        "assets/images/cricket/dumbles/image4.avif"
+        "assets/images/gym/dumbles/image1.avif",
+        "assets/images/gym/dumbles/image2.avif",
+        "assets/images/gym/dumbles/image3.avif",
+        "assets/images/gym/dumbles/image4.avif"
       ],
       "productPrice": 2999,
       "productDescription": "This set of ergonomic dumbbells was designed for easy use: it has everything you need to work out in the right conditions!",
@@ -228,10 +228,10 @@
       "productMainImage": "assets/images/gym/skippingRope/mainImage.avif",
       "productImages": 
       [
-        "assets/images/cricket/skippingRope/image1.avif",
-        "assets/images/cricket/skippingRope/image2.avif",
-        "assets/images/cricket/skippingRope/image3.avif",
-        "assets/images/cricket/skippingRope/image4.avif"
+        "assets/images/gym/skippingRope/image1.avif",
+        "assets/images/gym/skippingRope/image2.avif",
+        "assets/images/gym/skippingRope/image3.avif",
+        "assets/images/gym/skippingRope/image4.avif"
       ],
       "productPrice": 999,
       "productDescription": "The skipping rope is designed to be ultra durable for intense workouts, even outdoors! You can also add up to four weights of 75 g to the handles.",
@@ -458,28 +458,6 @@
       "productDescription": "This Soft 500 ankle support was designed to prevent injuries and osteoarthritis by supporting players' ankles with uniform joint compression.Applies even, targeted compression to support your joint",
       "productCategory": "volleyball",
       "productStock": 7
-    },
-    {
-      "id": "735a",
-      "productId": "101",
-      "productName": "Bat",
-      "productImage": "/assets/images/cricket-bat.jpg",
-      "productPrice": 6000,
-      "productDescription": "A game played with a ball and bat by two sides of usually 11 players each on a large field centering upon two wickets each defended by a batsman",
-      "productSize": "M",
-      "productCategory": "cricket",
-      "productQuantity": 15
-    },
-    {
-      "id": "73ea",
-      "productId": "101",
-      "productName": "Bat",
-      "productImage": "/assets/images/cricket-bat.jpg",
-      "productPrice": 12400,
-      "productDescription": "A game played with a ball and bat by two sides of usually 11 players each on a large field centering upon two wickets each defended by a batsman",
-      "productSize": "L",
-      "productCategory": "cricket",
-      "productQuantity": 31
     }
     
   ]
