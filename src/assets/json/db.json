@@ -1,6 +1,7 @@
 {
   "products": [
     {
+      "id": "735a",
       "productId": "101",
       "productName": "Tennis Ball",
       "productMainImage": "assets/images/cricket/ball/mainImage.avif",
@@ -459,52 +460,26 @@
       "productStock": 7
     },
     {
-      "productId": "403",
-      "productName": "Knee Brace",
-      "productMainImage": "/assets/images/volleyball/kneebrace/mainimage.avif",
-      "productImages": [
-        "/assets/images/volleyball/kneebrace/image1.avif",
-        "/assets/images/volleyball/kneebrace/image2.avif",
-        "/assets/images/volleyball/kneebrace/image3.avif",
-        "/assets/images/volleyball/kneebrace/image4.avif"
-      ],
-      "productPrice": 299,
-      "productSize": [
-        "S",
-        "M",
-        "L"
-      ],
-      "productDescription": "Prevent 100 knee brace is designed to support players' knees with uniform joint compression.Airy knit for perspiration wicking to keep your knee dry.",
-      "productCategory": "volleyball",
-      "productStock": 6
+      "id": "735a",
+      "productId": "101",
+      "productName": "Bat",
+      "productImage": "/assets/images/cricket-bat.jpg",
+      "productPrice": 6000,
+      "productDescription": "A game played with a ball and bat by two sides of usually 11 players each on a large field centering upon two wickets each defended by a batsman",
+      "productSize": "M",
+      "productCategory": "cricket",
+      "productQuantity": 15
     },
     {
-      "productId": "404",
-      "productName": "Beach Volleyball",
-      "productMainImage": "/assets/images/volleyball/beachball/mainimage.avif",
-      "productImages": [
-        "/assets/images/volleyball/beachball/image1.avif",
-        "/assets/images/volleyball/beachball/image2.avif"
-      ],
-      "productPrice": 699,
-      "productDescription": "This ball has been developed for playing recreational beach volleyball as a family or with friends.",
-      "productCategory": "volleyball",
-      "productStock": 7
-    },
-    {
-      "productId": "405",
-      "productName": "Volleyball Net Outdoor String",
-      "productMainImage": "/assets/images/volleyball/net/mainimage.avif",
-      "productImages": [
-        "/assets/images/volleyball/net/image1.avif",
-        "/assets/images/volleyball/net/image2.jpeg",
-        "/assets/images/volleyball/net/image3.jpeg",
-        "/assets/images/volleyball/net/image4.webp"
-      ],
-      "productPrice": 2799,
-      "productDescription": "This net is easy to carry around and set up, making it perfect for outdoor volleyball training sessions.The net has a built-in bag for storage, making it easy to carry around.",
-      "productCategory": "volleyball",
-      "productStock": 3
+      "id": "73ea",
+      "productId": "101",
+      "productName": "Bat",
+      "productImage": "/assets/images/cricket-bat.jpg",
+      "productPrice": 12400,
+      "productDescription": "A game played with a ball and bat by two sides of usually 11 players each on a large field centering upon two wickets each defended by a batsman",
+      "productSize": "L",
+      "productCategory": "cricket",
+      "productQuantity": 31
     }
     
   ]

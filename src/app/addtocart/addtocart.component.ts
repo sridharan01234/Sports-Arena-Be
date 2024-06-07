@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { AddtoCart } from '../model/addtocart';
+import { Product } from '../model/products';
+
 @Component({
   selector: 'app-addtocart',
   templateUrl: './addtocart.component.html',
@@ -8,7 +9,7 @@ import { AddtoCart } from '../model/addtocart';
 })
 export class AddtocartComponent implements OnInit {
   constructor(private httpRequest:HttpClient) {}
-  products!: AddtoCart[];
+  products!: Product[];
   totalQuantity: number = 0;
   totalPrice!: number;
 
@@ -17,17 +18,17 @@ export class AddtocartComponent implements OnInit {
   }
 
   public updateQuantity(id:string,status:string){
-   this.getProduct(id).subscribe((data:AddtoCart):void=>{
-        let product:AddtoCart = data;
-        if(status=='increase' && product.quantity>=0){
-         const oneProductPrice = this.findOneProductPrice(product.quantity,product.price);
-          product.quantity++;
-          product.price +=oneProductPrice;
+   this.getProduct(id).subscribe((data:Product):void=>{
+        let product:Product = data;
+        if(status=='increase' && product.productQuantity >=0){
+         const oneProductPrice = this.findOneProductPrice(product.productQuantity,product.productPrice);
+          product.productQuantity++;
+          product.productPrice +=oneProductPrice;
         }
-        else if(status=='decrease' && product.quantity>0){
-          const oneProductPrice = this.findOneProductPrice(product.quantity,product.price);
-          product.quantity--;
-          product.price-=oneProductPrice;
+        else if(status=='decrease' && product.productQuantity>1){
+          const oneProductPrice = this.findOneProductPrice(product.productQuantity,product.productPrice);
+          product.productQuantity--;
+          product.productPrice-=oneProductPrice;
 
         }
             this.updateProduct(id,product).subscribe((data)=>{
@@ -42,23 +43,25 @@ export class AddtocartComponent implements OnInit {
   }
 
   private getProducts(){
-    this.httpRequest.get<AddtoCart[]>('http://localhost:3000/products').subscribe((data:AddtoCart[]): void=>{
+    this.httpRequest.get<Product[]>('http://localhost:3000/addtocart').subscribe((data:Product[]): void=>{
       this.products= data;    
-    this.calculatePrice()
+    this.calculatePrice();
+    console.log(this.products);
+    
 
     });
   }
 
   private getProduct(id:string){
-     return this.httpRequest.get<AddtoCart>('http://localhost:3000/products/'+id);
+     return this.httpRequest.get<Product>('http://localhost:3000/addtocart/'+id);
   }
 
-  private updateProduct(id:string,product:AddtoCart){
-      return this.httpRequest.put('http://localhost:3000/products/'+id,product);
+  private updateProduct(id:string,product:Product){
+      return this.httpRequest.put('http://localhost:3000/addtocart/'+id,product);
   }
 
   public removeProduct(id:string){
-     this.httpRequest.delete('http://localhost:3000/products/'+id).subscribe(()=>{
+     this.httpRequest.delete('http://localhost:3000/addtocart/'+id).subscribe(()=>{
       this.getProducts();
 
      })
@@ -68,8 +71,8 @@ export class AddtocartComponent implements OnInit {
           let price:number[]=[];
           let quantity:number[]=[];
           this.products.map((product)=>{
-                 price.push(product.price);
-                 quantity.push(product.quantity)
+                 price.push(product.productPrice);
+                 quantity.push(product.productQuantity)
           })
         this.totalPrice =  this.calculateTotalPriceQuantity(price);
         this.totalQuantity=this.calculateTotalPriceQuantity(quantity);
