@@ -210,12 +210,22 @@
     {
       "productId": "301",
       "productName": "Bumper Weight Disc 50mm-15kg",
+<<<<<<< HEAD
       "productMainImage": "assets/images/gym/bumberDisc/mainImage.avif",
       "productImages": [
         "assets/images/cricket/bumberDisc/image1.avif",
         "assets/images/cricket/bumberDisc/image2.avif",
         "assets/images/cricket/bumberDisc/image3.avif",
         "assets/images/cricket/bumberDisc/image4.avif"
+=======
+      "productMainImage": "/assets/images/gym/bumberDisc/mainImage.avif",
+      "productImages": 
+      [
+        "assets/images/gym/bumberDisc/image1.avif",
+        "assets/images/gym/bumberDisc/image2.avif",
+        "assets/images/gym/bumberDisc/image3.avif",
+        "assets/images/gym/bumberDisc/image4.avif"
+>>>>>>> 3c390882469a24f22a50927618c8a02e32608026
       ],
       "productPrice": 2999,
       "productDescription": "The 15 kg bumper disc was developed by our coaches and design team.",
@@ -228,11 +238,20 @@
       "productId": "302",
       "productName": "Olympic Bar 15 kg D- 50 mm",
       "productMainImage": "assets/images/gym/weightLiftBar/mainImage.avif",
+<<<<<<< HEAD
       "productImages": [
         "assets/images/cricket/weightLiftBar/image1.avif",
         "assets/images/cricket/weightLiftBar/image2.avif",
         "assets/images/cricket/weightLiftBar/image3.avif",
         "assets/images/cricket/weightLiftBar/image4.avif"
+=======
+      "productImages": 
+      [
+        "assets/images/gym/weightLiftBar/image1.avif",
+        "assets/images/gym/weightLiftBar/image2.avif",
+        "assets/images/gym/weightLiftBar/image3.avif",
+        "assets/images/gym/weightLiftBar/image4.avif"
+>>>>>>> 3c390882469a24f22a50927618c8a02e32608026
       ],
       "productPrice": 2999,
       "productDescription": "The 15 kg bar was developed by our coaches and design team.",
@@ -245,11 +264,20 @@
       "productId": "304",
       "productName": "Dumbbells 3 kg Twin-Pack",
       "productMainImage": "assets/images/gym/dumbles/mainImage.avif",
+<<<<<<< HEAD
       "productImages": [
         "assets/images/cricket/dumbles/image1.avif",
         "assets/images/cricket/dumbles/image2.avif",
         "assets/images/cricket/dumbles/image3.avif",
         "assets/images/cricket/dumbles/image4.avif"
+=======
+      "productImages": 
+      [
+        "assets/images/gym/dumbles/image1.avif",
+        "assets/images/gym/dumbles/image2.avif",
+        "assets/images/gym/dumbles/image3.avif",
+        "assets/images/gym/dumbles/image4.avif"
+>>>>>>> 3c390882469a24f22a50927618c8a02e32608026
       ],
       "productPrice": 2999,
       "productDescription": "This set of ergonomic dumbbells was designed for easy use: it has everything you need to work out in the right conditions!",
@@ -262,11 +290,20 @@
       "productId": "304",
       "productName": "Skipping Rope Advanced Black Red",
       "productMainImage": "assets/images/gym/skippingRope/mainImage.avif",
+<<<<<<< HEAD
       "productImages": [
         "assets/images/cricket/skippingRope/image1.avif",
         "assets/images/cricket/skippingRope/image2.avif",
         "assets/images/cricket/skippingRope/image3.avif",
         "assets/images/cricket/skippingRope/image4.avif"
+=======
+      "productImages": 
+      [
+        "assets/images/gym/skippingRope/image1.avif",
+        "assets/images/gym/skippingRope/image2.avif",
+        "assets/images/gym/skippingRope/image3.avif",
+        "assets/images/gym/skippingRope/image4.avif"
+>>>>>>> 3c390882469a24f22a50927618c8a02e32608026
       ],
       "productPrice": 999,
       "productDescription": "The skipping rope is designed to be ultra durable for intense workouts, even outdoors! You can also add up to four weights of 75 g to the handles.",
@@ -504,6 +541,7 @@
       ],
       "productDescription": "This Soft 500 ankle support was designed to prevent injuries and osteoarthritis by supporting players' ankles with uniform joint compression.Applies even, targeted compression to support your joint",
       "productCategory": "volleyball",
+<<<<<<< HEAD
       "productStock": 7,
       "id": "04a2"
     },
@@ -677,6 +715,9 @@
       "productSize": "S",
       "productCategory": "cricket",
       "productStock": 4
+=======
+      "productStock": 7
+>>>>>>> 3c390882469a24f22a50927618c8a02e32608026
     }
   ]
 }

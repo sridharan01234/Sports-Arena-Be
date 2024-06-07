@@ -17,30 +17,25 @@ export class ProductViewComponent implements OnInit {
     private toastr:ToastrService
   ) { }
 
-  public currentRoute!: string | null;
-  public product!:Product;
-  public productDetails!:any;
+  public currentRoute!: any;
+  public product: any;
+  public productDetails: any;
   public size!:string;
 
   ngOnInit() {
 
-    this.currentRoute = this.route.snapshot.paramMap.get('id');
-    console.log(this.currentRoute);
-    this.getProductDetails();
-  }
+    
+    this.currentRoute = (this.route.snapshot.paramMap.get('id'));
 
-  getProductDetails() {
-    this.productService.getProducts()
-      .subscribe((res:any) => {
-        this.product = res.filter((value: { productId: string; }) => {
-          if (value.productId === this.currentRoute) {
-            console.log(value)
-            this.productDetails = value;
-          }
-        })
-        console.log(`details`,this.productDetails);
+    this.productService.getProduct(this.currentRoute).subscribe((res:any)=>
+      {
+        
+        this.productDetails=res.data
+        console.log(this.productDetails)
       }
-      );
+    )
+    console.log(this.currentRoute);
+    
   }
 
   createSize(productSize:string){
@@ -50,15 +45,20 @@ export class ProductViewComponent implements OnInit {
   }
 
   addtoCart(product:Product){
-  if(this.productDetails.productSize && !this.size){
-    this.toastr.warning('Please choose Size!');
+    if(this.productDetails.productSize && !this.size){
+      this.toastr.warning('Please choose Size!');
+    }
+    else{
+      this.productService.addtocart(product)
+          .subscribe((res)=>{
+            this.toastr.success('Added to the cart!');
+            console.log('addeddd',res);
+        })
+    
+  
+   
   }
-  else{
-    this.productService.addtocart(product)
-        .subscribe((res)=>{
-          this.toastr.success('Added to the cart!');
-          console.log('addeddd',res);
-      })
-  }
-  }
-}
+
+
+
+  }}

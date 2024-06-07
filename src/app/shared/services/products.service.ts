@@ -10,12 +10,16 @@ import { Product} from 'src/app/model/products';
 export class ProductsService {
 
   constructor(private http:HttpClient) { }
-  private apiUrl = 'http://localhost:3000/products';
+  private apiUrl = 'http://172.24.220.187';
 
   getProducts():Observable<Product>{
-    return this.http.get<Product>(`${this.apiUrl}`);
+    return this.http.get<Product>(`${this.apiUrl}/product/all`);
   }
-
+  getProduct(id:number)
+  {
+    console.log("Ser",id)
+    return this.http.get<Product>(`${this.apiUrl}/product?id=${id}`);
+  }
 
   addtocart(product:Product){
     return this.http.post(`http://localhost:3000/addtocart`,product)
