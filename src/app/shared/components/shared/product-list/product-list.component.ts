@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { Product } from 'src/app/model/products';
 import { ProductsService } from 'src/app/shared/services/products.service';
 
@@ -9,7 +10,7 @@ import { ProductsService } from 'src/app/shared/services/products.service';
 })
 export class ProductListComponent {
   public products!:Product[]
-  constructor(private productService:ProductsService)
+  constructor(private productService:ProductsService,private route:Router)
   {
 
   }
@@ -17,10 +18,17 @@ export class ProductListComponent {
   {
     this.productService.getProducts().subscribe((res:any)=>
     {
-      this.products=res
+      console.log("Hi")
+      this.products=res.data
       console.log(res)
     })
     
+    
+  }
+  navigateToProductView(id:string)
+  {
+    console.log("Hi")
+     this.route.navigate([ `/product/view/${id}`])
   }
 
 }

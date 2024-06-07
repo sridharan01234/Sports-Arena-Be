@@ -5,20 +5,9 @@
         <div class="col-md-4">
             <div class="row">
                 <div class="col-6" *ngFor="let i of productDetails.productImages">
-                    <img class="image-zoom" [src]="i" class="img-fluid img-style" [alt]="productDetails.productName1">
+                    <img class="image-zoom" [src]="i.imageUrl" class="img-fluid img-style" [alt]="productDetails.productName1">
                 </div>
-                <!-- <div class="col-6">
-                    <img class="image-zoom" src="/assets/images/shoe1.jpeg" class="img-fluid img-style" [alt]="productDetails.productName1">
-                </div>
-                <div class="col-6">
-                    <img src="/assets/images/shoe2.jpg" class="img-fluid img-style" [alt]="productDetails.productName2">
-                </div>
-                <div class="col-6">
-                    <img src="/assets/images/shoe1.jpeg" class="img-fluid img-style" [alt]="productDetails.productName3">
-                </div>
-                <div class="col-6">
-                    <img src="/assets/images/shoe4.jpeg" class="img-fluid img-style" [alt]="productDetails.productName4">
-                </div> -->
+               
             </div>
         </div>
         <div class="col-md-6 mx-5 px-5">
@@ -31,15 +20,15 @@
                 <div>
                     <span class="selling-price">{{productDetails.productPrice | currency:'INR' }}</span>
                 </div>
-                <div class="d-flex flex-row my-3">
+                <div class="d-flex flex-row my-3" *ngIf="productDetails.productSize.length!=0">
                     <div *ngFor="let i of productDetails.productSize">
                         <span>
-                            <button class="size-btn px-3 py-2 mx-1" (click)="createSize(i)">{{i}}</button>
+                            <button class="size-btn px-3 py-2 mx-1" (click)="createSize(i)">{{i.size}}</button>
                         </span>
                     </div>
                 </div>
                 <div class="mt-2">
-                    <a class="btn btn1"    (click)="addtoCart(productDetails)">
+                    <a class="btn btn1" (click)="addtoCart(productDetails)">
                         <i class="bi bi-cart"></i> Add To Cart
                     </a>
                     <a class="btn btn1">

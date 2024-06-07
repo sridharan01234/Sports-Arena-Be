@@ -36,7 +36,7 @@
       ],
       "productCategory": "cricket",
       "productStock": 4,
-      "id": "a19c"
+      "id": "e173"
     },
     {
       "productId": "103",
@@ -58,7 +58,7 @@
       ],
       "productCategory": "cricket",
       "productStock": 4,
-      "id": "7c3f"
+      "id": "d833"
     },
     {
       "productId": "104",
@@ -79,7 +79,7 @@
       ],
       "productCategory": "cricket",
       "productStock": 4,
-      "id": "41fb"
+      "id": "8090"
     },
     {
       "productId": "105",
@@ -104,7 +104,6 @@
     },
     {
       "productId": "106",
-      "productName": "Kit Bag",
       "productMainImage": "assets/images/cricket/kitbag1/mainImage.avif",
       "productImages": [
         "assets/images/cricket/kitbag1/image1.avif",
@@ -121,7 +120,7 @@
       ],
       "productCategory": "cricket",
       "productStock": 4,
-      "id": "bbbb"
+      "id": "6e26"
     },
     {
       "productId": "107",
@@ -146,7 +145,6 @@
     },
     {
       "productId": "108",
-      "productName": "White Cap",
       "productMainImage": "assets/images/cricket/cap1/mainImage.avif",
       "productImages": [
         "assets/images/cricket/cap1/image1.avif",
@@ -163,7 +161,7 @@
       ],
       "productCategory": "cricket",
       "productStock": 4,
-      "id": "e768"
+      "id": "e73c"
     },
     {
       "productId": "109",
@@ -184,7 +182,7 @@
       ],
       "productCategory": "cricket",
       "productStock": 4,
-      "id": "d638"
+      "id": "4ca9"
     },
     {
       "productId": "110",
@@ -205,24 +203,25 @@
       ],
       "productCategory": "cricket",
       "productStock": 4,
-      "id": "25b2"
+      "id": "de41"
     },
     {
       "productId": "301",
       "productName": "Bumper Weight Disc 50mm-15kg",
-      "productMainImage": "assets/images/gym/bumberDisc/mainImage.avif",
-      "productImages": [
-        "assets/images/cricket/bumberDisc/image1.avif",
-        "assets/images/cricket/bumberDisc/image2.avif",
-        "assets/images/cricket/bumberDisc/image3.avif",
-        "assets/images/cricket/bumberDisc/image4.avif"
+      "productMainImage": "/assets/images/gym/bumberDisc/mainImage.avif",
+      "productImages": 
+      [
+        "assets/images/gym/bumberDisc/image1.avif",
+        "assets/images/gym/bumberDisc/image2.avif",
+        "assets/images/gym/bumberDisc/image3.avif",
+        "assets/images/gym/bumberDisc/image4.avif"
       ],
       "productPrice": 2999,
       "productDescription": "The 15 kg bumper disc was developed by our coaches and design team.",
       "productSize": [],
       "productCategory": "gym",
       "productStock": 4,
-      "id": "3d2c"
+      "id": "b2f6"
     },
     {
       "productId": "302",
@@ -233,6 +232,13 @@
         "assets/images/cricket/weightLiftBar/image2.avif",
         "assets/images/cricket/weightLiftBar/image3.avif",
         "assets/images/cricket/weightLiftBar/image4.avif"
+      ],
+      "productImages": 
+      [
+        "assets/images/gym/weightLiftBar/image1.avif",
+        "assets/images/gym/weightLiftBar/image2.avif",
+        "assets/images/gym/weightLiftBar/image3.avif",
+        "assets/images/gym/weightLiftBar/image4.avif"
       ],
       "productPrice": 2999,
       "productDescription": "The 15 kg bar was developed by our coaches and design team.",
@@ -251,6 +257,13 @@
         "assets/images/cricket/dumbles/image3.avif",
         "assets/images/cricket/dumbles/image4.avif"
       ],
+      "productImages": 
+      [
+        "assets/images/gym/dumbles/image1.avif",
+        "assets/images/gym/dumbles/image2.avif",
+        "assets/images/gym/dumbles/image3.avif",
+        "assets/images/gym/dumbles/image4.avif"
+      ],
       "productPrice": 2999,
       "productDescription": "This set of ergonomic dumbbells was designed for easy use: it has everything you need to work out in the right conditions!",
       "productSize": [],
@@ -259,7 +272,6 @@
       "id": "dd66"
     },
     {
-      "productId": "304",
       "productName": "Skipping Rope Advanced Black Red",
       "productMainImage": "assets/images/gym/skippingRope/mainImage.avif",
       "productImages": [
@@ -268,12 +280,19 @@
         "assets/images/cricket/skippingRope/image3.avif",
         "assets/images/cricket/skippingRope/image4.avif"
       ],
+      "productImages": 
+      [
+        "assets/images/gym/skippingRope/image1.avif",
+        "assets/images/gym/skippingRope/image2.avif",
+        "assets/images/gym/skippingRope/image3.avif",
+        "assets/images/gym/skippingRope/image4.avif"
+      ],
       "productPrice": 999,
       "productDescription": "The skipping rope is designed to be ultra durable for intense workouts, even outdoors! You can also add up to four weights of 75 g to the handles.",
       "productSize": [],
       "productCategory": "gym",
       "productStock": 4,
-      "id": "d6e7"
+      "id": "e1e2"
     },
     {
       "productId": "201",
@@ -310,28 +329,25 @@
       ],
       "productCategory": "football",
       "productStock": 3,
-      "id": "b698"
+      "id": "d431"
     },
     {
       "productId": "203",
       "productName": "Men Football Jersey Shirt",
       "productMainImage": "/assets/images/football/jersey/mainimage.avif",
       "productImages": [
-        "/assets/images/football/jersey/image1.avif",
         "/assets/images/football/jersey/image2.avif",
-        "/assets/images/football/jersey/image3.avif",
-        "/assets/images/football/jersey/image4.avif"
+        "/assets/images/football/jersey/image4.avif",
+        "/assets/images/football/jersey/image1.avif",
+        "/assets/images/football/jersey/image3.avif"
       ],
       "productPrice": 699,
       "productDescription": "Special cut and Outback fabric.Good air circulation to ensure you stay dry during matches",
       "productSize": [
         "S",
         "M",
-        "L"
-      ],
-      "productCategory": "football",
-      "productStock": 7,
-      "id": "7a32"
+        "L"],
+      "id": "88b1"
     },
     {
       "productId": "204",
@@ -352,7 +368,7 @@
       ],
       "productCategory": "football",
       "productStock": 5,
-      "id": "9fe5"
+      "id": "2c5d"
     },
     {
       "productId": "205",
@@ -367,13 +383,9 @@
       "productPrice": 699,
       "productDescription": "These gloves for goalkeepers learning to dive and catch the ball.Rip-tab strap for fastening around the wrist.",
       "productSize": [
-        "S",
-        "M",
-        "L"
-      ],
+        "S"],
       "productCategory": "football",
-      "productStock": 5,
-      "id": "ba8b"
+      "id": "7492"
     },
     {
       "productId": "206",
@@ -389,28 +401,7 @@
       "productDescription": "This goal cage for football fans looking to play with friends or family on all types of playing surface.Easy to set up/take down thanks to a system of clip-on corners.Material is resistant to wear on all surfaces .Comes in a cover with a shoulder strap.",
       "productCategory": "football",
       "productStock": 6,
-      "id": "c83d"
-    },
-    {
-      "productId": "207",
-      "productName": "Football Track Pant",
-      "productMainImage": "/assets/images/football/trackpant/mainimage.avif",
-      "productImages": [
-        "/assets/images/football/trackpant/image1.avif",
-        "/assets/images/football/trackpant/image2.avif",
-        "/assets/images/football/trackpant/image3.avif",
-        "/assets/images/football/trackpant/image4.avif"
-      ],
-      "productPrice": 4999,
-      "productDescription": "Smart coaching and hard work can solve every football problem. But it also helps to have comfortable, movement-focused adidas gear to pull on at the training ground. These Arsenal training pants keep players covered up during chilly sessions. They're quick to get on and off thanks to their ankle zips. Moisture-wicking AEROREADY and a slim fit ensure you stay on the front foot.",
-      "productSize": [
-        "S",
-        "M",
-        "L"
-      ],
-      "productCategory": "football",
-      "productStock": 2,
-      "id": "ca3a"
+      "id": "2ece"
     },
     {
       "productId": "208",
@@ -431,7 +422,7 @@
       ],
       "productCategory": "football",
       "productStock": 4,
-      "id": "d791"
+      "id": "e005"
     },
     {
       "productId": "209",
@@ -452,7 +443,7 @@
       ],
       "productCategory": "football",
       "productStock": 4,
-      "id": "a7b3"
+      "id": "2757"
     },
     {
       "productId": "210",
@@ -468,7 +459,7 @@
       "productDescription": "This football for beach soccer players looking for a durable ball for playing on hard or sand pitches",
       "productCategory": "football",
       "productStock": 5,
-      "id": "2d08"
+      "id": "6b2a"
     },
     {
       "productId": "401",
@@ -484,7 +475,7 @@
       "productDescription": "This ball was designed for outdoor volleyball training.Ball withstands all types of outdoor pitches.",
       "productCategory": "volleyball",
       "productStock": 5,
-      "id": "0091"
+      "id": "576d"
     },
     {
       "productId": "402",
@@ -508,48 +499,44 @@
       "id": "211c"
     }
   ],
-  "cart": [
+
+  "addtocart": [
     {
-      "productId": "208",
-      "productName": "Football Boots",
-      "productMainImage": "/assets/images/football/boots/mainimage.avif",
+      "id": "d2e2",
+      "productId": "105",
+      "productName": "Jersey",
+      "productMainImage": "assets/images/cricket/jersey1/mainImage.avif",
       "productImages": [
-        "/assets/images/football/boots/image1.avif",
-        "/assets/images/football/boots/image2.avif",
-        "/assets/images/football/boots/image3.avif",
-        "/assets/images/football/boots/image4.avif"
+        "assets/images/cricket/jersey1/image1.avif",
+        "assets/images/cricket/jersey1/image2.avif",
+        "assets/images/cricket/jersey1/image3.avif",
+        "assets/images/cricket/jersey1/image4.avif"
       ],
-      "productPrice": 2598,
-      "productDescription": "Wider instep for increased comfort.Sole with multiple round studs for good footwork.Supple, seamless upper to improve ball contact.",
-      "productSize": [
-        "S"
-      ],
-      "productCategory": "football",
-      "productStock": 4,
-      "productQuantity": 4,
-      "id": "er23"
+      "productPrice": 540,
+      "productDescription": "Our cricket passionate team has developed this breathable short sleeve polo for you to practice cricket comfortably under the sun.",
+      "productSize": "S",
+      "productCategory": "cricket",
+      "productStock": 4
     },
     {
-      "productId": "402",
-      "productName": "Adult Right/Left Ankle Proprioceptive Brace",
-      "productMainImage": "/assets/images/volleyball/anklebrace/mainimage.avif",
+      "id": "8090",
+      "productId": "104",
+      "productName": "Helmet ",
+      "productMainImage": "assets/images/cricket/helmet/mainImage.avif",
       "productImages": [
-        "/assets/images/volleyball/anklebrace/image1.avif",
-        "/assets/images/volleyball/anklebrace/image2.avif",
-        "/assets/images/volleyball/anklebrace/image3.avif",
-        "/assets/images/volleyball/anklebrace/image4.avif"
+        "assets/images/cricket/helmet/image1.avif",
+        "assets/images/cricket/helmet/image2.avif",
+        "assets/images/cricket/helmet/image3.avif",
+        "assets/images/cricket/helmet/image4.avif"
       ],
-      "productPrice": 4193,
-      "productSize": [
-        "M"
-      ],
-      "productDescription": "This Soft 500 ankle support was designed to prevent injuries and osteoarthritis by supporting players' ankles with uniform joint compression.Applies even, targeted compression to support your joint",
-      "productCategory": "volleyball",
-      "productStock": 7,
-      "productQuantity": 7,
-      "id": "wdi3"
+      "productPrice": 340,
+      "productDescription": "Our cricket passionate team has developed this cricket shoe for your regular training on hard ground, mat or artificial turf.",
+      "productSize": "S",
+      "productCategory": "cricket",
+      "productStock": 4
     },
     {
+      "id": "576d",
       "productId": "401",
       "productName": "Volleyball Outdoor Ball",
       "productMainImage": "/assets/images/volleyball/ball/mainimage.avif",
@@ -559,50 +546,78 @@
         "/assets/images/volleyball/ball/image3.avif",
         "/assets/images/volleyball/ball/image4.avif"
       ],
-      "productPrice": 3995,
+      "productPrice": 799,
       "productDescription": "This ball was designed for outdoor volleyball training.Ball withstands all types of outdoor pitches.",
       "productCategory": "volleyball",
-      "productStock": 5,
-      "productQuantity": 5,
-      "id": "ka32"
+      "productStock": 5
     },
     {
-      "productId": "203",
-      "productName": "Men Football Jersey Shirt",
-      "productMainImage": "/assets/images/football/jersey/mainimage.avif",
+      "id": "6882",
+      "productId": "403",
+      "productName": "Knee Brace",
+      "productMainImage": "/assets/images/volleyball/kneebrace/mainimage.avif",
       "productImages": [
-        "/assets/images/football/jersey/image1.avif",
-        "/assets/images/football/jersey/image2.avif",
-        "/assets/images/football/jersey/image3.avif",
-        "/assets/images/football/jersey/image4.avif"
+        "/assets/images/volleyball/kneebrace/image1.avif",
+        "/assets/images/volleyball/kneebrace/image2.avif",
+        "/assets/images/volleyball/kneebrace/image3.avif",
+        "/assets/images/volleyball/kneebrace/image4.avif"
       ],
-      "productPrice": 2796,
-      "productDescription": "Special cut and Outback fabric.Good air circulation to ensure you stay dry during matches",
-      "productSize": [
-        "L"
-      ],
-      "productCategory": "football",
-      "productStock": 7,
-      "productQuantity": 4,
-      "id": "la23"
+      "productPrice": 299,
+      "productSize": "L",
+      "productDescription": "Prevent 100 knee brace is designed to support players' knees with uniform joint compression.Airy knit for perspiration wicking to keep your knee dry.",
+      "productCategory": "volleyball",
+      "productStock": 6
     },
     {
-      "productId": "302",
-      "productName": "Olympic Bar 15 kg D- 50 mm",
-      "productMainImage": "assets/images/gym/weightLiftBar/mainImage.avif",
+      "id": "8413",
+      "productId": "105",
+      "productName": "Jersey",
+      "productMainImage": "assets/images/cricket/jersey1/mainImage.avif",
       "productImages": [
-        "assets/images/cricket/weightLiftBar/image1.avif",
-        "assets/images/cricket/weightLiftBar/image2.avif",
-        "assets/images/cricket/weightLiftBar/image3.avif",
-        "assets/images/cricket/weightLiftBar/image4.avif"
+        "assets/images/cricket/jersey1/image1.avif",
+        "assets/images/cricket/jersey1/image2.avif",
+        "assets/images/cricket/jersey1/image3.avif",
+        "assets/images/cricket/jersey1/image4.avif"
       ],
-      "productPrice": 17994,
-      "productDescription": "The 15 kg bar was developed by our coaches and design team.",
-      "productSize": [],
-      "productCategory": "gym",
-      "productStock": 4,
-      "productQuantity": 6,
-      "id": "aw21"
+      "productPrice": 540,
+      "productDescription": "Our cricket passionate team has developed this breathable short sleeve polo for you to practice cricket comfortably under the sun.",
+      "productSize": "M",
+      "productCategory": "cricket",
+      "productStock": 4
+    },
+    {
+      "id": "8413",
+      "productId": "105",
+      "productName": "Jersey",
+      "productMainImage": "assets/images/cricket/jersey1/mainImage.avif",
+      "productImages": [
+        "assets/images/cricket/jersey1/image1.avif",
+        "assets/images/cricket/jersey1/image2.avif",
+        "assets/images/cricket/jersey1/image3.avif",
+        "assets/images/cricket/jersey1/image4.avif"
+      ],
+      "productPrice": 540,
+      "productDescription": "Our cricket passionate team has developed this breathable short sleeve polo for you to practice cricket comfortably under the sun.",
+      "productSize": "S",
+      "productCategory": "cricket",
+      "productStock": 4
+    },
+    {
+      "id": "8413",
+      "productId": "105",
+      "productName": "Jersey",
+      "productMainImage": "assets/images/cricket/jersey1/mainImage.avif",
+      "productImages": [
+        "assets/images/cricket/jersey1/image1.avif",
+        "assets/images/cricket/jersey1/image2.avif",
+        "assets/images/cricket/jersey1/image3.avif",
+        "assets/images/cricket/jersey1/image4.avif"
+      ],
+      "productPrice": 540,
+      "productDescription": "Our cricket passionate team has developed this breathable short sleeve polo for you to practice cricket comfortably under the sun.",
+      "productSize": "S",
+      "productCategory": "cricket",
+      "productStock": 7
     }
   ]
 }
