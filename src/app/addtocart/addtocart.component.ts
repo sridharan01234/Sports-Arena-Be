@@ -43,27 +43,24 @@ export class AddtocartComponent implements OnInit {
   }
 
   private getProducts(){
-    this.httpRequest.get<Product[]>('http://localhost:3000/addtocart').subscribe((data:Product[]): void=>{
+    this.httpRequest.get<Product[]>('http://localhost:3000/cart').subscribe((data:Product[]): void=>{
       this.products= data;    
     this.calculatePrice();
     console.log(this.products);
-    
-
     });
   }
 
   private getProduct(id:string){
-     return this.httpRequest.get<Product>('http://localhost:3000/addtocart/'+id);
+     return this.httpRequest.get<Product>('http://localhost:3000/cart/'+id);
   }
 
   private updateProduct(id:string,product:Product){
-      return this.httpRequest.put('http://localhost:3000/addtocart/'+id,product);
+      return this.httpRequest.put('http://localhost:3000/cart/'+id,product);
   }
 
   public removeProduct(id:string){
-     this.httpRequest.delete('http://localhost:3000/addtocart/'+id).subscribe(()=>{
+     this.httpRequest.delete('http://localhost:3000/cart/'+id).subscribe(()=>{
       this.getProducts();
-
      })
   }
 

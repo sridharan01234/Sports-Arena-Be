@@ -28,7 +28,7 @@
 
           <div class="row">
             <div class="col-md-6 form-floating">
-               <input type="date" class="form-control my-2" id="FloatingDate" placeholder="Date Of Birth" formControlName="age">
+               <input type="date" class="form-control my-2" id="FloatingDate" placeholder="Date Of Birth" formControlName="age" >
                <label for="FloatingDate"class="m-2">Date Of Birth</label>
                <div *ngIf="registerFormControl['age'].invalid && (registerFormControl['age'].dirty || registerFormControl['age'].touched)">
                 <p *ngIf="registerFormControl['age'].hasError('required')"><sup>*</sup>DOB should be given</p>

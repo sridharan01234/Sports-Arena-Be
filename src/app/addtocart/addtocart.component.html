@@ -1,24 +1,25 @@
   <app-header></app-header>
   <div class="cartItems">
-    <div class="row" *ngIf="totalQuantity>0; else emptycart">
+    <div class="row" *ngIf="products.length >0; else emptycart">
         <div class="col-lg-3"></div>
         <div class="col-lg-5 card">
           <div *ngFor="let item of products" class="row m-2 border-bottom card-body">
-             <div class="col-3">
+             <div class="col-sm-3">
                 <div class="image">
                   <img [src]="item.productMainImage" alt="item.name">
                 </div>  
-               <div class="d-flex flex-row justify-content-center  mt-2"><button class=" btn btn-outline-dark me-1 rounded-0" (click)="updateQuantity(item.id,'decrease')">-</button> <button class=" btn btn-outline-dark px-3 rounded-0" >{{ item.productQuantity}}</button> <button class="btn btn-outline-dark ms-1 rounded-0" (click)="updateQuantity(item.id,'increase')">+</button> </div>
+               <div class="d-flex flex-row justify-content-center  mt-2"><button class=" btn btn-outline-dark me-1 rounded-0" (click)="updateQuantity(item.id,'decrease')">-</button>
+                 <button class="bg-light text-dark px-3 rounded-0 border border-dark pe-none " >{{ item.productQuantity}}</button> <button class="btn btn-outline-dark ms-1 rounded-0" (click)="updateQuantity(item.id,'increase')">+</button> </div>
               </div>
-            <div class="col-4">
-                <p class="card-title">{{item.productName}}</p>
-                <p class="card-text">Size: {{ item.productSize}}</p>
-                <p class="card-text">{{item.productPrice | currency:'INR'}}</p>
-                    <button class="btn btn-dark mt-5" (click)="removeProduct(item.id)">Remove</button>
+            <div class="col-lg-9 d-flex flex-column">
+                <p class="card-title p-2">{{item.productName}}</p>
+                <p class="card-text p-2" *ngIf="item.productSize?.length; else lineBreak">Size: {{ item.productSize}}</p>
+                <p class="card-text p-2">{{item.productPrice | currency:'INR'}}</p>
+                <ng-template #lineBreak></ng-template>
+                    <button class="btn btn-dark mt-auto btn-sm col-2 p-2 fs-6" (click)="removeProduct(item.id)">Remove</button>
              </div>
           </div>
-           <div class="d-flex justify-content-end my-3"> <a href="#"><button class="btn btn-dark fs-5 p-2 mx-2">Place order</button></a> </div>
-              
+           <div class="d-flex justify-content-end my-3"> <a href="#"><button class="btn btn-dark fs-5 p-2 mx-2">Place order</button></a> </div>      
         </div>
         <div class="col-3 card ms-5 h-25 price">
             <h4 class="row border-bottom py-3 px-3 card-header">PRICE DETAILS</h4>
