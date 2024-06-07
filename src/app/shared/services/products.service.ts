@@ -17,12 +17,6 @@ export class ProductsService {
   }
 
 
-  // updateQuantity(id:string,products:Product){
-  //   console.log(id); 
-  //   return this.http.put(`http://localhost:3000/addtocart/${id}`,products)
-  // }  
-
-
   addtocart(product:Product){
     return this.http.post(`http://localhost:3000/addtocart`,product)
   }

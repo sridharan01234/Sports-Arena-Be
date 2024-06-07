@@ -35,19 +35,10 @@
     color: white;
 }
 
-/* .product-view .input-quantity {
-    border: 1px solid black;
-    margin-right: 3px;
-    font-size: 12px;
-    margin-top: 10px;
-    width: 58px;
-    text-align: center;
-    padding: 7px;
-} */
-
 .size-btn:hover {
     background-color: black;
     color: white;
+    
 }
 
 .img-style:hover {

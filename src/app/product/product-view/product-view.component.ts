@@ -17,9 +17,9 @@ export class ProductViewComponent implements OnInit {
     private toastr:ToastrService
   ) { }
 
-  public currentRoute: any;
-  public product: any;
-  public productDetails: any;
+  public currentRoute!: string | null;
+  public product!:Product;
+  public productDetails!:any;
   public size!:string;
 
   ngOnInit() {
@@ -32,66 +32,33 @@ export class ProductViewComponent implements OnInit {
   getProductDetails() {
     this.productService.getProducts()
       .subscribe((res:any) => {
-        this.product = res.filter((x: { productId: string; }) => {
-          if (x.productId === this.currentRoute) {
-            console.log(x)
-            this.productDetails = x;
+        this.product = res.filter((value: { productId: string; }) => {
+          if (value.productId === this.currentRoute) {
+            console.log(value)
+            this.productDetails = value;
           }
         })
-        console.log(`11111111111111111`,this.productDetails);
+        console.log(`details`,this.productDetails);
       }
       );
   }
-
-  // increaseQuantity() {
-  //   console.log(this.productDetails.id);
-    
-  //   this.productDetails.productQuantity++;
-  //   console.log(this.productDetails.productQuantity);
-    
-  //   this.productService.updateQuantity(this.productDetails.id, this.productDetails)
-  //     .subscribe((res) => {
-  //       console.log(res);
-  //     })
-
-  //   // this.productService.addtocart()
-  // }
-
-
-  // decreaseQuantity(){
-  //   if(this.productDetails.productQuantity > 1){
-  //     this.productDetails.productQuantity--;
-  //     this.productService.updateQuantity(this.productDetails.id,this.productDetails)
-  //     .subscribe((res)=>{
-  //       console.log(res);
-  //     })
-  //   }
-  // }
 
   createSize(productSize:string){
     console.log('wedf',productSize);
     this.size=productSize
     this.productDetails.productSize=this.size;
-
   }
-
 
   addtoCart(product:Product){
-
-    if(this.size){
-      this.productService.addtocart(product)
-      .subscribe((res)=>{
-        this.toastr.success('Added to the cart!');
-        console.log('addeddd',res);
-      
-      })
-    }
-    else{
-      this.toastr.warning('Please choose Size!')
-    }
-   
+  if(this.productDetails.productSize && !this.size){
+    this.toastr.warning('Please choose Size!');
   }
-
-
-
+  else{
+    this.productService.addtocart(product)
+        .subscribe((res)=>{
+          this.toastr.success('Added to the cart!');
+          console.log('addeddd',res);
+      })
+  }
+  }
 }
