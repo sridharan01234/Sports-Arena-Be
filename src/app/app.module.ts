@@ -22,7 +22,7 @@ import { AddtocartComponent } from './addtocart/addtocart.component';
 import { AuthserviceService } from './shared/services/authservice.service';
 import { SharedComponent } from './shared/components/shared/shared.component';
 import { SharedModule } from './shared/components/shared/shared.module';
-
+import { DateValidatorDirective } from './shared/date-validator.directive';
 
 
 
@@ -39,7 +39,8 @@ import { SharedModule } from './shared/components/shared/shared.module';
     ResetpasswordComponent,
 
   
-    AddtocartComponent
+    AddtocartComponent,
+        DateValidatorDirective
       
     ],
 

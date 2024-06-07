@@ -1,18 +1,19 @@
+  <app-header></app-header>
   <div class="cartItems">
-    <div class="row" *ngIf="products.length>0; else emptycart">
+    <div class="row" *ngIf="totalQuantity>0; else emptycart">
         <div class="col-lg-3"></div>
         <div class="col-lg-5 card">
           <div *ngFor="let item of products" class="row m-2 border-bottom card-body">
              <div class="col-3">
                 <div class="image">
-                  <img [src]="item.imageUrl" alt="item.name">
+                  <img [src]="item.productMainImage" alt="item.name">
                 </div>  
-               <div class="d-flex flex-row justify-content-center  mt-2"><button class=" btn btn-outline-dark me-1 rounded-0" (click)="updateQuantity(item.id,'decrease')">-</button> <button class=" btn btn-outline-dark px-3 rounded-0" >{{ item.quantity}}</button> <button class="btn btn-outline-dark ms-1 rounded-0" (click)="updateQuantity(item.id,'increase')">+</button> </div>
+               <div class="d-flex flex-row justify-content-center  mt-2"><button class=" btn btn-outline-dark me-1 rounded-0" (click)="updateQuantity(item.id,'decrease')">-</button> <button class=" btn btn-outline-dark px-3 rounded-0" >{{ item.productQuantity}}</button> <button class="btn btn-outline-dark ms-1 rounded-0" (click)="updateQuantity(item.id,'increase')">+</button> </div>
               </div>
             <div class="col-4">
-                <p class="card-title">{{item.name}}</p>
-                <p class="card-text">Size: {{ item.size}}</p>
-                <p class="card-text">{{item.price | currency:'INR'}}</p>
+                <p class="card-title">{{item.productName}}</p>
+                <p class="card-text">Size: {{ item.productSize}}</p>
+                <p class="card-text">{{item.productPrice | currency:'INR'}}</p>
                     <button class="btn btn-dark mt-5" (click)="removeProduct(item.id)">Remove</button>
              </div>
           </div>
@@ -35,4 +36,4 @@
      
   </div>
 
-
+<app-footer></app-footer>
