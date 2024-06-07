@@ -2,186 +2,242 @@
   "products": [
     {
       "productId": "101",
-      "productName": "Bat",
-      "productImage": "/assets/images/cricket-bat.jpg",
-      "productPrice": 1299,
-      "productDescription": "A game played with a ball and bat by two sides of usually 11 players each on a large field centering upon two wickets each defended by a batsman",
-      "productSize": [
-        "S",
-        "M",
-        "L"
+      "productName": "Tennis Ball",
+      "productMainImage": "assets/images/cricket/ball/mainImage.avif",
+      "productImages": 
+      [
+        "assets/images/cricket/ball/image1.avif",
+        "assets/images/cricket/ball/image2.avif",
+        "assets/images/cricket/ball/image3.avif",
+        "assets/images/cricket/ball/image4.avif"
       ],
+      "productPrice": 40,
+      "productDescription": "Our cricket passionate team has developed this soft cricket tennis ball for regular usage in gully's, small spaces and open grounds.",
+      "productSize": [ ],
       "productCategory": "cricket",
-      "productQuantity": 1,
-      "id": "735a"
+      "productStock": 4
     },
     {
       "productId": "102",
-      "productName": "Ball",
-      "productImage": "/assets/images/cricketBall.avif",
-      "productPrice": 299,
-      "productDescription": "A game played with a ball and bat by two sides of usually 11 players each on a large field centering upon two wickets each defended by a batsman",
-      "productSize": [
-        "S",
-        "M",
-        "L"
+      "productName": "Cricket Bat for Hard Tennis Ball ",
+      "productMainImage": "assets/images/cricket/blackBat/mainImage.avif",
+      "productImages": 
+      [
+        "assets/images/cricket/blackBat/image1.avif",
+        "assets/images/cricket/blackBat/image2.avif",
+        "assets/images/cricket/blackBat/image3.avif",
+        "assets/images/cricket/blackBat/image4.avif"
       ],
+      "productPrice": 740,
+      "productDescription": "Our cricket passionate team has developed this powerful hard tennis ball cricket bat for you to hit long and powerful shots in open ground tournaments.",
+      "productSize": ["S","M","L" ],
       "productCategory": "cricket",
-      "productQuantity": 2,
-      "id": "ad79"
+      "productStock": 4
     },
     {
       "productId": "103",
-      "productName": "Stump",
-      "productImage": "/assets/images/cricket-stump.jpeg",
-      "productPrice": 799,
-      "productDescription": "A game played with a ball and bat by two sides of usually 11 players each on a large field centering upon two wickets each defended by a batsman",
+      "productName": "Cricket Shoe ",
+      "productMainImage": "assets/images/cricket/shoe1/mainImage.avif",
+      "productImages": 
+      [
+        "assets/images/cricket/shoe1/image1.avif",
+        "assets/images/cricket/shoe1/image2.avif",
+        "assets/images/cricket/shoe1/image3.avif",
+        "assets/images/cricket/shoe1/image4.avif"
+      ],
+      "productPrice": 540,
+      "productDescription": "Our cricket passionate team has developed this cricket shoe for your regular training on hard ground, mat or artificial turf.",
+      "productSize": ["6","7","8","9"],
       "productCategory": "cricket",
-      "productQuantity": 1,
-      "id": "319b"
+      "productStock": 4
     },
     {
       "productId": "104",
-      "productName": "Mens Football Shoe Agility 100 Turf Black",
-      "productImage": "/assets/images/football-shoe.jpg",
-      "productPrice": 999,
-      "productDescription": "The flexible Agility 100 boots for playing on firm pitches once a week.Upper and sole are resistant to wear from schist and artificial turf.Multiple small studs provide solid footing on hard pitches.",
-      "productSize": [
-        "S",
-        "M",
-        "L"
+      "productName": "Helmet ",
+      "productMainImage": "assets/images/cricket/helmet/mainImage.avif",
+      "productImages": 
+      [
+        "assets/images/cricket/helmet/image1.avif",
+        "assets/images/cricket/helmet/image2.avif",
+        "assets/images/cricket/helmet/image3.avif",
+        "assets/images/cricket/helmet/image4.avif"
       ],
-      "productCategory": "football",
-      "productQuantity": 1,
-      "id": "c5db"
+      "productPrice": 340,
+      "productDescription": "Our cricket passionate team has developed this cricket shoe for your regular training on hard ground, mat or artificial turf.",
+      "productSize": ["S","M","L"],
+      "productCategory": "cricket",
+      "productStock": 4
     },
     {
       "productId": "105",
-      "productName": "Football Goal Kage ",
-      "productImage": "/assets/images/football-cage.jpg",
-      "productPrice": 1999,
-      "productDescription": "This goal cage for football fans looking to play with friends or family on all types of playing surface. Easy to set up/take down thanks to a system of clip-on corners.",
-      "productSize": [
-        "S",
-        "M",
-        "L"
+      "productName": "Jersey",
+      "productMainImage": "assets/images/cricket/jersey1/mainImage.avif",
+      "productImages": 
+      [
+        "assets/images/cricket/jersey1/image1.avif",
+        "assets/images/cricket/jersey1/image2.avif",
+        "assets/images/cricket/jersey1/image3.avif",
+        "assets/images/cricket/jersey1/image4.avif"
       ],
-      "productCategory": "football",
-      "productQuantity": 1,
-      "id": "79c8"
+      "productPrice": 540,
+      "productDescription": "Our cricket passionate team has developed this breathable short sleeve polo for you to practice cricket comfortably under the sun.",
+      "productSize": ["S","M","L"],
+      "productCategory": "cricket",
+      "productStock": 4
     },
     {
       "productId": "106",
-      "productName": "Football Ball ",
-      "productImage": "/assets/images/football.jpg",
-      "productPrice": 1999,
-      "productDescription": "Have made the F900 to FIFA Quality Pro standards for your training sessions and competitions by using thermobonding: there are no seams, giving a great feel. ",
-      "productSize": [
-        "S",
-        "M",
-        "L"
+      "productName": "Kit Bag",
+      "productMainImage": "assets/images/cricket/kitbag1/mainImage.avif",
+      "productImages": 
+      [
+        "assets/images/cricket/kitbag1/image1.avif",
+        "assets/images/cricket/kitbag1/image2.avif",
+        "assets/images/cricket/kitbag1/image3.avif",
+        "assets/images/cricket/kitbag1/image4.avif"
       ],
-      "productCategory": "football",
-      "productQuantity": 1,
-      "id": "e6b4"
+      "productPrice": 540,
+      "productDescription": "Our team of designers and engineers have developed this cricket kit bag for adults to comfortably carry their full kit.",
+      "productSize": ["S","M","L"],
+      "productCategory": "cricket",
+      "productStock": 4
     },
     {
       "productId": "107",
-      "productName": "Kabaadi Jersey",
-      "productImage": "/assets/images/kabbadi-tshirt.avif",
-      "productPrice": 599,
-      "productDescription": "Designed exclusively for men, our Kabaddi Sports Jersey in striking blue is the perfect blend of style and performance. Whether you're a seasoned pro or just starting out, our Sublimation Kabaddi Jersey ensures you stand out on the field with its plain yet captivating design.",
-      "productSize": [
-        "S",
-        "M",
-        "L"
+      "productName": "Gloves",
+      "productMainImage": "assets/images/cricket/gloves1/mainImage.avif",
+      "productImages": 
+      [
+        "assets/images/cricket/gloves1/image1.avif",
+        "assets/images/cricket/gloves1/image2.avif",
+        "assets/images/cricket/gloves1/image3.avif",
+        "assets/images/cricket/gloves1/image4.avif"
       ],
-      "productCategory": "kabaddi",
-      "productQuantity": 1,
-      "id": "bd6c"
+      "productPrice": 240,
+      "productDescription": "Our cricket passionate team has developed this batting gloves for kids to discover and learn leather ball cricket comfortably and safely.",
+      "productSize": ["S","M","L"],
+      "productCategory": "cricket",
+      "productStock": 4
     },
     {
       "productId": "108",
-      "productName": "Kabaadi Shoes",
-      "productImage": "/assets/images/kabaadi-shoe.jpg",
-      "productPrice": 1599,
-      "productDescription": "Whether you're a seasoned pro or just starting out, our Sublimation Kabaddi Shoes ensures you stand out on the field with its plain yet captivating design.",
-      "productSize": [
-        "S",
-        "M",
-        "L"
+      "productName": "White Cap",
+      "productMainImage": "assets/images/cricket/cap1/mainImage.avif",
+      "productImages": 
+      [
+        "assets/images/cricket/cap1/image1.avif",
+        "assets/images/cricket/cap1/image2.avif",
+        "assets/images/cricket/cap1/image3.avif",
+        "assets/images/cricket/cap1/image4.avif"
       ],
-      "productCategory": "kabaddi",
-      "productQuantity": 1,
-      "id": "26ba"
+      "productPrice": 140,
+      "productDescription": "Our cricket passionate team has developed this cricket cap for you to play safely and comfortably outdoor under the sun.",
+      "productSize": ["S","M","L"],
+      "productCategory": "cricket",
+      "productStock": 4
     },
     {
-      "id": "ad79",
-      "productId": "102",
-      "productName": "Ball",
-      "productImage": "/assets/images/cricketBall.avif",
-      "productPrice": 299,
-      "productDescription": "A game played with a ball and bat by two sides of usually 11 players each on a large field centering upon two wickets each defended by a batsman",
-      "productSize": [
-        "S",
-        "M",
-        "L"
+      "productId": "109",
+      "productName": "CSK Jersey",
+      "productMainImage": "assets/images/cricket/cskJersey/mainImage.jpg",
+      "productImages": 
+      [
+        "assets/images/cricket/shoe1/image1.jpg",
+        "assets/images/cricket/shoe1/image2.jpg",
+        "assets/images/cricket/shoe1/image3.jpg",
+        "assets/images/cricket/shoe1/image4.jpg"
       ],
+      "productPrice": 840,
+      "productDescription": "The signed jersey of CSK Franchise 2024",
+      "productSize": ["S","M","L"],
       "productCategory": "cricket",
-      "productQuantity": 2
+      "productStock": 4
     },
     {
-      "id": "735a",
-      "productId": "101",
-      "productName": "Bat",
-      "productImage": "/assets/images/cricket-bat.jpg",
-      "productPrice": 1299,
-      "productDescription": "A game played with a ball and bat by two sides of usually 11 players each on a large field centering upon two wickets each defended by a batsman",
-      "productSize": [
-        "S",
-        "M",
-        "L"
+      "productId": "110",
+      "productName": "RCB Jersey",
+      "productMainImage": "assets/images/cricket/rcbJersey/mainImage.jpg",
+      "productImages": 
+      [
+        "assets/images/cricket/rcbJersey/image1.jpg",
+        "assets/images/cricket/rcbJersey/image2.jpg",
+        "assets/images/cricket/rcbJersey/image3.jpg",
+        "assets/images/cricket/rcbJersey/image4.jpg"
       ],
+      "productPrice": 840,
+      "productDescription": "The signed jersey of RCB Franchise 2024",
+      "productSize": ["S","M","L"],
       "productCategory": "cricket",
-      "productQuantity": 1
+      "productStock": 4
     },
     {
-      "0": "S",
-      "1": "M",
-      "2": "L",
-      "id": "ef3c"
+      "productId": "301",
+      "productName": "Bumper Weight Disc 50mm-15kg",
+      "productMainImage": "assets/images/gym/bumberDisc/mainImage.avif",
+      "productImages": 
+      [
+        "assets/images/cricket/bumberDisc/image1.avif",
+        "assets/images/cricket/bumberDisc/image2.avif",
+        "assets/images/cricket/bumberDisc/image3.avif",
+        "assets/images/cricket/bumberDisc/image4.avif"
+      ],
+      "productPrice": 2999,
+      "productDescription": "The 15 kg bumper disc was developed by our coaches and design team.",
+      "productSize": [],
+      "productCategory": "gym",
+      "productStock": 4
     },
     {
-      "id": "735a",
-      "productId": "101",
-      "productName": "Bat",
-      "productImage": "/assets/images/cricket-bat.jpg",
-      "productPrice": 1299,
-      "productDescription": "A game played with a ball and bat by two sides of usually 11 players each on a large field centering upon two wickets each defended by a batsman",
-      "productSize": [
-        "S",
-        "M",
-        "L"
+      "productId": "302",
+      "productName": "Olympic Bar 15 kg D- 50 mm",
+      "productMainImage": "assets/images/gym/weightLiftBar/mainImage.avif",
+      "productImages": 
+      [
+        "assets/images/cricket/weightLiftBar/image1.avif",
+        "assets/images/cricket/weightLiftBar/image2.avif",
+        "assets/images/cricket/weightLiftBar/image3.avif",
+        "assets/images/cricket/weightLiftBar/image4.avif"
       ],
-      "productCategory": "cricket",
-      "productQuantity": 1
-    }
-  ],
-  "addtocart": [
+      "productPrice": 2999,
+      "productDescription": "The 15 kg bar was developed by our coaches and design team.",
+      "productSize": [],
+      "productCategory": "gym",
+      "productStock": 4
+    },
     {
-      "id": "735a",
-      "productId": "101",
-      "productName": "Bat",
-      "productImage": "/assets/images/cricket-bat.jpg",
-      "productPrice": 1299,
-      "productDescription": "A game played with a ball and bat by two sides of usually 11 players each on a large field centering upon two wickets each defended by a batsman",
-      "productSize": [
-        "S",
-        "M",
-        "L"
+      "productId": "304",
+      "productName": "Dumbbells 3 kg Twin-Pack",
+      "productMainImage": "assets/images/gym/dumbles/mainImage.avif",
+      "productImages": 
+      [
+        "assets/images/cricket/dumbles/image1.avif",
+        "assets/images/cricket/dumbles/image2.avif",
+        "assets/images/cricket/dumbles/image3.avif",
+        "assets/images/cricket/dumbles/image4.avif"
       ],
-      "productCategory": "cricket",
-      "productQuantity": 1
+      "productPrice": 2999,
+      "productDescription": "This set of ergonomic dumbbells was designed for easy use: it has everything you need to work out in the right conditions!",
+      "productSize": [],
+      "productCategory": "gym",
+      "productStock": 4
+    },
+    {
+      "productId": "304",
+      "productName": "Skipping Rope Advanced Black Red",
+      "productMainImage": "assets/images/gym/skippingRope/mainImage.avif",
+      "productImages": 
+      [
+        "assets/images/cricket/skippingRope/image1.avif",
+        "assets/images/cricket/skippingRope/image2.avif",
+        "assets/images/cricket/skippingRope/image3.avif",
+        "assets/images/cricket/skippingRope/image4.avif"
+      ],
+      "productPrice": 999,
+      "productDescription": "The skipping rope is designed to be ultra durable for intense workouts, even outdoors! You can also add up to four weights of 75 g to the handles.",
+      "productSize": [],
+      "productCategory": "gym",
+      "productStock": 4
     }
   ]
 }
+   
