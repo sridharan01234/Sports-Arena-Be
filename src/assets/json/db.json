@@ -1,6 +1,245 @@
 {
   "products": [
     {
+      "id": "735a",
+      "productId": "101",
+      "productName": "Tennis Ball",
+      "productMainImage": "assets/images/cricket/ball/mainImage.avif",
+      "productImages": 
+      [
+        "assets/images/cricket/ball/image1.avif",
+        "assets/images/cricket/ball/image2.avif",
+        "assets/images/cricket/ball/image3.avif",
+        "assets/images/cricket/ball/image4.avif"
+      ],
+      "productPrice": 40,
+      "productDescription": "Our cricket passionate team has developed this soft cricket tennis ball for regular usage in gully's, small spaces and open grounds.",
+      "productSize": [ ],
+      "productCategory": "cricket",
+      "productStock": 4
+    },
+    {
+      "productId": "102",
+      "productName": "Cricket Bat for Hard Tennis Ball ",
+      "productMainImage": "assets/images/cricket/blackBat/mainImage.avif",
+      "productImages": 
+      [
+        "assets/images/cricket/blackBat/image1.avif",
+        "assets/images/cricket/blackBat/image2.avif",
+        "assets/images/cricket/blackBat/image3.avif",
+        "assets/images/cricket/blackBat/image4.avif"
+      ],
+      "productPrice": 740,
+      "productDescription": "Our cricket passionate team has developed this powerful hard tennis ball cricket bat for you to hit long and powerful shots in open ground tournaments.",
+      "productSize": ["S","M","L" ],
+      "productCategory": "cricket",
+      "productStock": 4
+    },
+    {
+      "productId": "103",
+      "productName": "Cricket Shoe ",
+      "productMainImage": "assets/images/cricket/shoe1/mainImage.avif",
+      "productImages": 
+      [
+        "assets/images/cricket/shoe1/image1.avif",
+        "assets/images/cricket/shoe1/image2.avif",
+        "assets/images/cricket/shoe1/image3.avif",
+        "assets/images/cricket/shoe1/image4.avif"
+      ],
+      "productPrice": 540,
+      "productDescription": "Our cricket passionate team has developed this cricket shoe for your regular training on hard ground, mat or artificial turf.",
+      "productSize": ["6","7","8","9"],
+      "productCategory": "cricket",
+      "productStock": 4
+    },
+    {
+      "productId": "104",
+      "productName": "Helmet ",
+      "productMainImage": "assets/images/cricket/helmet/mainImage.avif",
+      "productImages": 
+      [
+        "assets/images/cricket/helmet/image1.avif",
+        "assets/images/cricket/helmet/image2.avif",
+        "assets/images/cricket/helmet/image3.avif",
+        "assets/images/cricket/helmet/image4.avif"
+      ],
+      "productPrice": 340,
+      "productDescription": "Our cricket passionate team has developed this cricket shoe for your regular training on hard ground, mat or artificial turf.",
+      "productSize": ["S","M","L"],
+      "productCategory": "cricket",
+      "productStock": 4
+    },
+    {
+      "productId": "105",
+      "productName": "Jersey",
+      "productMainImage": "assets/images/cricket/jersey1/mainImage.avif",
+      "productImages": 
+      [
+        "assets/images/cricket/jersey1/image1.avif",
+        "assets/images/cricket/jersey1/image2.avif",
+        "assets/images/cricket/jersey1/image3.avif",
+        "assets/images/cricket/jersey1/image4.avif"
+      ],
+      "productPrice": 540,
+      "productDescription": "Our cricket passionate team has developed this breathable short sleeve polo for you to practice cricket comfortably under the sun.",
+      "productSize": ["S","M","L"],
+      "productCategory": "cricket",
+      "productStock": 4
+    },
+    {
+      "productId": "106",
+      "productName": "Kit Bag",
+      "productMainImage": "assets/images/cricket/kitbag1/mainImage.avif",
+      "productImages": 
+      [
+        "assets/images/cricket/kitbag1/image1.avif",
+        "assets/images/cricket/kitbag1/image2.avif",
+        "assets/images/cricket/kitbag1/image3.avif",
+        "assets/images/cricket/kitbag1/image4.avif"
+      ],
+      "productPrice": 540,
+      "productDescription": "Our team of designers and engineers have developed this cricket kit bag for adults to comfortably carry their full kit.",
+      "productSize": ["S","M","L"],
+      "productCategory": "cricket",
+      "productStock": 4
+    },
+    {
+      "productId": "107",
+      "productName": "Gloves",
+      "productMainImage": "assets/images/cricket/gloves1/mainImage.avif",
+      "productImages": 
+      [
+        "assets/images/cricket/gloves1/image1.avif",
+        "assets/images/cricket/gloves1/image2.avif",
+        "assets/images/cricket/gloves1/image3.avif",
+        "assets/images/cricket/gloves1/image4.avif"
+      ],
+      "productPrice": 240,
+      "productDescription": "Our cricket passionate team has developed this batting gloves for kids to discover and learn leather ball cricket comfortably and safely.",
+      "productSize": ["S","M","L"],
+      "productCategory": "cricket",
+      "productStock": 4
+    },
+    {
+      "productId": "108",
+      "productName": "White Cap",
+      "productMainImage": "assets/images/cricket/cap1/mainImage.avif",
+      "productImages": 
+      [
+        "assets/images/cricket/cap1/image1.avif",
+        "assets/images/cricket/cap1/image2.avif",
+        "assets/images/cricket/cap1/image3.avif",
+        "assets/images/cricket/cap1/image4.avif"
+      ],
+      "productPrice": 140,
+      "productDescription": "Our cricket passionate team has developed this cricket cap for you to play safely and comfortably outdoor under the sun.",
+      "productSize": ["S","M","L"],
+      "productCategory": "cricket",
+      "productStock": 4
+    },
+    {
+      "productId": "109",
+      "productName": "CSK Jersey",
+      "productMainImage": "assets/images/cricket/cskJersey/mainImage.jpg",
+      "productImages": 
+      [
+        "assets/images/cricket/shoe1/image1.jpg",
+        "assets/images/cricket/shoe1/image2.jpg",
+        "assets/images/cricket/shoe1/image3.jpg",
+        "assets/images/cricket/shoe1/image4.jpg"
+      ],
+      "productPrice": 840,
+      "productDescription": "The signed jersey of CSK Franchise 2024",
+      "productSize": ["S","M","L"],
+      "productCategory": "cricket",
+      "productStock": 4
+    },
+    {
+      "productId": "110",
+      "productName": "RCB Jersey",
+      "productMainImage": "assets/images/cricket/rcbJersey/mainImage.jpg",
+      "productImages": 
+      [
+        "assets/images/cricket/rcbJersey/image1.jpg",
+        "assets/images/cricket/rcbJersey/image2.jpg",
+        "assets/images/cricket/rcbJersey/image3.jpg",
+        "assets/images/cricket/rcbJersey/image4.jpg"
+      ],
+      "productPrice": 840,
+      "productDescription": "The signed jersey of RCB Franchise 2024",
+      "productSize": ["S","M","L"],
+      "productCategory": "cricket",
+      "productStock": 4
+    },
+    {
+      "productId": "301",
+      "productName": "Bumper Weight Disc 50mm-15kg",
+      "productMainImage": "assets/images/gym/bumberDisc/mainImage.avif",
+      "productImages": 
+      [
+        "assets/images/cricket/bumberDisc/image1.avif",
+        "assets/images/cricket/bumberDisc/image2.avif",
+        "assets/images/cricket/bumberDisc/image3.avif",
+        "assets/images/cricket/bumberDisc/image4.avif"
+      ],
+      "productPrice": 2999,
+      "productDescription": "The 15 kg bumper disc was developed by our coaches and design team.",
+      "productSize": [],
+      "productCategory": "gym",
+      "productStock": 4
+    },
+    {
+      "productId": "302",
+      "productName": "Olympic Bar 15 kg D- 50 mm",
+      "productMainImage": "assets/images/gym/weightLiftBar/mainImage.avif",
+      "productImages": 
+      [
+        "assets/images/cricket/weightLiftBar/image1.avif",
+        "assets/images/cricket/weightLiftBar/image2.avif",
+        "assets/images/cricket/weightLiftBar/image3.avif",
+        "assets/images/cricket/weightLiftBar/image4.avif"
+      ],
+      "productPrice": 2999,
+      "productDescription": "The 15 kg bar was developed by our coaches and design team.",
+      "productSize": [],
+      "productCategory": "gym",
+      "productStock": 4
+    },
+    {
+      "productId": "304",
+      "productName": "Dumbbells 3 kg Twin-Pack",
+      "productMainImage": "assets/images/gym/dumbles/mainImage.avif",
+      "productImages": 
+      [
+        "assets/images/cricket/dumbles/image1.avif",
+        "assets/images/cricket/dumbles/image2.avif",
+        "assets/images/cricket/dumbles/image3.avif",
+        "assets/images/cricket/dumbles/image4.avif"
+      ],
+      "productPrice": 2999,
+      "productDescription": "This set of ergonomic dumbbells was designed for easy use: it has everything you need to work out in the right conditions!",
+      "productSize": [],
+      "productCategory": "gym",
+      "productStock": 4
+    },
+    {
+      "productId": "304",
+      "productName": "Skipping Rope Advanced Black Red",
+      "productMainImage": "assets/images/gym/skippingRope/mainImage.avif",
+      "productImages": 
+      [
+        "assets/images/cricket/skippingRope/image1.avif",
+        "assets/images/cricket/skippingRope/image2.avif",
+        "assets/images/cricket/skippingRope/image3.avif",
+        "assets/images/cricket/skippingRope/image4.avif"
+      ],
+      "productPrice": 999,
+      "productDescription": "The skipping rope is designed to be ultra durable for intense workouts, even outdoors! You can also add up to four weights of 75 g to the handles.",
+      "productSize": [],
+      "productCategory": "gym",
+      "productStock": 4
+    },
+    {
       "productId": "201",
       "productName": "Football",
       "productMainImage": "/assets/images/football/ball/mainimage.avif",
@@ -33,7 +272,7 @@
         "L"
       ],
       "productCategory": "football",
-      "productStock": 3 
+      "productStock": 3
     },
     {
       "productId": "203",
@@ -53,7 +292,7 @@
         "L"
       ],
       "productCategory": "football",
-      "productStock": 7 
+      "productStock": 7
     },
     {
       "productId": "204",
@@ -73,7 +312,7 @@
         "L"
       ],
       "productCategory": "football",
-      "productStock": 5 
+      "productStock": 5
     },
     {
       "productId": "205",
@@ -93,7 +332,7 @@
         "L"
       ],
       "productCategory": "football",
-      "productStock": 5 
+      "productStock": 5
     },
     {
       "productId": "206",
@@ -108,7 +347,7 @@
       "productPrice": 1299,
       "productDescription": "This goal cage for football fans looking to play with friends or family on all types of playing surface.Easy to set up/take down thanks to a system of clip-on corners.Material is resistant to wear on all surfaces .Comes in a cover with a shoulder strap.",
       "productCategory": "football",
-      "productStock": 6 
+      "productStock": 6
     },
     {
       "productId": "207",
@@ -128,7 +367,7 @@
         "L"
       ],
       "productCategory": "football",
-      "productStock": 2 
+      "productStock": 2
     },
     {
       "productId": "208",
@@ -148,7 +387,7 @@
         "L"
       ],
       "productCategory": "football",
-      "productStock": 4 
+      "productStock": 4
     },
     {
       "productId": "209",
@@ -168,7 +407,7 @@
         "L"
       ],
       "productCategory": "football",
-      "productStock": 4 
+      "productStock": 4
     },
     {
       "productId": "210",
@@ -221,54 +460,28 @@
       "productStock": 7
     },
     {
-      "productId": "403",
-      "productName": "Knee Brace",
-      "productMainImage": "/assets/images/volleyball/kneebrace/mainimage.avif",
-      "productImages": [
-        "/assets/images/volleyball/kneebrace/image1.avif",
-        "/assets/images/volleyball/kneebrace/image2.avif",
-        "/assets/images/volleyball/kneebrace/image3.avif",
-        "/assets/images/volleyball/kneebrace/image4.avif"
-      ],
-      "productPrice": 299,
-      "productSize": [
-        "S",
-        "M",
-        "L"
-      ],
-      "productDescription": "Prevent 100 knee brace is designed to support players' knees with uniform joint compression.Airy knit for perspiration wicking to keep your knee dry.",
-      "productCategory": "volleyball",
-      "productStock": 6
+      "id": "735a",
+      "productId": "101",
+      "productName": "Bat",
+      "productImage": "/assets/images/cricket-bat.jpg",
+      "productPrice": 6000,
+      "productDescription": "A game played with a ball and bat by two sides of usually 11 players each on a large field centering upon two wickets each defended by a batsman",
+      "productSize": "M",
+      "productCategory": "cricket",
+      "productQuantity": 15
     },
     {
-      "productId": "404",
-      "productName": "Beach Volleyball",
-      "productMainImage": "/assets/images/volleyball/beachball/mainimage.avif",
-      "productImages": [
-        "/assets/images/volleyball/beachball/image1.avif",
-        "/assets/images/volleyball/beachball/image2.avif"
-      ],
-      "productPrice": 699,
-      "productDescription": "This ball has been developed for playing recreational beach volleyball as a family or with friends.",
-      "productCategory": "volleyball",
-      "productStock": 7
-    },
-    {
-      "productId": "405",
-      "productName": "Volleyball Net Outdoor String",
-      "productMainImage": "/assets/images/volleyball/net/mainimage.avif",
-      "productImages": [
-        "/assets/images/volleyball/net/image1.avif",
-        "/assets/images/volleyball/net/image2.jpeg",
-        "/assets/images/volleyball/net/image3.jpeg",
-        "/assets/images/volleyball/net/image4.webp"
-      ],
-      "productPrice": 2799,
-      "productDescription": "This net is easy to carry around and set up, making it perfect for outdoor volleyball training sessions.The net has a built-in bag for storage, making it easy to carry around.",
-      "productCategory": "volleyball",
-      "productStock": 3
+      "id": "73ea",
+      "productId": "101",
+      "productName": "Bat",
+      "productImage": "/assets/images/cricket-bat.jpg",
+      "productPrice": 12400,
+      "productDescription": "A game played with a ball and bat by two sides of usually 11 players each on a large field centering upon two wickets each defended by a batsman",
+      "productSize": "L",
+      "productCategory": "cricket",
+      "productQuantity": 31
     }
     
-
   ]
 }
+   

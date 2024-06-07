@@ -25,42 +25,43 @@
             </div>
           </div>
         </div>
-  
-        <div class="row">
-          <div class="col-md-6 form-floating">
-             <input type="number" class="form-control my-2" id="FloatingAge" placeholder="Age" formControlName="age" min="12" max="80">
-             <label for="FloatingAge"class="m-2">Age</label>
-             <div *ngIf="registerFormControl['age'].invalid && (registerFormControl['age'].dirty || registerFormControl['age'].touched)">
-              <p *ngIf="registerFormControl['age'].hasError('required')"><sup>*</sup>Age must be given</p>
-              <p *ngIf="registerFormControl['age'].hasError('min')"><sup>*</sup>Age must be greater than 12</p>
-              <p *ngIf="registerFormControl['age'].hasError('max')"><sup>*</sup>Age must be less than 80</p>
-            </div>
-          </div>
 
-          <div class="col-md-6 form-floating">
+          <div class="row">
+            <div class="col-md-6 form-floating">
+               <input type="date" class="form-control my-2" id="FloatingDate" placeholder="Date Of Birth" formControlName="age">
+               <label for="FloatingDate"class="m-2">Date Of Birth</label>
+               <div *ngIf="registerFormControl['age'].invalid && (registerFormControl['age'].dirty || registerFormControl['age'].touched)">
+                <p *ngIf="registerFormControl['age'].hasError('required')"><sup>*</sup>DOB should be given</p>
+                <p *ngIf="regForm.hasError('lessthanToday')"><sup>*</sup>Date of birth should be less than today</p>
+              </div>
+            </div>
+              <div class="col-md-6 my-2 form-floating">
+                <select class="form-select form-lg" formControlName="gender" id="floatingGender" placeholder="gender">
+                  <option value="" selected>---Select Gender---</option>
+                  <option [value]="gender" *ngFor="let gender of userGender">{{gender}}</option>
+                </select>
+                <label for="floatingGender" class="ms-2">Gender</label>
+                  <div *ngIf="registerFormControl['gender'].invalid && (registerFormControl['gender'].dirty || registerFormControl['gender'].touched)">
+                    <p *ngIf="registerFormControl['gender'].hasError('required')"><sup>*</sup>Gender must be given</p>
+                  </div>
+              </div>
+              </div>              
+
+            <div class="col-md-12 form-floating">
               <input type="tel" class="form-control my-2" id="FloatingPhoneno" placeholder="123-456-7890" formControlName="phoneNumber" (input)="phoneNoMask($event)">
-              <label for="FloatingPhoneno" class="m-2">Phone Number</label>
+              <label for="FloatingPhoneno">Phone Number</label>
               <div *ngIf="registerFormControl['phoneNumber'].invalid && (registerFormControl['phoneNumber'].dirty || registerFormControl['phoneNumber'].touched)">
                 <p *ngIf="registerFormControl['phoneNumber'].hasError('required')"><sup>*</sup>Phone Number must be given</p>
                 <p *ngIf="registerFormControl['phoneNumber'].hasError('pattern')"><sup>*</sup>Phone Number must be number</p>
                 <p *ngIf="registerFormControl['phoneNumber'].hasError('minlength') && !registerFormControl['phoneNumber'].hasError('pattern')"><sup>*</sup>Phone Number must be 10 digits</p>
               </div>
-            </div>
-      
-        <div>
-          <label class="col-md-12 m-2">Gender</label>
-          <div *ngFor="let gender of userGender" class="form-check form-check-inline ms-5">
-            <input class="form-check-input my-2 border border-dark border-2" type="radio" name="gender" id="gender" [value]="gender" formControlName="gender">
-            <label class="form-check-label m-1" for="gender">{{gender}}</label>
-          </div>
-              <div *ngIf="registerFormControl['gender'].invalid && (registerFormControl['gender'].dirty || registerFormControl['gender'].touched)">
-                <p *ngIf="registerFormControl['gender'].hasError('required')"><sup>*</sup>Gender must be given</p>
-              </div>
-          </div>
+
+
+
        
         <div class="col-md-12 form-floating">
             <input type="email" class="form-control my-2" id="FloatingEmail" placeholder="abc@example.com" formControlName="email" >
-            <label for="FloatingEmail" class="m-2">Email</label>
+            <label for="FloatingEmail">Email</label>
             <div *ngIf="registerFormControl['email'].invalid && (registerFormControl['email'].dirty || registerFormControl['email'].touched)">
               <p *ngIf="registerFormControl['email'].hasError('required')"><sup>*</sup>Email must be given</p>
               <p *ngIf="registerFormControl['email'].hasError('pattern')"><sup>*</sup>Valid Email must be given</p>
@@ -69,7 +70,7 @@
 
     <div class="col-md-12 form-floating Password">
               <input type="{{showPassword? 'text':'password'}}" class="form-control my-2" id="FloatingPassword" placeholder="Password" formControlName="password"  (input)="checkPasswordValid()" (mousedown)="checkPasswordValid()">
-              <label for="FloatingPassword" class="m-2">Password</label>
+              <label for="FloatingPassword">Password</label>
               <span class="icon"><i [ngClass]="{'bi bi-eye-slash-fill':!showPassword,'bi bi-eye-fill':showPassword}" (click)="toggleShowPassword()"></i></span>
     </div>
        <div *ngIf="registerFormControl['password'].invalid && (registerFormControl['password'].dirty || registerFormControl['password'].touched)" class="iconAlign">
@@ -103,7 +104,7 @@
 
             <div class="col-md-12 Password form-floating">
                 <input type="{{showConfirmPassword? 'text':'password'}}" class="form-control my-2" id="FloatingConfirmPassword" placeholder="Confirm Password" formControlName="confirmPassword" >
-                <label for="FloatingConfirmPassword" class="m-2">Confirm Password</label>
+                <label for="FloatingConfirmPassword">Confirm Password</label>
                 <span class="icon"><i [ngClass]="{'bi bi-eye-slash-fill':!showConfirmPassword,'bi bi-eye-fill':showConfirmPassword}" (click)="toggleShowConfirmPassword()"></i></span>
             </div>
             <div *ngIf="registerFormControl['confirmPassword'].invalid && (registerFormControl['confirmPassword'].dirty || registerFormControl['confirmPassword'].touched)" class="iconAlign">
