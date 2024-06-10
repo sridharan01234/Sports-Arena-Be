@@ -1,0 +1,33 @@
+<app-header></app-header>
+<div class="tournament-container" >
+    <div class="tournament-card" *ngFor="let tournament of tournaments">
+        <div class="row">
+          <div class="md-2"></div>
+          <div class="col-md-4">
+            <img [src]="tournament.tournamentImage" alt="{{tournament.tournamentName}}" class="tournament-img">
+          </div>
+          <div class="col-md-6">
+            <div class="tournament-details">
+              <h1 class="tournament-name">{{tournament.tournamentName}}</h1>
+              <p class="tournament-location">{{tournament.tournamentLocation}}</p>
+              
+              <p>Start Date: <input type="date" name="" id="" [(ngModel)]="tournament.tournamentStartDate"  disabled></p>
+              <p>End Date: <input type="date" name="" id="" [(ngModel)]="tournament.tournamentEndDate"  disabled></p>
+              <div class="contact-details">
+                <p class="addressHead">Contact Details</p>
+                <p class="organizerName">{{tournament.organizerName}}</p>
+                <p><a [href]="'tel:' + tournament.phoneNumber">{{tournament.phoneNumber}}</a></p>
+                <p><a [href]="'emailto:' + tournament.email">{{tournament.email}}</a></p>
+              </div>
+              <button class="btn btn-dark" (click)="register(tournament.tournamentId)">Register Now</button>
+        </div>
+       
+          </div>
+           
+          
+     
+      </div>
+    </div>
+  </div>
+  <app-footer></app-footer>
+  

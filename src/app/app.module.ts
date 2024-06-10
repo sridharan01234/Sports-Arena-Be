@@ -23,6 +23,7 @@ import { AuthserviceService } from './shared/services/authservice.service';
 import { SharedComponent } from './shared/components/shared/shared.component';
 import { SharedModule } from './shared/components/shared/shared.module';
 import { DateValidatorDirective } from './shared/date-validator.directive';
+import { TournamentComponent } from './tournament/tournament.component';
 
 
 
@@ -40,7 +41,8 @@ import { DateValidatorDirective } from './shared/date-validator.directive';
 
   
     AddtocartComponent,
-        DateValidatorDirective
+        DateValidatorDirective,
+        TournamentComponent
       
     ],
 
@@ -54,14 +56,16 @@ import { DateValidatorDirective } from './shared/date-validator.directive';
     FormsModule,
     ReactiveFormsModule,
     NgOtpInputModule,
+    ProductModule,
+    SharedModule,
     ToastNoAnimationModule.forRoot({
       timeOut: 2000,
       positionClass: 'toast-top-right',
       preventDuplicates: true,
       closeButton: true
     }),
-    ProductModule,
-    SharedModule
+    
+   
   ],
   providers: [AuthserviceService,{ provide: HTTP_INTERCEPTORS, useClass: AuthenticationInterceptor, multi: true }],
   bootstrap: [AppComponent],

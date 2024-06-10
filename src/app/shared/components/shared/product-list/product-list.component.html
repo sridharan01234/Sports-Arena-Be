@@ -1,20 +1,19 @@
 <div class="product-container">
-    <div class="product" *ngFor="let prod of products">
-       
-        <span class="stock" *ngIf="prod.productQuantity>1">In stock   {{prod.productQuantity}}</span>
-        <span class="outofStock" *ngIf="prod.productQuantity<=1">In stock   {{prod.productQuantity}}</span>
-        <i class="bi bi-heart"></i>
-        <img [src]="prod.productMainImage" alt="Image of the product">
-       <h5>{{prod.productName}}</h5>
-        <p>{{prod.productPrice | currency:'INR'}}</p>
-        <div class="row">
-            <div class="col-md-6">
-                <button class="btn btn-outline-dark">Add to cart</button>
-            </div>
-            <div class="col-md-6">
-                <button class="btn btn-outline-dark" (click)="navigateToProductView(prod.productId)">View</button>
-            </div>
-        </div>
-       
+
+  <div class="product" *ngFor="let prod of filteredProducts">
+    <span class="stock" *ngIf="prod.productQuantity > 1">In stock {{ prod.productQuantity }}</span>
+    <span class="outofStock" *ngIf="prod.productQuantity <= 1">Out of stock</span>
+    <i class="bi bi-heart"></i>
+    <img [src]="prod.productMainImage" alt="Image of the product">
+    <h5>{{ prod.productName }}</h5>
+    <p>{{ prod.productPrice | currency:'INR' }}</p>
+    <div class="row">
+      <div class="col-md-6">
+        <button class="btn btn-outline-dark">Add to cart</button>
+      </div>
+      <div class="col-md-6">
+        <button class="btn btn-outline-dark" (click)="navigateToProductView(prod.productId)">View</button>
+      </div>
     </div>
+  </div>
 </div>
