@@ -17,8 +17,7 @@ export class DateValidatorDirective {
              return {'lessthanToday':true};
     }
     return null;
-
   }
 
-  
+
 }

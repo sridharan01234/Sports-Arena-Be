@@ -47,8 +47,6 @@ export class AddtocartComponent implements OnInit {
       this.products= data;    
     this.calculatePrice();
     console.log(this.products);
-    
-
     });
   }
 
@@ -63,7 +61,6 @@ export class AddtocartComponent implements OnInit {
   public removeProduct(id:string){
      this.httpRequest.delete('http://localhost:3000/addtocart/'+id).subscribe(()=>{
       this.getProducts();
-
      })
   }
 
