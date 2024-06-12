@@ -7,16 +7,30 @@
     padding: 20px;
     margin: 20px;
     width: 340px;
+    cursor: pointer;
     position: relative;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    overflow: hidden; /* Ensure the image doesn't overflow the product container */
 }
 
+.product button {
+    text-align: center;
+}
+.product :hover
+{
+    transform: scale(1.2);
+}
 .product img {
     width: 200px;
     height: 200px;
     display: block;
     margin: 0 auto;
     margin-top: 30px; /* Adds space to prevent overlap with stock label */
+    transition: transform 0.3s ease; /* Smooth transition for zoom effect */
+}
+
+.product img:hover {
+    transform: scale(1.2); /* Zoom effect */
 }
 
 .product i {
@@ -30,7 +44,6 @@
 
 .product h5, .product p {
     margin: 15px 0;
-   
 }
 
 .product .stock {
@@ -43,8 +56,8 @@
     border-radius: 3px;
     z-index: 5; /* Lower than the icon's z-index */
 }
-.product .outofStock
-{
+
+.product .outofStock {
     position: absolute;
     top: 10px;
     left: 10px;
