@@ -2,7 +2,7 @@
 <div class="tournament-container" >
     <div class="tournament-card" *ngFor="let tournament of tournaments">
         <div class="row">
-          <div class="md-2"></div>
+          
           <div class="col-md-4">
             <img [src]="tournament.tournamentImage" alt="{{tournament.tournamentName}}" class="tournament-img">
           </div>
@@ -20,14 +20,16 @@
                 <p><a [href]="'emailto:' + tournament.email">{{tournament.email}}</a></p>
               </div>
               <button class="btn btn-dark" (click)="register(tournament.tournamentId)">Register Now</button>
+             
         </div>
-       
+      
           </div>
            
-          
-     
+        
       </div>
+    
     </div>
+   
   </div>
   <app-footer></app-footer>
   

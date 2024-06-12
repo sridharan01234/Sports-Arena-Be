@@ -27,7 +27,11 @@ export class ProductsService {
   }
 
   addtocart(product:Product){
-    return this.http.post(`http://localhost:3000/addtocart`,product)
+    return this.http.post(`${this.apiUrl}/cart/add`,product)
+  }
+  getCart()
+  {
+    return this.http.get(`${this.apiUrl}/cart/get`) 
   }
  
 

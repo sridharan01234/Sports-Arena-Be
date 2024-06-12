@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { Product } from '../model/products';
+import { ProductsService } from '../shared/services/products.service';
 
 @Component({
   selector: 'app-addtocart',
@@ -8,7 +9,7 @@ import { Product } from '../model/products';
   styleUrls: ['./addtocart.component.css'],
 })
 export class AddtocartComponent implements OnInit {
-  constructor(private httpRequest:HttpClient) {}
+  constructor(private httpRequest:HttpClient,private productService:ProductsService) {}
   products!: Product[];
   totalQuantity: number = 0;
   totalPrice!: number;
@@ -43,8 +44,8 @@ export class AddtocartComponent implements OnInit {
   }
 
   private getProducts(){
-    this.httpRequest.get<Product[]>('http://localhost:3000/addtocart').subscribe((data:Product[]): void=>{
-      this.products= data;    
+   this.productService.getCart().subscribe((res:any): void=>{
+      this.products= res.data;    
     this.calculatePrice();
     console.log(this.products);
     });

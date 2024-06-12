@@ -491,12 +491,12 @@
         "assets/images/cricket/jersey1/image3.avif",
         "assets/images/cricket/jersey1/image4.avif"
       ],
-      "productPrice": 4860,
+      "productPrice": 6480,
       "productDescription": "Our cricket passionate team has developed this breathable short sleeve polo for you to practice cricket comfortably under the sun.",
       "productSize": "S",
       "productCategory": "cricket",
       "productStock": 4,
-      "productQuantity": 9
+      "productQuantity": 12
     },
     {
       "id": "8090",
@@ -544,12 +544,42 @@
         "/assets/images/volleyball/kneebrace/image3.avif",
         "/assets/images/volleyball/kneebrace/image4.avif"
       ],
-      "productPrice": 1196,
+      "productPrice": 1495,
       "productSize": "L",
       "productDescription": "Prevent 100 knee brace is designed to support players' knees with uniform joint compression.Airy knit for perspiration wicking to keep your knee dry.",
       "productCategory": "volleyball",
       "productStock": 6,
-      "productQuantity": 4
+      "productQuantity": 5
+    },
+    {
+      "id": "3d03",
+      "created_at": "2024-06-07 12:18:26",
+      "updated_at": "2024-06-07 12:18:26",
+      "admin_id": null,
+      "productId": 102,
+      "productName": "Cricket Bat for Hard Tennis Ball",
+      "productMainImage": "assets/images/cricket/blackBat/mainImage.avif",
+      "productPrice": "740.00",
+      "productDescription": "Our cricket passionate team has developed this powerful hard tennis ball cricket bat for you to hit long and powerful shots in open ground tournaments.",
+      "productSize": {
+        "size": "M"
+      },
+      "productCategory": "cricket",
+      "productStock": 4,
+      "productImages": [
+        {
+          "imageUrl": "assets/images/cricket/blackBat/image1.avif"
+        },
+        {
+          "imageUrl": "assets/images/cricket/blackBat/image2.avif"
+        },
+        {
+          "imageUrl": "assets/images/cricket/blackBat/image3.avif"
+        },
+        {
+          "imageUrl": "assets/images/cricket/blackBat/image4.avif"
+        }
+      ]
     }
   ]
 }

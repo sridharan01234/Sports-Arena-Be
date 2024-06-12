@@ -18,8 +18,8 @@ export class ProductListComponent implements OnInit, OnDestroy {
   constructor(private productService: ProductsService, private route: Router) {}
 
   ngOnInit() {
-    this.productService.getMockProduct().subscribe((res: any) => {
-      this.products = res;
+    this.productService.getProducts().subscribe((res: any) => {
+      this.products = res.data;
       this.filteredProducts = this.products; // Show all products initially
     });
 
