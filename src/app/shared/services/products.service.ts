@@ -1,8 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Product} from 'src/app/model/products';
-
+import { cartResponse, removeCart, updateCart } from 'src/app/model/cart';
+import { Product } from 'src/app/model/products';
 @Injectable({
   providedIn: 'root'
 })
@@ -17,12 +17,23 @@ export class ProductsService {
   }
   getProduct(id:number)
   {
-    console.log("Ser",id)
     return this.http.get<Product>(`${this.apiUrl}/product?id=${id}`);
   }
 
   addtocart(product:Product){
-    return this.http.post(`http://localhost:3000/addtocart`,product)
+    return this.http.post(`${this.apiUrl}/cart/add`,product)  
+  }
+  
+  getCartProducts(){
+       return this.http.get<cartResponse>(`${this.apiUrl}/cart/get`);
+  }
+
+  updateCartItem(updatedQuantity:updateCart){
+       return this.http.put<cartResponse>(`${this.apiUrl}/cart/add`,updatedQuantity);
+  }
+   
+  removeFromCart(productId:removeCart){    
+        return this.http.post(`${this.apiUrl}/cart/remove`,productId);
   }
 
 }
