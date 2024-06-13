@@ -1,0 +1,56 @@
+.tournament-container {
+  margin: 200px auto;
+   
+    width: 100vw;
+   
+    
+  }
+  
+  .tournament-card {
+
+    border: 1px solid #ddd;
+    width: 70%;
+    height: 400px;
+margin: 40px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .tournament-img {
+     width: 400px; 
+    height: 400px; 
+    
+  }
+  
+  .tournament-details {
+    padding: 16px;
+  }
+  
+  .tournament-name {
+   font-size: 25px;
+   font-weight: 700;
+    margin: 0;
+  }
+  
+  .tournament-location {
+    color: #555;
+    margin: 8px 0;
+  }
+  
+ 
+  .contact-details
+  {
+    font-style: italic;
+  }
+  .addressHead
+  {
+   text-decoration: underline;
+   font-weight: 500;
+  }
+  .contact-details a
+  {
+    text-decoration: none;
+    color: black;
+  }
+  
