@@ -31,7 +31,6 @@ export class ProductViewComponent implements OnInit {
       {
         
         this.productDetails=res.data
-        console.log(`/////////////`,this.productDetails)
       }
     )
     console.log(this.currentRoute);
@@ -43,14 +42,17 @@ export class ProductViewComponent implements OnInit {
     this.productDetails.productSize=this.size;
   }
 
-  addtoCart(product:Product){
-    console.log(`product`,product);
+  addtoCart(){
+    console.log(`product`,this.productDetails);
     
-    if(this.productDetails.productSize && !this.size){
+    if(this.productDetails.productSize.length >0 && !this.size){
       this.toastr.warning('Please choose Size!');
     }
     else{
-       this.productService.addtocart(product).subscribe((data)=> {
+      if(!this.productDetails.productSize.length)
+             this.productDetails.productSize ='NA';
+      
+       this.productService.addtocart(this.productDetails).subscribe((data)=> {
          this.toastr.success(`Product added in Add to cart`)
          console.log(`dfghjkl;`,data);
   });

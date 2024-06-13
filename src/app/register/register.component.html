@@ -32,7 +32,7 @@
                <label for="FloatingDate"class="m-2">Date Of Birth</label>
                <div *ngIf="registerFormControl['age'].invalid && (registerFormControl['age'].dirty || registerFormControl['age'].touched)">
                 <p *ngIf="registerFormControl['age'].hasError('required')"><sup>*</sup>DOB should be given</p>
-                <p *ngIf="regForm.hasError('lessthanToday')"><sup>*</sup>Date of birth should be less than today</p>
+                <p *ngIf="regForm.hasError('lessthanToday')"><sup>*</sup>Date of birth should less than today</p>
               </div>
             </div>
               <div class="col-md-6 my-2 form-floating">

@@ -1,0 +1,98 @@
+<div class="modal-header">
+    <h4 class="modal-title ms-4">Add</h4>
+    <button type="button" class="btn-close" aria-label="close" (click)="activeModal.dismiss('Cross click')"></button>
+</div>
+<div class="modal-body">
+    <form [formGroup]="addTournament" (input)="hideInvalidError()" *ngIf="addTournament" >
+        <p *ngIf="submitValid" class="ms-5">*Enter valid Details </p>
+        <div class="col-md-10 m-5 mt-3 form-floating">
+                <input type="text" formControlName="tournamentName" id="floatingNameLabel" class="form-control" placeholder="Tournament Name">
+                <label for="floatingNameLabel">Tournament Name</label>
+                <div *ngIf="tournamentFormControls['tournamentName'].invalid && (tournamentFormControls['tournamentName'].dirty || tournamentFormControls['tournamentName'].touched)">
+                <p *ngIf="tournamentFormControls['tournamentName'].hasError('required')"><sup>*</sup>Tournament Name is required</p>
+                <p *ngIf="tournamentFormControls['tournamentName'].hasError('pattern')"><sup>*</sup>Tournament Name should be valid format</p>
+                </div>
+        </div>
+
+        <div class="col-md-10 m-5 form-floating">
+            <textarea formControlName="tournamentLocation" id="floatingLocationLabel" class="form-control h-100" placeholder="Tournament Location" rows="3"></textarea>
+            <label for="floatingLocationLabel" >Tournament Location</label>
+            <div *ngIf="tournamentFormControls['tournamentLocation'].invalid && (tournamentFormControls['tournamentLocation'].dirty || tournamentFormControls['tournamentLocation'].touched)">
+                <p *ngIf="tournamentFormControls['tournamentLocation'].hasError('required')"><sup>*</sup>Tournament Location is required</p>
+                <p *ngIf="tournamentFormControls['tournamentLocation'].hasError('pattern')"><sup>*</sup>Tournament Location should be valid format</p>
+            </div>
+        </div>
+
+        <div class="col-md-10 m-5 form-floating">
+            <textarea formControlName="tournamentDescription" id="floatingDescriptionLabel" class="form-control h-100" placeholder="Tournament Description" rows="5"></textarea>
+            <label for="floatingDescriptionLabel" >Tournament Description</label>
+            <div *ngIf="tournamentFormControls['tournamentDescription'].invalid && (tournamentFormControls['tournamentDescription'].dirty || tournamentFormControls['tournamentDescription'].touched)">
+                <p *ngIf="tournamentFormControls['tournamentDescription'].hasError('required')"><sup>*</sup>Tournament Description is required</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-5 form-floating mb-5 ms-5">
+                <input type="text" formControlName="organizerName" id="floatingOrganizerNameLabel" class="form-control" placeholder="Tournament Organizer Name">
+                <label for="floatingOrganizerNameLabel" class="ms-2">Organizer Name</label>
+                <div *ngIf="tournamentFormControls['organizerName'].invalid && (tournamentFormControls['organizerName'].dirty || tournamentFormControls['organizerName'].touched)">
+                    <p *ngIf="tournamentFormControls['organizerName'].hasError('required')"><sup>*</sup>Organizer Name must be given</p>
+                    <p *ngIf="tournamentFormControls['organizerName'].hasError('pattern')"><sup>*</sup>Organizer Name must be valid format</p>
+                </div>
+             </div>
+            
+            <div class="col-md-5 form-floating mb-5 me-5">
+                <input type="tel" formControlName="phoneNumber" id="floatingPhoneNumberLabel" class="form-control" placeholder="Organizer Phone Number">
+                <label for="floatingPhoneNumberLabel" class="ms-2">Phone Number</label>
+                <div *ngIf="tournamentFormControls['phoneNumber'].invalid && (tournamentFormControls['phoneNumber'].dirty || tournamentFormControls['phoneNumber'].touched)">
+                    <p *ngIf="tournamentFormControls['phoneNumber'].hasError('required')"><sup>*</sup>Phone Number must be given</p>
+                    <p *ngIf="tournamentFormControls['phoneNumber'].hasError('pattern')"><sup>*</sup>Phone Number must be valid format</p>
+                </div>
+            </div>
+        </div>
+
+
+      <div class="row">
+        <div class="col-md-5 form-floating mb-5 ms-5">
+            <input type="date" formControlName="tournamentStartDate" id="floatingStartDateLabel" class="form-control" placeholder="Tournament Start Date" [min]="minDate">
+            <label for="floatingStartDateLabel" class="ms-2">Tournament Start Date</label>
+            <div *ngIf="tournamentFormControls['tournamentStartDate'].invalid && (tournamentFormControls['tournamentStartDate'].dirty || tournamentFormControls['tournamentStartDate'].touched)">
+                <p *ngIf="tournamentFormControls['tournamentStartDate'].hasError('required')"><sup>*</sup>Start Date must be given</p>
+            </div>
+         </div>
+        
+        <div class="col-md-5 form-floating mb-5 me-5">
+            <input type="date" formControlName="tournamentEndDate" id="floatingEndDateLabel" class="form-control" placeholder="Tournament End Date" [min]="minDate">
+            <label for="floatingEndDateLabel" class="ms-2">Tournament End Date</label>
+            <div *ngIf="tournamentFormControls['tournamentEndDate'].invalid && (tournamentFormControls['tournamentEndDate'].dirty || tournamentFormControls['tournamentEndDate'].touched)">
+                <p *ngIf="tournamentFormControls['tournamentEndDate'].hasError('required')"><sup>*</sup>End Date must be given</p>
+                <p *ngIf="addTournament.hasError('lessthenStartDate')"><sup>*</sup>Valid End Date should be given</p>
+            </div>
+        </div>
+      </div>
+      
+
+      <div class="row">
+        <div class="col-md-5 form-floating mb-5 ms-5">
+            <input type="email" formControlName="email" id="floatingemailLabel" class="form-control" placeholder="Email">
+            <label for="floatingemailLabel" class="ms-2">Email</label>
+            <div *ngIf="tournamentFormControls['email'].invalid && (tournamentFormControls['email'].dirty || tournamentFormControls['email'].touched)">
+                <p *ngIf="tournamentFormControls['email'].hasError('required')"><sup>*</sup>Email must be given</p>
+                <p *ngIf="tournamentFormControls['email'].hasError('pattern')"><sup>*</sup>Email must be in valid format</p>
+            </div>
+         </div>
+        
+        <div class="col-md-5 form-floating  mb-5 me-5">
+            <input type="file" formControlName="tournamentImage" class="form-control form-control-md" id="floatingImageLabel">
+            <label for="floatingImageLabel" class="ms-2">Tournament Image</label>
+            <div *ngIf="tournamentFormControls['tournamentImage'].invalid && (tournamentFormControls['tournamentImage'].dirty || tournamentFormControls['tournamentImage'].touched)">
+                <p *ngIf="tournamentFormControls['tournamentImage'].hasError('required')"><sup>*</sup>Image must be given</p>
+            </div>
+        </div>
+      </div>
+    </form>
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-dark px-4 py-3" (click)="getTournamentDetails()">Add</button>
+</div>
+

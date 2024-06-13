@@ -19,4 +19,19 @@ export class DateValidatorDirective {
     return null;
   }
 
+
+  StartEndDateValidation(form: AbstractControl): ValidationErrors | null {
+    const startDate = form.get('tournamentStartDate');
+    const endDate = form.get('tournamentEndDate');
+    if(!endDate)
+      return null;
+    else if (startDate && startDate.value > endDate.value){
+      console.log(startDate.value > endDate.value);
+      
+             endDate.setErrors({'lessthenStartDate':true});
+             return {'lessthenStartDate':true};
+    }
+    return null;
+  }
+
 }
