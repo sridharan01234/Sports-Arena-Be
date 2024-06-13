@@ -9,6 +9,16 @@ export interface Product {
     productCategory:string;
     productStock:number;
     productQuantity:number;
-    id:string
+    id:string;
+
   }
   
+
+  export interface ProductViewResponse{
+    status:string,
+    data:Product
+ }
+  export interface ProductResponse{
+     status:string,
+     data:string
+  }
