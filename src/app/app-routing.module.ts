@@ -6,6 +6,7 @@ import { RegisterComponent } from './register/register.component';
 import { HomeComponent } from './home/home.component';
 import { AddtocartComponent } from './addtocart/addtocart.component';
 import { TournamentComponent } from './tournament/tournament.component';
+import { TournamentRegisterComponent } from './tournament-register/tournament-register.component';
 
 const routes: Routes = [
   {path:'',component:HomeComponent},
@@ -27,7 +28,7 @@ const routes: Routes = [
       }
     ],
   },
-  {path:'tournament',title:'Tournament',component:TournamentComponent}
+  {path:'tournament',title:'Tournament',component:TournamentComponent},
   
 ]
 

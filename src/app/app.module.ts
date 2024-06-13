@@ -25,6 +25,7 @@ import { SharedModule } from './shared/components/shared/shared.module';
 import { DateValidatorDirective } from './shared/date-validator.directive';
 import { AuthserviceService } from './shared/services/authservice.service';
 import { TournamentComponent } from './tournament/tournament.component';
+import { TournamentRegisterComponent } from './tournament-register/tournament-register.component';
 
 
 
@@ -40,14 +41,15 @@ import { TournamentComponent } from './tournament/tournament.component';
     PasswordValidationDirective,
     RegisterComponent,
     ResetpasswordComponent,
-
-
     AddtocartComponent,
-        DateValidatorDirective,
-        TournamentComponent,
-        AddTournamentComponent
-      
-    ],
+    DateValidatorDirective,
+    TournamentComponent,
+    TournamentRegisterComponent,
+    AddTournamentComponent
+
+  ],
+
+
 
 
   imports: [
@@ -67,8 +69,8 @@ import { TournamentComponent } from './tournament/tournament.component';
       closeButton: true
     }),
     NgbModule,
-    
-   
+
+
   ],
   providers: [AuthserviceService, { provide: HTTP_INTERCEPTORS, useClass: AuthenticationInterceptor, multi: true }],
   bootstrap: [AppComponent],

@@ -1,0 +1,68 @@
+    <div class="modal-header">
+      <h4 class="modal-title" id="modal-basic-title">Tournament Register</h4>
+      <button type="button" class="btn-close" aria-label="Close" (click)="activeModal.dismiss('Cross click')"></button>
+    </div>
+    <div class="modal-body">
+      <form [formGroup]="tournamentRegForm">
+
+            <div class="form-row" id="input-style">
+                <div class="form-floating valid-style">
+                    <input type="text" class="form-control" placeholder="Player Name"
+                        formControlName="playerName" required>
+                    <label for="floatingInput">Player Name</label>
+                    <small
+                        *ngIf="tournamentRegForm.get('playerName')?.invalid && (tournamentRegForm.get('playerName')?.touched || tournamentRegForm.get('playerName')?.dirty)">
+                        <p *ngIf="tournamentRegForm.get('playerName')?.hasError('required')">*Player Name is
+                            required</p>
+                        <p *ngIf="tournamentRegForm.get('playerName')?.hasError('minlength')">
+                            *Player Name contain atleast 3 characters</p>
+                        <p
+                            *ngIf="!tournamentRegForm.get('playerName')?.hasError('required') && tournamentRegForm.get('playerName')?.hasError('pattern') ">
+                            *Player Name should be valid format</p>
+                    </small>
+                </div>
+                <div class="form-floating valid-style">
+                    <input type="text" class="form-control" placeholder="Team Name" formControlName="teamName"
+                        required>
+                    <label for="floatingInput">Team Name</label>
+                    <small
+                        *ngIf="tournamentRegForm.get('teamName')?.invalid && (tournamentRegForm.get('teamName')?.touched || tournamentRegForm.get('teamName')?.dirty)">
+                        <p *ngIf="tournamentRegForm.get('teamName')?.hasError('required')">*Team Name is required
+                        </p>
+                        <p *ngIf="tournamentRegForm.get('teamName')?.hasError('minlength')">*Team Name contain
+                            atleast 5 characters</p>
+                        <p
+                            *ngIf="tournamentRegForm.get('teamName')?.hasError('pattern') && !tournamentRegForm.get('teamName')?.hasError('required')">
+                            *Team Name can be alphabets with digits</p>
+                    </small>
+                </div>
+                <div class="form-floating valid-style">
+                    <input type="email" class="form-control" placeholder="Email" formControlName="email"
+                        required>
+                    <label for="floatingInput">Email</label>
+                    <small
+                        *ngIf="tournamentRegForm.get('email')?.invalid && (tournamentRegForm.get('email')?.touched || tournamentRegForm.get('email')?.dirty)">
+                        <p *ngIf="tournamentRegForm.get('email')?.hasError('required')">*Email Id is required</p>
+                        <p *ngIf="tournamentRegForm.get('email')?.hasError('pattern')">*Email should be valid
+                            format</p>
+                    </small>
+                </div>
+                <div class="form-floating valid-style">
+                    <input type="text" class="form-control" placeholder="Phone Number" formControlName="phoneNumber" required>
+                    <label for="floatingInput">Phone Number</label>
+                    <small
+                        *ngIf="tournamentRegForm.get('phoneNumber')?.invalid && (tournamentRegForm.get('phoneNumber')?.touched || tournamentRegForm.get('phoneNumber')?.dirty)">
+                        <div *ngIf="tournamentRegForm.get('phoneNumber')?.hasError('required')">*Phone Number is
+                            required</div>
+                        <div *ngIf="tournamentRegForm.get('phoneNumber')?.hasError('pattern') ">*Phone Number should be valid format
+                            </div>
+                    </small>
+                </div>
+            </div>
+      </form>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-dark"  (click)="onRegister()">Register</button>
+    </div>
+
+
