@@ -8,10 +8,11 @@ import { ProductsService } from '../shared/services/products.service';
   styleUrls: ['./addtocart.component.css'],
 })
 export class AddtocartComponent implements OnInit {
+  public products!:cart[];
+  public totalQuantity: number = 0;
+  public totalPrice!: number;
+
   constructor(private productService:ProductsService) {}
-  products!:cart[];
-  totalQuantity: number = 0;
-  totalPrice!: number;
 
   ngOnInit(): void {
     this.getProducts();

@@ -12,27 +12,27 @@ export class ProductsService {
   constructor(private http:HttpClient) { }
   private apiUrl = 'http://172.24.220.187';
 
-  getProducts():Observable<Product>{
+  public getProducts():Observable<Product>{
     return this.http.get<Product>(`${this.apiUrl}/product/all`);
   }
-  getProduct(id:number)
+  public getProduct(id:number)
   {
     return this.http.get<Product>(`${this.apiUrl}/product?id=${id}`);
   }
 
-  addtocart(product:Product){
+  public addtocart(product:Product){
     return this.http.post(`${this.apiUrl}/cart/add`,product)  
   }
   
-  getCartProducts(){
+  public getCartProducts(){
        return this.http.get<cartResponse>(`${this.apiUrl}/cart/get`);
   }
 
-  updateCartItem(updatedQuantity:updateCart){
+  public updateCartItem(updatedQuantity:updateCart){
        return this.http.put<cartResponse>(`${this.apiUrl}/cart/add`,updatedQuantity);
   }
    
-  removeFromCart(productId:removeCart){    
+  public removeFromCart(productId:removeCart){    
         return this.http.post(`${this.apiUrl}/cart/remove`,productId);
   }
 
