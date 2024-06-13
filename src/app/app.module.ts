@@ -2,27 +2,28 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { CommonModule } from '@angular/common';
-import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { LoginComponent } from './login/login.component';
-import { PasswordValidationDirective } from './customvalidation/password-validation.directive';
 import { NgOtpInputModule } from 'ng-otp-input';
 import { ToastNoAnimationModule } from 'ngx-toastr';
-import { RegisterComponent } from './register/register.component';
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
 import { AuthenticationInterceptor } from './core/authentication.interceptor';
+import { PasswordValidationDirective } from './customvalidation/password-validation.directive';
 import { HomeComponent } from './home/home.component';
-import { ResetpasswordComponent } from './resetpassword/resetpassword.component';
+import { LoginComponent } from './login/login.component';
 import { ProductModule } from './product/product.module';
+import { RegisterComponent } from './register/register.component';
+import { ResetpasswordComponent } from './resetpassword/resetpassword.component';
+import { AddTournamentComponent } from './add-tournament/add-tournament.component';
 
 
 import { AddtocartComponent } from './addtocart/addtocart.component';
 
-import { AuthserviceService } from './shared/services/authservice.service';
-import { SharedComponent } from './shared/components/shared/shared.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SharedModule } from './shared/components/shared/shared.module';
 import { DateValidatorDirective } from './shared/date-validator.directive';
+import { AuthserviceService } from './shared/services/authservice.service';
 import { TournamentComponent } from './tournament/tournament.component';
 
 
@@ -43,7 +44,8 @@ import { TournamentComponent } from './tournament/tournament.component';
 
     AddtocartComponent,
         DateValidatorDirective,
-        TournamentComponent
+        TournamentComponent,
+        AddTournamentComponent
       
     ],
 
@@ -64,6 +66,7 @@ import { TournamentComponent } from './tournament/tournament.component';
       preventDuplicates: true,
       closeButton: true
     }),
+    NgbModule,
     
    
   ],

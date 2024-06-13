@@ -13,7 +13,7 @@
               </div>
             <div class="col-lg-9 d-flex flex-column">
                 <p class="card-title p-2">{{item.productName}}</p>
-                <p class="card-text p-2" *ngIf="item.productSize?.length; else lineBreak">Size: {{ item.productSize}}</p>
+                <p class="card-text p-2" *ngIf="item.productSize!='NA'; else lineBreak">Size: {{ item.productSize}}</p>
                 <p class="card-text p-2">{{item.productPrice  * item.quantity | currency:'INR'}}</p>
                 <ng-template #lineBreak></ng-template>
                     <button class="btn btn-dark mt-auto btn-sm col-2 p-2 fs-6" (click)="removeProduct(item.productId,item.productSize)">Remove</button>

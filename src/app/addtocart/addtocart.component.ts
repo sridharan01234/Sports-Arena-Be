@@ -35,7 +35,9 @@ export class AddtocartComponent implements OnInit {
   private getProducts(){
     this.productService.getCartProducts().subscribe((response:cartResponse):void=> {
         this.products=response.data;
-        this.calculatePrice();        
+        this.calculatePrice();    
+        console.log(this.products);
+            
     })
 }
 
