@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { TournamentRegisterComponent } from '../tournament-register/tournament-register.component';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-tournament',
@@ -6,6 +8,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./tournament.component.css']
 })
 export class TournamentComponent {
+
+  constructor(private modalService:NgbModal){}
+
   tournaments = [
     {
       tournamentId:1,
@@ -21,8 +26,18 @@ export class TournamentComponent {
     },
    
   ]
-    register(tournamentId: number) {
-      console.log(`Registering for tournament with ID: ${tournamentId}`);
-      // Implement registration logic here
-    }
+
+
+
+  public open() {
+    this.modalService.open(TournamentRegisterComponent,{size:'lg'}).result.then(
+      (result) => {  console.log(`result`,result);
+      }
+    );
+  }
+
+
+
+
+
 }

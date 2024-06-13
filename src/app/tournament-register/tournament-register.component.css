@@ -1,0 +1,34 @@
+.form-style {
+    height: 43vh;
+    padding: 10px;
+    font-size: large;
+}
+
+#input-style {
+    padding: 20px;
+}
+
+.register-btn{
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 20px;
+}
+
+
+small {
+    color: red;
+}
+
+.first-container {
+    margin-top: 25vh;
+    margin-left: 25vh
+}
+
+.valid-style {
+    padding: 10px;
+}
+
+label {
+    margin-left: 5px;
+    margin-top: 5px;
+}
