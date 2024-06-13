@@ -7,6 +7,7 @@ export interface Product {
     productDescription: string;
     productSize?: string[] | string;
     productCategory:string;
+    productStock:number;
     productQuantity:number;
     id:string
   }

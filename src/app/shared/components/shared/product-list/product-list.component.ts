@@ -20,6 +20,7 @@ export class ProductListComponent implements OnInit, OnDestroy {
   ngOnInit() {
     this.productService.getProducts().subscribe((res: any) => {
       this.products = res.data;
+      console.log(this.products)
       this.filteredProducts = this.products; // Show all products initially
     });
 
