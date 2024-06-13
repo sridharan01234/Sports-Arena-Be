@@ -28,21 +28,22 @@ import { DateValidatorDirective } from './shared/date-validator.directive';
 
 
 @NgModule({
-  declarations: [AppComponent,
-     LoginComponent,
-     PasswordValidationDirective,
-     RegisterComponent,
-      HomeComponent,
-      LoginComponent,
+  declarations: [
+    AppComponent,
+    LoginComponent,
+    PasswordValidationDirective,
+    RegisterComponent,
+    HomeComponent,
+    LoginComponent,
     PasswordValidationDirective,
     RegisterComponent,
     ResetpasswordComponent,
 
-  
+
     AddtocartComponent,
-        DateValidatorDirective
-      
-    ],
+    DateValidatorDirective
+
+  ],
 
 
   imports: [
@@ -60,11 +61,10 @@ import { DateValidatorDirective } from './shared/date-validator.directive';
       preventDuplicates: true,
       closeButton: true
     }),
-    ProductModule,
     SharedModule
   ],
-  providers: [AuthserviceService,{ provide: HTTP_INTERCEPTORS, useClass: AuthenticationInterceptor, multi: true }],
+  providers: [AuthserviceService, { provide: HTTP_INTERCEPTORS, useClass: AuthenticationInterceptor, multi: true }],
   bootstrap: [AppComponent],
-  
+
 })
 export class AppModule { }
