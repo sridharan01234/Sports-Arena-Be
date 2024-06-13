@@ -491,12 +491,12 @@
         "assets/images/cricket/jersey1/image3.avif",
         "assets/images/cricket/jersey1/image4.avif"
       ],
-      "productPrice": 6480,
+      "productPrice": 5940,
       "productDescription": "Our cricket passionate team has developed this breathable short sleeve polo for you to practice cricket comfortably under the sun.",
       "productSize": "S",
       "productCategory": "cricket",
       "productStock": 4,
-      "productQuantity": 12
+      "productQuantity": 11
     },
     {
       "id": "8090",
@@ -552,15 +552,33 @@
       "productQuantity": 5
     },
     {
-      "id": "3d03",
+      "id": "8413",
+      "productId": "105",
+      "productName": "Jersey",
+      "productMainImage": "assets/images/cricket/jersey1/mainImage.avif",
+      "productImages": [
+        "assets/images/cricket/jersey1/image1.avif",
+        "assets/images/cricket/jersey1/image2.avif",
+        "assets/images/cricket/jersey1/image3.avif",
+        "assets/images/cricket/jersey1/image4.avif"
+      ],
+      "productPrice": 4320,
+      "productDescription": "Our cricket passionate team has developed this breathable short sleeve polo for you to practice cricket comfortably under the sun.",
+      "productSize": "S",
+      "productCategory": "cricket",
+      "productStock": 7,
+      "productQuantity": 8
+    },
+    {
+      "id": "670e",
       "created_at": "2024-06-07 12:18:26",
       "updated_at": "2024-06-07 12:18:26",
       "admin_id": null,
-      "productId": 102,
-      "productName": "Cricket Bat for Hard Tennis Ball",
-      "productMainImage": "assets/images/cricket/blackBat/mainImage.avif",
-      "productPrice": "740.00",
-      "productDescription": "Our cricket passionate team has developed this powerful hard tennis ball cricket bat for you to hit long and powerful shots in open ground tournaments.",
+      "productId": 105,
+      "productName": "Jersey",
+      "productMainImage": "assets/images/cricket/jersey1/mainImage.avif",
+      "productPrice": "540.00",
+      "productDescription": "Our cricket passionate team has developed this breathable short sleeve polo for you to practice cricket comfortably under the sun.",
       "productSize": {
         "size": "M"
       },
@@ -568,16 +586,46 @@
       "productStock": 4,
       "productImages": [
         {
-          "imageUrl": "assets/images/cricket/blackBat/image1.avif"
+          "imageUrl": "assets/images/cricket/jersey1/image1.avif"
         },
         {
-          "imageUrl": "assets/images/cricket/blackBat/image2.avif"
+          "imageUrl": "assets/images/cricket/jersey1/image2.avif"
         },
         {
-          "imageUrl": "assets/images/cricket/blackBat/image3.avif"
+          "imageUrl": "assets/images/cricket/jersey1/image3.avif"
         },
         {
-          "imageUrl": "assets/images/cricket/blackBat/image4.avif"
+          "imageUrl": "assets/images/cricket/jersey1/image4.avif"
+        }
+      ]
+    },
+    {
+      "id": "68ea",
+      "created_at": "2024-06-07 12:18:26",
+      "updated_at": "2024-06-07 12:18:26",
+      "admin_id": null,
+      "productId": 105,
+      "productName": "Jersey",
+      "productMainImage": "assets/images/cricket/jersey1/mainImage.avif",
+      "productPrice": "540.00",
+      "productDescription": "Our cricket passionate team has developed this breathable short sleeve polo for you to practice cricket comfortably under the sun.",
+      "productSize": {
+        "size": "M"
+      },
+      "productCategory": "cricket",
+      "productStock": 4,
+      "productImages": [
+        {
+          "imageUrl": "assets/images/cricket/jersey1/image1.avif"
+        },
+        {
+          "imageUrl": "assets/images/cricket/jersey1/image2.avif"
+        },
+        {
+          "imageUrl": "assets/images/cricket/jersey1/image3.avif"
+        },
+        {
+          "imageUrl": "assets/images/cricket/jersey1/image4.avif"
         }
       ]
     }

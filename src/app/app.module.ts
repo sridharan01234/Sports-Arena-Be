@@ -52,7 +52,6 @@ import { TournamentComponent } from './tournament/tournament.component';
     AppRoutingModule,
     CommonModule,
     HttpClientModule,
-    ProductModule,
     FormsModule,
     ReactiveFormsModule,
     NgOtpInputModule,

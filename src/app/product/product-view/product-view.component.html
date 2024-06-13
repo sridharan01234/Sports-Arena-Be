@@ -23,7 +23,7 @@
                 <div class="d-flex flex-row my-3" *ngIf="productDetails.productSize.length!=0">
                     <div *ngFor="let i of productDetails.productSize">
                         <span>
-                            <button class="size-btn px-3 py-2 mx-1" (click)="createSize(i)">{{i.size}}</button>
+                            <button class="size-btn px-3 py-2 mx-1" (click)="createSize(i.size)">{{i.size}}</button>
                         </span>
                     </div>
                 </div>
