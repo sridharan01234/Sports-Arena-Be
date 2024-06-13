@@ -7,7 +7,6 @@
                     <img class="image-zoom" [src]="i.imageUrl" class="img-fluid img-style"
                         [alt]="productDetails.productName1">
                 </div>
-
             </div>
         </div>
         <div class="col-md-6 mx-5 px-5">
@@ -23,7 +22,7 @@
                 <div class="d-flex flex-row my-3" *ngIf="productDetails.productSize.length!=0">
                     <div *ngFor="let i of productDetails.productSize">
                         <span>
-                            <button class="size-btn px-3 py-2 mx-1" (click)="createSize(i)">{{i.size}}</button>
+                            <button class="size-btn px-3 py-2 mx-1" (click)="createSize(i.size)">{{i.size}}</button>
                         </span>
                     </div>
                 </div>

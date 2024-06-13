@@ -1,51 +1,19 @@
 <app-header></app-header>
 <div class="product-container">
-    <div class="products-sidebar">
-      <h4>Sports</h4>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="cricket">
-        <label class="form-check-label" for="cricket">Cricket</label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="football">
-        <label class="form-check-label" for="football">Football</label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="volleyball">
-        <label class="form-check-label" for="volleyball">Volleyball</label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="kabaddi">
-        <label class="form-check-label" for="kabaddi">Kabaddi</label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="hockey">
-        <label class="form-check-label" for="hockey">Hockey</label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="gym">
-        <label class="form-check-label" for="gym">Gym</label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="kids">
-        <label class="form-check-label" for="kids">Kids</label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="shoes">
-        <label class="form-check-label" for="shoes">Shoes</label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="tshirt">
-        <label class="form-check-label" for="tshirt">T-shirt</label>
-      </div>
+  <div class="products-sidebar">
+    <div *ngFor="let category of categories" class="form-check">
+      <input 
+        class="form-check-input" 
+        type="radio" 
+        [value]="category" 
+        name="categoryRadios"
+        (change)="onCategoryChange($event, category)">
+      <label class="form-check-label">{{ category | titlecase }}</label>
     </div>
-    <div class="product-list">
-      <app-product-list></app-product-list>
-    </div>
-   
-</div> 
-  <app-footer></app-footer>
- 
-
-
+  </div>
   
+  <div class="product-list">
+    <app-product-list></app-product-list>
+  </div>
+</div>
+<app-footer></app-footer>

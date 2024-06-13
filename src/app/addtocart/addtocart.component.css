@@ -19,10 +19,12 @@ span{
 
 .cartItems{
     margin-top: 150px;
+    height:100%;
+    margin-bottom: 150px;
 }
 
 .emptycart{
-    height:60vh;
+    height:40vh;
 }
 
 .emptycart i{
@@ -32,5 +34,6 @@ span{
 
 .price{
     position: sticky;
-    top:20px;
+    top:100px;
 }
+
