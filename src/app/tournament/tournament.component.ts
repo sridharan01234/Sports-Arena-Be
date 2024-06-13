@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import { TournamentRegisterComponent } from '../tournament-register/tournament-register.component';
-import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { AddTournamentComponent } from '../add-tournament/add-tournament.component';
 @Component({
   selector: 'app-tournament',
   templateUrl: './tournament.component.html',
@@ -9,7 +10,7 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 })
 export class TournamentComponent {
 
-  constructor(private modalService:NgbModal){}
+  constructor(  public modalService:NgbModal ){}
 
   tournaments = [
     {
@@ -40,4 +41,17 @@ export class TournamentComponent {
 
 
 
+    register(tournamentId: number) {
+      console.log(`Registering for tournament with ID: ${tournamentId}`);
+    }
+
+
+    addTournamentModalOpen(){
+      const addTournamentModalRef = this.modalService.open(AddTournamentComponent,{size:"lg"});
+      addTournamentModalRef.result.then((tournamentDetails)=>{
+        console.log(`.......`,tournamentDetails);
+        
+  
+      })
+      }
 }

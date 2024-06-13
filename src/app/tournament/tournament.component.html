@@ -1,5 +1,9 @@
 <app-header></app-header>
 <div class="tournament-container">
+  <div class="d-flex justify-content-end m-0">
+    <button (click)="addTournamentModalOpen()" class="btn btn-dark px-4 py-3 me-5 ">Add Tournament</button>
+  </div>
+
   <div class="tournament-card" *ngFor="let tournament of tournaments">
     <div class="row">
 
@@ -20,14 +24,12 @@
             <p><a [href]="'emailto:' + tournament.email">{{tournament.email}}</a></p>
           </div>
           <button class="btn btn-dark" (click)="open()">Register Now</button>
+
         </div>
-
       </div>
-
-
     </div>
-
   </div>
-
 </div>
+
+
 <app-footer></app-footer>
