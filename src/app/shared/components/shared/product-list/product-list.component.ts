@@ -20,8 +20,7 @@ export class ProductListComponent implements OnInit, OnDestroy {
   ngOnInit() {
     this.productService.getProducts().subscribe((res: any) => {
       this.products = res.data;
-      console.log(this.products)
-      this.filteredProducts = this.products; // Show all products initially
+      this.filteredProducts = this.products; 
     });
 
     this.categorySubscription = this.productService.selectedCategories$.subscribe(category => {
@@ -39,7 +38,7 @@ export class ProductListComponent implements OnInit, OnDestroy {
     if (this.products && category) {
       this.filteredProducts = this.products.filter(prod => prod.productCategory === category);
     } else {
-      this.filteredProducts = this.products; // Show all products if no category is selected
+      this.filteredProducts = this.products;
     }
     console.log(this.filteredProducts);
   }
