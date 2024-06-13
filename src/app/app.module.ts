@@ -50,7 +50,6 @@ import { DateValidatorDirective } from './shared/date-validator.directive';
     AppRoutingModule,
     CommonModule,
     HttpClientModule,
-    ProductModule,
     FormsModule,
     ReactiveFormsModule,
     NgOtpInputModule,

@@ -1,6 +1,6 @@
-import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { Product } from '../model/products';
+import { cart, cartResponse, removeCart, updateCart } from '../model/cart';
+import { ProductsService } from '../shared/services/products.service';
 
 @Component({
   selector: 'app-addtocart',
@@ -8,75 +8,59 @@ import { Product } from '../model/products';
   styleUrls: ['./addtocart.component.css'],
 })
 export class AddtocartComponent implements OnInit {
-  constructor(private httpRequest:HttpClient) {}
-  products!: Product[];
-  totalQuantity: number = 0;
-  totalPrice!: number;
+  public products!:cart[];
+  public totalQuantity: number = 0;
+  public totalPrice!: number;
+
+  constructor(private productService:ProductsService) {}
 
   ngOnInit(): void {
     this.getProducts();
   }
 
-  public updateQuantity(id:string,status:string){
-   this.getProduct(id).subscribe((data:Product):void=>{
-        let product:Product = data;
-        if(status=='increase' && product.productQuantity >=0){
-         const oneProductPrice = this.findOneProductPrice(product.productQuantity,product.productPrice);
-          product.productQuantity++;
-          product.productPrice +=oneProductPrice;
-        }
-        else if(status=='decrease' && product.productQuantity>1){
-          const oneProductPrice = this.findOneProductPrice(product.productQuantity,product.productPrice);
-          product.productQuantity--;
-          product.productPrice-=oneProductPrice;
-
-        }
-            this.updateProduct(id,product).subscribe((data)=>{
-                this.getProducts();
+  public updateQuantity(id:number,status:string,size:string){
+    const foundProduct:cart = this.products.filter((product)=> product.productId==id && product.productSize==size)[0]
+    if(status=='increase' && foundProduct.quantity >=0){
+              foundProduct.quantity++;
+            }
+     else if(status=='decrease' && foundProduct.quantity>1){
+              foundProduct.quantity--;
+            }
+        const updatedQuantity:updateCart = {"productId":foundProduct.productId, "quantity":foundProduct.quantity,"productSize":foundProduct.productSize}; 
+            this.productService.updateCartItem(updatedQuantity).subscribe(()=>{
+              this.calculatePrice();
             })
-         })
-  }
-
-  public findOneProductPrice(quantity:number,price:number){
-    return price/quantity;
-
-  }
+    }
 
   private getProducts(){
-    this.httpRequest.get<Product[]>('http://localhost:3000/addtocart').subscribe((data:Product[]): void=>{
-      this.products= data;    
-    this.calculatePrice();
-    console.log(this.products);
-    });
-  }
+    this.productService.getCartProducts().subscribe((response:cartResponse):void=> {
+        this.products=response.data;
+        this.calculatePrice();        
+    })
+}
 
-  private getProduct(id:string){
-     return this.httpRequest.get<Product>('http://localhost:3000/addtocart/'+id);
-  }
-
-  private updateProduct(id:string,product:Product){
-      return this.httpRequest.put('http://localhost:3000/addtocart/'+id,product);
-  }
-
-  public removeProduct(id:string){
-     this.httpRequest.delete('http://localhost:3000/addtocart/'+id).subscribe(()=>{
-      this.getProducts();
-     })
+  public removeProduct(id:number,size:string|number){
+    const productid:removeCart={"productId":id,"productSize":size};
+    this.productService.removeFromCart(productid).subscribe((data)=>{
+       this.getProducts();      
+    })
   }
 
   private calculatePrice(){
           let price:number[]=[];
           let quantity:number[]=[];
           this.products.map((product)=>{
-                 price.push(product.productPrice);
-                 quantity.push(product.productQuantity)
-          })
+                 price.push(product.productPrice*product.quantity);
+                 quantity.push(product.quantity);
+          })        
         this.totalPrice =  this.calculateTotalPriceQuantity(price);
         this.totalQuantity=this.calculateTotalPriceQuantity(quantity);
   }
+
 
   private calculateTotalPriceQuantity(price:number[]){
       return price.reduce((accumulator,currentValue)=> accumulator+ currentValue);
   }
 
 }
+

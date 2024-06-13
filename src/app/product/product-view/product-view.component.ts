@@ -14,7 +14,7 @@ export class ProductViewComponent implements OnInit {
   constructor(
     private productService: ProductsService,
     private route: ActivatedRoute,
-    private toastr:ToastrService
+    private toastr:ToastrService,
   ) { }
 
   public currentRoute!: any;
@@ -31,7 +31,7 @@ export class ProductViewComponent implements OnInit {
       {
         
         this.productDetails=res.data
-        console.log(this.productDetails)
+        console.log(`/////////////`,this.productDetails)
       }
     )
     console.log(this.currentRoute);
@@ -39,26 +39,28 @@ export class ProductViewComponent implements OnInit {
   }
 
   createSize(productSize:string){
-    console.log('wedf',productSize);
     this.size=productSize
     this.productDetails.productSize=this.size;
   }
 
   addtoCart(product:Product){
+    console.log(`product`,product);
+    
     if(this.productDetails.productSize && !this.size){
       this.toastr.warning('Please choose Size!');
     }
     else{
-      this.productService.addtocart(product)
-          .subscribe((res)=>{
-            this.toastr.success('Added to the cart!');
-            console.log('addeddd',res);
-        })
-    
-  
-   
+       this.productService.addtocart(product).subscribe((data)=> {
+         this.toastr.success(`Product added in Add to cart`)
+         console.log(`dfghjkl;`,data);
+  });
+
   }
 
+}
+
+}
 
 
-  }}
+
+  
