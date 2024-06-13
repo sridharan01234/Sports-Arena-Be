@@ -7,7 +7,7 @@
     font-size: 24px;
 }
 
-.product-name .label-stock{
+.product-name .label-stock {
     font-size: 13px;
     padding: 4px 13px;
     border-radius: 5px;
@@ -38,7 +38,11 @@
 .size-btn:hover {
     background-color: black;
     color: white;
-    
+}
+
+.size-btn:focus {
+    background-color: black;
+    color: white;
 }
 
 .img-style:hover {

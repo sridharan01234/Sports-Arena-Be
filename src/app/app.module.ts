@@ -30,17 +30,18 @@ import { TournamentComponent } from './tournament/tournament.component';
 
 
 @NgModule({
-  declarations: [AppComponent,
-     LoginComponent,
-     PasswordValidationDirective,
-     RegisterComponent,
-      HomeComponent,
-      LoginComponent,
+  declarations: [
+    AppComponent,
+    LoginComponent,
+    PasswordValidationDirective,
+    RegisterComponent,
+    HomeComponent,
+    LoginComponent,
     PasswordValidationDirective,
     RegisterComponent,
     ResetpasswordComponent,
 
-  
+
     AddtocartComponent,
         DateValidatorDirective,
         TournamentComponent,
@@ -69,8 +70,8 @@ import { TournamentComponent } from './tournament/tournament.component';
     
    
   ],
-  providers: [AuthserviceService,{ provide: HTTP_INTERCEPTORS, useClass: AuthenticationInterceptor, multi: true }],
+  providers: [AuthserviceService, { provide: HTTP_INTERCEPTORS, useClass: AuthenticationInterceptor, multi: true }],
   bootstrap: [AppComponent],
-  
+
 })
 export class AppModule { }

@@ -1,13 +1,12 @@
-
 <app-header></app-header>
 <div class="container" *ngIf="productDetails">
     <div class="row">
         <div class="col-md-4">
             <div class="row">
                 <div class="col-6" *ngFor="let i of productDetails.productImages">
-                    <img class="image-zoom" [src]="i.imageUrl" class="img-fluid img-style" [alt]="productDetails.productName1">
+                    <img class="image-zoom" [src]="i.imageUrl" class="img-fluid img-style"
+                        [alt]="productDetails.productName1">
                 </div>
-               
             </div>
         </div>
         <div class="col-md-6 mx-5 px-5">
@@ -50,4 +49,3 @@
 </div>
 
 <app-footer></app-footer>
-

@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
 
 import { cartResponse, removeCart, updateCart } from 'src/app/model/cart';
-import { Product } from 'src/app/model/products';
+import { Product, ProductResponse, ProductViewResponse } from 'src/app/model/products';
 @Injectable({
   providedIn: 'root'
 })
@@ -21,12 +21,12 @@ export class ProductsService {
  
   public getProduct(id:number)
   {
-    return this.http.get<Product>(`${this.apiUrl}/product?id=${id}`);
+    return this.http.get<ProductViewResponse>(`${this.apiUrl}/product?id=${id}`);
   }
 
 
   public addtocart(product:Product){
-    return this.http.post(`${this.apiUrl}/cart/add`,product)  
+    return this.http.post<ProductResponse>(`${this.apiUrl}/cart/add`,product)  
   }
   
   public getCartProducts(){
